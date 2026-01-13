@@ -65,6 +65,9 @@ private:
     G4double fDetectorDistance1;
     G4double fDetectorDistance2;
     G4double fDetectorDistance3;
+    G4double fDetectorDistance4;
+    G4double fDetectorDistance5;
+    G4double fDetectorDistance6;
     
     G4double fXLength;
     G4double fYLength;

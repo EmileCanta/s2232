@@ -1,346 +1,250 @@
 #include "DetectorConstruction.hh"
 #include "DetectorMessenger.hh"
-
-
 #include "G4Material.hh"
-
 #include "G4Box.hh"
 #include "G4LogicalVolume.hh"
 #include "G4PVPlacement.hh"
-
 #include "G4GeometryManager.hh"
 #include "G4PhysicalVolumeStore.hh"
 #include "G4LogicalVolumeStore.hh"
 #include "G4SolidStore.hh"
 #include "G4AssemblyVolume.hh"
-
 #include "G4VisAttributes.hh"
 #include "G4Colour.hh"
-
 #include "DetectionSystemRCMP.hh"
-
-#include "G4SystemOfUnits.hh" // new version geant4.10 requires units
-
+#include "G4SystemOfUnits.hh"
 #include "CADMesh.hh"
 
-//RCMP Detection system constructor
-DetectionSystemRCMP::DetectionSystemRCMP() :
-	// LogicalVolumes
-	fDSSSDpixelLog(0)
+DetectionSystemRCMP::DetectionSystemRCMP() : fDSSSDpixelLog(0)
 { 	
-	//BB7 DSSSD x,y length and thickness
 	fXLength = 64.*mm;
 	fYLength = 64.*mm;
-	fDetectorThickness   = 1.*mm;
-	fDetectorDistance1 = 41.93*mm;
-	fDetectorDistance2 = 47.99*mm;
-	fDetectorDistance3 = 42.45*mm;
+	
+    fDetectorThickness = 1.*mm;
+
+	fDetectorDistance1 = 44.92*mm;
+	fDetectorDistance2 = 45.29*mm;
+	fDetectorDistance3 = 44.98*mm;
+    fDetectorDistance4 = 44.62*mm;
+	fDetectorDistance5 = 42.63*mm;
+	fDetectorDistance6 = 42.68*mm;
 
 	fXPosOffset = 0.;
 	fYPosOffset = 0.;
 	fZPosOffset = 0.;
 
-
-	//number of channels per row and cols 32 and 32
 	fPixelsXRow = (G4int)(32);
 	fPixelsYRow = (G4int)(32);
 
-	//total number of pixels 32*32
 	fNumberOfPixels = fPixelsXRow*fPixelsYRow;
 	
-	
-	
-	//single pixel width
-	fPixelWidth      = 2.*mm;
-	
-	
-	
-	
-
-
-
-	
+	fPixelWidth = 2.*mm;
 }
 
-
-//RCMP detection system destructor
-
-DetectionSystemRCMP::~DetectionSystemRCMP() {
-	// LogicalVolumes
+DetectionSystemRCMP::~DetectionSystemRCMP() 
+{
 	delete fDSSSDpixelLog;
 }
 
+G4int DetectionSystemRCMP::Build() 
+{ 
 
-
-//Detector assembly
-G4int DetectionSystemRCMP::Build() { 
-
-	// Build assembly volume
 	fAssembly = new G4AssemblyVolume(); 
 
-    G4cout<<"BuildPixelVolume"<<G4endl;
+    G4cout << "BuildPixelVolume" << G4endl;
 	BuildPixelVolume();
 
 	return 1;
 }
 
+G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog) 
+{
 
+    G4double posX;
+    G4double posY;
+    G4double posZ;
 
-//FUNCTION TO PLACE DETECTOR PIXEL INTO PHSYICAL VOLUME STATUS:::COMPLETE
-G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog) {
+    G4int pixelNumber = 0;
 
-	//building detector assuming channel 1,1 starts at (-64,-64) This may change depends on detector rotations
-	
-	
-	G4double posX;
-	G4double posY;
-	G4double posZ;
+    //G4RotationMatrix* GriffinRotate = new G4RotationMatrix();
+    G4RotationMatrix* FrameRotate1 = new G4RotationMatrix();
+    G4RotationMatrix* FrameRotate2 = new G4RotationMatrix();
+    G4RotationMatrix* FrameRotate3 = new G4RotationMatrix();
 
-	G4int pixelNumber = 0;
+    //GriffinRotate->rotateZ(-22.5*deg);n
+    //GriffinRotate->rotateZ(-0.*deg); 
+    //GriffinRotate->rotateY(36.75*deg);
+    FrameRotate1->rotateY(37.53*deg);
+    FrameRotate2->rotateY(143.52*deg);
+    FrameRotate3->rotateZ(90.*deg);
+    FrameRotate3->rotateY(-44.48*deg);
 
-	G4RotationMatrix* GriffinRotate = new G4RotationMatrix();
-	G4RotationMatrix* FrameRotate = new G4RotationMatrix();
-	G4RotationMatrix* FrameRotate2 = new G4RotationMatrix();
-	G4RotationMatrix* FrameRotate3 = new G4RotationMatrix();
-	G4RotationMatrix* FrameRotate4 = new G4RotationMatrix();
-	//GriffinRotate->rotateZ(-22.5*deg);   // orientation
-	//GriffinRotate->rotateZ(-0.*deg);   // orientation
-	GriffinRotate->rotateY(37.53*deg);   // orientation
-	FrameRotate->rotateY(37.53*deg);   // orientation
-	FrameRotate2->rotateY(143.52*deg);   // orientation
-	FrameRotate3->rotateY(-44.48*deg);   // orientation
+    //G4Transform3D rotateTransformGriffin(*GriffinRotate, G4ThreeVector());
+    G4Transform3D rotateTransformFrame1(*FrameRotate1, G4ThreeVector());
+    G4Transform3D rotateTransformFrame2(*FrameRotate2, G4ThreeVector());
+    G4Transform3D rotateTransformFrame3(*FrameRotate3, G4ThreeVector());
 
-	// Using geant4 transform class to handle GRIFFIN rotation
-	G4Transform3D rotateTransform(*GriffinRotate, G4ThreeVector()); // no translation
-	G4Transform3D rotateTransformFrame(*FrameRotate, G4ThreeVector()); // no translation
-	G4Transform3D rotateTransformFrame2(*FrameRotate2, G4ThreeVector()); // no translation
-	G4Transform3D rotateTransformFrame3(*FrameRotate3, G4ThreeVector()); // no translation
-	G4Transform3D rotateTransformFrame4(*FrameRotate4, G4ThreeVector()); // no translation
+    G4double startY = -fXLength / 2.0;
+    G4double startZ = -fYLength / 2.0;
+    G4double startX = -fYLength / 2.0;
 
-G4double startY = -fXLength / 2.0;   // rowX -> Y
-G4double startZ = -fYLength / 2.0;   // rowY -> Z
-G4double startX = -fYLength / 2.0;
+    for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
+    {
+        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0;
 
+        for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
+        {
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 11.21*mm;
+            G4double posX = 44.92*mm;
 
+            G4ThreeVector localPos1(posX, posY, posZ);
 
+            G4Point3D p1(localPos1);
 
+            G4Point3D pRot1 = rotateTransformFrame1 * p1;
 
+            G4ThreeVector rotatedPos1(pRot1);
 
+            fAssembly->MakeImprint(expHallLog, rotatedPos1, FrameRotate1, pixelNumber);
 
-
-
-
-
-
-	
-	//32*32 pixel construction with row1 col(1-32) 0,1,2,3>>>>>>>31, row2 col(1-32)32>>>>>>>>63
-	//First loop for Junction side in Ntuple with strip number increase along Y direction
-	//Nested loop for Ohmic side in Ntuple with strip number increase along Z direction
-	//construc detector in x-direction, x-distance is fixed, 
-	for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) {
-	
-		
-    		G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0 + fXPosOffset;
-		//posX = fDetectorDistance1;
-    		for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) {
-        		G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 13.16*mm;
-        		G4double posX = fDetectorDistance1 + fZPosOffset;
-		//non-rotated coordinates using detector local positions
-        	G4ThreeVector localPos(posX, posY, posZ);
-		//construct detector in negative X at the same time
-		G4ThreeVector localPos2(-posX,posY,posZ);
-        // rotate the *position* about the global origin
-        
-	G4Point3D p(localPos);
-	G4Point3D p2(localPos2);
-    	G4Point3D pRot = rotateTransformFrame * p;
-	G4Point3D pRot2 = rotateTransformFrame *p2; 
-    	G4ThreeVector rotatedPos(pRot);
-	G4ThreeVector rotatedPos2(pRot2);
-        
-        
-        //Assiging this detector to RCMP1
-        fAssembly->MakeImprint(expHallLog, rotatedPos, FrameRotate, pixelNumber);
-        //fAssembly->MakeImprint(expHallLog, rotatedPos, FrameRotate, pixelNumber);
-
-	++pixelNumber;
+            ++pixelNumber;
+        }
     }
-}
 
 
 
 
-	for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) {
-	
-		
-    		G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0 + fXPosOffset;
-		//posX = fDetectorDistance1;
-    		for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) {
-        		G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 8.41*mm;
-        		G4double posX = fDetectorDistance2 + fZPosOffset;
-		//non-rotated coordinates using detector local positions
-        	G4ThreeVector localPos(posX, posY, posZ);
-		//construct detector in negative X at the same time
-		G4ThreeVector localPos2(-posX,posY,posZ);
-        // rotate the *position* about the global origin
-        
-	G4Point3D p(localPos);
-	G4Point3D p2(localPos2);
-    	G4Point3D pRot = rotateTransformFrame * p;
-	G4Point3D pRot2 = rotateTransformFrame *p2; 
-    	G4ThreeVector rotatedPos(pRot);
-	G4ThreeVector rotatedPos2(pRot2);
-        
-        
-        //Assiging this detector to RCMP1
-        //fAssembly->MakeImprint(expHallLog, rotatedPos, GriffinRotate, pixelNumber);
+    for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
+    {
+        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0;
 
-        //Assiging this detector to RCMP2
-	fAssembly->MakeImprint(expHallLog,rotatedPos2,FrameRotate,pixelNumber+32*32);
-	++pixelNumber;
+        for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
+        {
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 10.35*mm;
+            G4double posX = 44.98*mm;
+
+            G4ThreeVector localPos2(-posX,posY,posZ);
+
+            G4Point3D p2(localPos2);
+
+            G4Point3D pRot2 = rotateTransformFrame1 *p2; 
+
+            G4ThreeVector rotatedPos2(pRot2);
+
+            fAssembly->MakeImprint(expHallLog,rotatedPos2,FrameRotate1,pixelNumber+32*32);
+
+            ++pixelNumber;
+        }
     }
-}
 
+    pixelNumber = 32*32*2;
 
+    for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
+    {
+        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0;
 
+        for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
+        {
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 10.75*mm;
+            G4double posX = 45.29*mm;
 
+            G4ThreeVector localPos3(posX, posY, posZ);
 
+            G4Point3D p3(localPos3);
 
+            G4Point3D pRot3 = rotateTransformFrame2 * p3;
 
+            G4ThreeVector rotatedPos3(pRot3);
 
+            fAssembly->MakeImprint(expHallLog, rotatedPos3, FrameRotate2, pixelNumber);
 
-
-
-
-	//construction of inner detectors along y-axis 
-pixelNumber = 32*32*2;
-	// Using geant4 transform class to handle GRIFFIN rotation
-	//G4Transform3D rotateTransform2(*GriffinRotate, G4ThreeVector()); // no translation
-	//First loop for Junction side in Ntuple with strip number increase along X direction
-	//Nested loop for Ohmic side in Ntuple with strip number increase along Z direction
-	//construc detector in y-direction, distance y is fixed
-	for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) {
-    		G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0 + fXPosOffset;
-		//posX = fDetectorDistance1;
-    		for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) {
-        		G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 8.41*mm;
-        		G4double posX = fDetectorDistance2 + fZPosOffset;
-		//non-rotated coordinates using detector local positions
-        	G4ThreeVector localPos3(posX, posY, posZ);
-		//construct detector in negative X at the same time
-		G4ThreeVector localPos4(-posX,posY,posZ);
-        // rotate the *position* about the global origin
-        
-	G4Point3D p3(localPos3);
-	G4Point3D p4(localPos4);
-    	G4Point3D pRot3 = rotateTransformFrame2 * p3;
-	G4Point3D pRot4 = rotateTransformFrame2 *p4; 
-    	G4ThreeVector rotatedPos3(pRot3);
-	G4ThreeVector rotatedPos4(pRot4);
-        
-        fAssembly->MakeImprint(expHallLog, rotatedPos3, FrameRotate2, pixelNumber);
-	//fAssembly->MakeImprint(expHallLog,rotatedPos4,GriffinRotate,pixelNumber+32*32);
-	++pixelNumber;
+            ++pixelNumber;
+        }
     }
-}
 
+    for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
+    {
+        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0;
 
+        for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
+        {
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 10.81*mm;
+            G4double posX = 44.62*mm;
 
-for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) {
-    		G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0 + fXPosOffset;
-		//posX = fDetectorDistance1;
-    		for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) {
-        		G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 13.16;
-        		G4double posX = fDetectorDistance1 + fZPosOffset;
-		//non-rotated coordinates using detector local positions
-        	G4ThreeVector localPos3(posX, posY, posZ);
-		//construct detector in negative X at the same time
-		G4ThreeVector localPos4(-posX,posY,posZ);
-        // rotate the *position* about the global origin
-        
-	G4Point3D p3(localPos3);
-	G4Point3D p4(localPos4);
-    	G4Point3D pRot3 = rotateTransformFrame2 * p3;
-	G4Point3D pRot4 = rotateTransformFrame2 *p4; 
-    	G4ThreeVector rotatedPos3(pRot3);
-	G4ThreeVector rotatedPos4(pRot4);
-        
-        //fAssembly->MakeImprint(expHallLog, rotatedPos3, GriffinRotate, pixelNumber);
-	fAssembly->MakeImprint(expHallLog,rotatedPos4,FrameRotate2,pixelNumber+32*32);
-	++pixelNumber;
+            G4ThreeVector localPos4(-posX,posY,posZ);
+
+            G4Point3D p4(localPos4);
+
+            G4Point3D pRot4 = rotateTransformFrame2 *p4; 
+
+            G4ThreeVector rotatedPos4(pRot4);
+
+            fAssembly->MakeImprint(expHallLog,rotatedPos4,FrameRotate2,pixelNumber+32*32);
+
+            ++pixelNumber;
+        }
     }
-}
 
-FrameRotate->rotateY(-37.53*deg);
-FrameRotate->rotateZ(90*deg);
-FrameRotate->rotateY(-44.48*deg);
-	//construction of inner detectors along y-axis 
     pixelNumber = 32*32*3;
-// Using geant4 transform class to handle GRIFFIN rotation
-//G4Transform3D rotateTransform2(*GriffinRotate, G4ThreeVector()); // no translation
-//First loop for Junction side in Ntuple with strip number increase along X direction
-//Nested loop for Ohmic side in Ntuple with strip number increase along Z direction
-//construc detector in y-direction, distance y is fixed
-for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) {
-G4double posX = startX + fPixelWidth*rowX + fPixelWidth/2.0;
-//posX = fDetectorDistance1;
-for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) {
-G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 5.86*mm;
-G4double posY = fDetectorDistance3 + fZPosOffset;
-//non-rotated coordinates using detector local positions
-G4ThreeVector localPos5(posX, posY, posZ);
-//construct detector in negative X at the same time
-G4ThreeVector localPos6(posX,-posY,posZ);
-// rotate the *position* about the global origin
 
-G4Point3D p5(localPos5);
-G4Point3D p6(localPos6);
-G4Point3D pRot5 = rotateTransformFrame3 * p5;
-G4Point3D pRot6 = rotateTransformFrame3 *p6; 
-G4ThreeVector rotatedPos5(pRot5);
-G4ThreeVector rotatedPos6(pRot6);
+    for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
+    {
+        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0 - 2.33*mm;
+        
+        for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
+        {
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 3.16*mm;
+            G4double posX = 42.45*mm;
 
-fAssembly->MakeImprint(expHallLog, rotatedPos5, FrameRotate, pixelNumber);
-++pixelNumber;
-}
-}
+            G4ThreeVector localPos5(posX, posY, posZ);
 
-for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) {
-G4double posX = startX + fPixelWidth*rowX + fPixelWidth/2.0 - 5.86;
-//posX = fDetectorDistance1;
-for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) {
-G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0;
-G4double posY = fDetectorDistance3 + fZPosOffset;
-//non-rotated coordinates using detector local positions
-G4ThreeVector localPos5(posX, posY, posZ);
-//construct detector in negative X at the same time
-G4ThreeVector localPos6(posX,-posY,posZ);
-// rotate the *position* about the global origin
+            G4Point3D p5(localPos5);
 
-G4Point3D p5(localPos5);
-G4Point3D p6(localPos6);
-G4Point3D pRot5 = rotateTransformFrame3 * p5;
-G4Point3D pRot6 = rotateTransformFrame3 *p6; 
-G4ThreeVector rotatedPos5(pRot5);
-G4ThreeVector rotatedPos6(pRot6);
+            G4Point3D pRot5 = rotateTransformFrame3 * p5;
 
-//fAssembly->MakeImprint(expHallLog, rotatedPos3, GriffinRotate, pixelNumber);
-fAssembly->MakeImprint(expHallLog,rotatedPos6,FrameRotate,pixelNumber+32*32);
-++pixelNumber;
-}
-}
+            G4ThreeVector rotatedPos5(pRot5);
+
+            fAssembly->MakeImprint(expHallLog, rotatedPos5, FrameRotate3, pixelNumber);
+
+            ++pixelNumber;
+        }
+    }
+
+    for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
+    {
+        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0 + 3.52*mm;
+        for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
+        {
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 2.69*mm;
+            G4double posX = 42.45*mm;
+
+            G4ThreeVector localPos6(-posX,posY,posZ);
+
+            G4Point3D p6(localPos6);
+
+            G4Point3D pRot6 = rotateTransformFrame3 *p6; 
+
+            G4ThreeVector rotatedPos6(pRot6);
+
+            fAssembly->MakeImprint(expHallLog,rotatedPos6,FrameRotate3,pixelNumber+32*32);
+
+            ++pixelNumber;
+        }
+    }
+
     G4Material* FrameMaterial = G4Material::GetMaterial("G4_POLYETHYLENE");
-	
+
     if(!FrameMaterial) 
     {
-		G4cout << " ----> Material " << FrameMaterial << G4endl;
-		return 0;
-	}
+        G4cout << " ----> Material " << FrameMaterial << G4endl;
+        
+        return 0;
+    }
 
-	G4VisAttributes* visAtt = new G4VisAttributes(G4Colour(1.0,0.0,0.0));
-	
+    G4VisAttributes* visAtt = new G4VisAttributes(G4Colour(1.0,0.0,0.0));
+
     visAtt->SetVisibility(true);
-    
+
     auto mesh = CADMesh::TessellatedMesh::FromSTL("../../frame_3d/frame.stl");
 
     auto solid = mesh->GetSolid();
@@ -348,7 +252,7 @@ fAssembly->MakeImprint(expHallLog,rotatedPos6,FrameRotate,pixelNumber+32*32);
     G4LogicalVolume* MeshLog = new G4LogicalVolume(solid, FrameMaterial, "MeshLog");
 
     G4VPhysicalVolume* MeshPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), MeshLog, "MeshPhys", expHallLog, false, 0, true); 
-    
+
     auto windows = CADMesh::TessellatedMesh::FromSTL("../../frame_3d/windows.stl");
 
     auto solidWind = windows->GetSolid();
@@ -357,42 +261,34 @@ fAssembly->MakeImprint(expHallLog,rotatedPos6,FrameRotate,pixelNumber+32*32);
 
     //G4VPhysicalVolume* WindPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), WindLog, "WindPhys", expHallLog, false, 0, true); 
 
-	return 1;
+    return 1;
 }
 
-
-
-//This function used for creating pixel volume:::::Material needs update
-
-G4int DetectionSystemRCMP::BuildPixelVolume() {
-
-	//need modification of silicon material
+G4int DetectionSystemRCMP::BuildPixelVolume() 
+{
 	G4Material* material = G4Material::GetMaterial("Silicon");
-	if(!material) {
+	
+    if(!material) 
+    {
 		G4cout<<" ----> Material "<<material<<" not found, cannot build the detector shell! "<<G4endl;
 		return 0;
 	}
 
-	// Set visualization attributes
 	G4VisAttributes* visAtt = new G4VisAttributes(G4Colour(1.0,0.0,0.0));
-	visAtt->SetVisibility(true);
+	
+    visAtt->SetVisibility(true);
+	
+    G4Box* DSSSDpixel = BuildPixel();
 
-
-	G4Box* DSSSDpixel = BuildPixel();
-
-	// Define rotation and movement objects, logic volume is defined at ceneter hence no rotation or movement
 	G4ThreeVector direction 	= G4ThreeVector(0,0,0);
 	G4double zPosition		= 0.0*mm;
 	G4ThreeVector move 		= zPosition * direction;
 	G4RotationMatrix* rotate  = new G4RotationMatrix;
-	
 		
-	//Start by building one detector at distance of 47.6mm in z-direction
-	//logical volume of detector pixel
-	if(fDSSSDpixelLog == nullptr) {
+	if(fDSSSDpixelLog == nullptr) 
+    {
 		fDSSSDpixelLog = new G4LogicalVolume(DSSSDpixel, material, "DSSSDpixelLog", 0, 0, 0);
 		fDSSSDpixelLog->SetVisAttributes(visAtt);
-
 	}
 
 	fAssembly->AddPlacedVolume(fDSSSDpixelLog, move, rotate);
@@ -400,16 +296,13 @@ G4int DetectionSystemRCMP::BuildPixelVolume() {
 	return 1;
 }
 
-///////////////////////////////////////////////////////////////////////
-// BB7 Detector pixel construction 2mm*2mm*1mm :::::::FUNCTION COMPLETE
-///////////////////////////////////////////////////////////////////////
-G4Box* DetectionSystemRCMP::BuildPixel() {
+G4Box* DetectionSystemRCMP::BuildPixel() 
+{
 	G4double halfLengthX = fPixelWidth/2.0;
 	G4double halfLengthY = fPixelWidth/2.0;
 	G4double halfLengthZ = fDetectorThickness/2.0;
-	//Create BB7 DSSSD single pixel
-	//logic volume along x axis
-	G4Box* pixel = new G4Box("pixel", halfLengthZ, halfLengthY,halfLengthX );
+	
+    G4Box* pixel = new G4Box("pixel", halfLengthZ, halfLengthY, halfLengthX);
 
 	return pixel;
-}//end ::BuildPixel
+}
