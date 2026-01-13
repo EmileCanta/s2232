@@ -74,10 +74,10 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
     //GriffinRotate->rotateZ(-22.5*deg);n
     //GriffinRotate->rotateZ(-0.*deg); 
     //GriffinRotate->rotateY(36.75*deg);
-    FrameRotate1->rotateY(37.53*deg);
-    FrameRotate2->rotateY(143.52*deg);
+    FrameRotate1->rotateY(37.*deg);
+    FrameRotate2->rotateY(143.*deg);
     FrameRotate3->rotateZ(90.*deg);
-    FrameRotate3->rotateY(-44.48*deg);
+    FrameRotate3->rotateY(45*deg);
 
     //G4Transform3D rotateTransformGriffin(*GriffinRotate, G4ThreeVector());
     G4Transform3D rotateTransformFrame1(*FrameRotate1, G4ThreeVector());
@@ -94,8 +94,8 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 11.21*mm;
-            G4double posX = 44.92*mm;
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 9.03*mm;
+            G4double posX = 44.92*mm + (fDetectorThickness/2.) + 2.*mm;
 
             G4ThreeVector localPos1(posX, posY, posZ);
 
@@ -120,8 +120,8 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 10.35*mm;
-            G4double posX = 44.98*mm;
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 8.08*mm;
+            G4double posX = 45.29*mm + (fDetectorThickness/2.) + 2.*mm;
 
             G4ThreeVector localPos2(-posX,posY,posZ);
 
@@ -145,8 +145,8 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 10.75*mm;
-            G4double posX = 45.29*mm;
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 7.68*mm;
+            G4double posX = 44.98*mm + (fDetectorThickness/2.) + 2.*mm;
 
             G4ThreeVector localPos3(posX, posY, posZ);
 
@@ -168,8 +168,8 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 10.81*mm;
-            G4double posX = 44.62*mm;
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 8.63*mm;
+            G4double posX = 44.62*mm + (fDetectorThickness/2.) + 2.*mm;
 
             G4ThreeVector localPos4(-posX,posY,posZ);
 
@@ -189,12 +189,12 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
     for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
     {
-        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0 - 2.33*mm;
+        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0 + 3.40*mm;
         
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 3.16*mm;
-            G4double posX = 42.45*mm;
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 1.59*mm;
+            G4double posX = 36.55*mm + (fDetectorThickness/2.) + 2.*mm;
 
             G4ThreeVector localPos5(posX, posY, posZ);
 
@@ -212,11 +212,11 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
     for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
     {
-        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0 + 3.52*mm;
+        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0 - 1.94*mm;
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 2.69*mm;
-            G4double posX = 42.45*mm;
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 2.12*mm;
+            G4double posX = 36.55*mm + (fDetectorThickness/2.) + 2.*mm;
 
             G4ThreeVector localPos6(-posX,posY,posZ);
 
@@ -259,7 +259,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
     G4LogicalVolume* WindLog = new G4LogicalVolume(solidWind, FrameMaterial, "WindLog");
 
-    //G4VPhysicalVolume* WindPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), WindLog, "WindPhys", expHallLog, false, 0, true); 
+//    G4VPhysicalVolume* WindPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), WindLog, "WindPhys", expHallLog, false, 0, true); 
 
     return 1;
 }
