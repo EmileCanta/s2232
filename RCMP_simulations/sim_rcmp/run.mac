@@ -11,7 +11,7 @@
 
 /DetSys/det/addRCMP
 /DetSys/gun/position 0.0 0.0 0.0 cm
-/gun/particle e-
-/DetSys/gun/efficiencyEnergy 0.01 MeV
-/run/beamOn 200000
+/gun/particle proton
+/DetSys/gun/efficiencyEnergy 0.5 MeV
+/run/beamOn 1000000
 
