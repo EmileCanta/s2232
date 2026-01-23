@@ -80,7 +80,7 @@
 	fEffPolarization = false;
 	LaBrinit(); //sets up default variables - messy having them all declared here
 
-	fBeamSpotSigma = 0.*mm;
+	fBeamSpotSigma = 1.*mm;
 
 	fTargetDistro = false;
 	fNeedFileDistro = false;
@@ -260,10 +260,11 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 		} else {
 			//G4cout<<"Random "<< G4endl; //may offer the solution, an altered 2pi rando. Using 4pi for efficiency
 			// random direction if no preference provided
-			effRandCosTheta = 2.*G4UniformRand()-1.0; //cos(theta) = 2cos^2(0.5theta)-1 ??
+			effRandCosTheta = (2.0*G4UniformRand())-1.0; //cos(theta) = 2cos^2(0.5theta)-1 ??
 			effRandSinTheta = sqrt(1. - effRandCosTheta*effRandCosTheta); //from sin^2(theta)+cos^2(theta)=1
-			effRandPhi      = (360.*deg)*G4UniformRand();
+			effRandPhi      = (2.0*CLHEP::pi)*G4UniformRand();
 			effdirection = G4ThreeVector(effRandSinTheta*cos(effRandPhi), effRandSinTheta*sin(effRandPhi), effRandCosTheta);
+			//effdirection = G4ThreeVector(effRandSinTheta*cos(effRandPhi), effRandCosTheta, effRandSinTheta*sin(effRandPhi));  //Swapped
 			//converts from Spherical polar(physics def.) to cartesian via (rsin(theta)cos(phi),rsin(theta)cos(phi),rcos(theta)) r=1,unit length
 		}
 
@@ -274,7 +275,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 
 		if(fHistoManager->RecordGun()){
 			fHistoManager->BeamEnergy(fEffEnergy);
-			fHistoManager->BeamTheta(effdirection.theta());
+			fHistoManager->BeamTheta(effdirection.theta()); 
 			fHistoManager->BeamPhi(effdirection.phi());
 			fHistoManager->BeamPos(thisEffPosition);
 		}

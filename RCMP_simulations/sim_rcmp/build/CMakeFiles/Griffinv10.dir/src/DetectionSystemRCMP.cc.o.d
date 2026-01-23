@@ -279,6 +279,13 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
  /usr/include/assert.h \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NistManager.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ICRU90StoppingData.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Material.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NistElementBuilder.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NistMaterialBuilder.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Pow.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Exp.hh \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Box.hh \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeomTypes.hh \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeomConfig.hh \
@@ -317,6 +324,16 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Visible.hh \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Visible.icc \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Box.icc \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Tubs.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Tubs.icc \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SubtractionSolid.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BooleanSolid.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DisplacedSolid.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RotationMatrix.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AffineTransform.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AffineTransform.icc \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VBooleanProcessor.hh \
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BooleanSolid.icc \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4LogicalVolume.hh \
  /usr/include/c++/13/memory \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
@@ -342,7 +359,6 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: \
  /usr/include/c++/13/bits/this_thread_sleep.h \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Region.icc \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VPhysicalVolume.hh \
- /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RotationMatrix.hh \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VPhysicalVolume.icc \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4LogicalVolume.icc \
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PVPlacement.hh \

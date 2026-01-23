@@ -204,7 +204,7 @@ public:
 	G4bool   Spice()      { return fSpice;      }
 	G4bool   Paces()      { return fPaces;      }
 	G4bool   QED()        { return fQED;      }
-	G4bool   RCMP()        { return fRCMP;      }
+	G4bool   RCMP()       { return fRCMP;       }
 	G4bool   Descant()    { return fDescant;    }
 	G4bool   Testcan()    { return fTestcan;    }
 

@@ -9775,12 +9775,16 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/TwoVector.h
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/TwoVector.icc
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AffineTransform.hh
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AffineTransform.icc
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ApplicationState.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AssemblyTriplet.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AssemblyTriplet.icc
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AssemblyVolume.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AssemblyVolume.icc
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AutoLock.hh
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BooleanSolid.hh
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BooleanSolid.icc
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Box.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Box.icc
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4CSGSolid.hh
@@ -9789,17 +9793,20 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DataVector.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DataVector.icc
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DensityEffectCalculator.hh
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DisplacedSolid.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Element.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ElementTable.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ElementVector.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EnvironmentUtils.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Exception.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExceptionSeverity.hh
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Exp.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeomConfig.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeomSplitter.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeomTypes.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeometryManager.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GlobalConfig.hh
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ICRU90StoppingData.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4IEEE754.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4IonisParamElm.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4IonisParamMat.hh
@@ -9814,6 +9821,9 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MaterialPropertiesTable.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MaterialPropertyVector.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MaterialTable.hh
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NistElementBuilder.hh
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NistManager.hh
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NistMaterialBuilder.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Normal3D.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OrderedTable.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PVPlacement.hh
@@ -9824,6 +9834,7 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicsVectorType.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Point3D.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Polyhedron.hh
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Pow.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Region.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Region.icc
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RotationMatrix.hh
@@ -9832,6 +9843,7 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SolidStore.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4String.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4String.icc
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SubtractionSolid.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SurfBits.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SurfBits.icc
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SystemOfUnits.hh
@@ -9842,12 +9854,15 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Transform3D.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TriangularFacet.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TriangularFacet.icc
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Tubs.hh
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Tubs.icc
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TwoVector.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Types.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcommand.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIdirectory.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UImessenger.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIparameter.hh
+ /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VBooleanProcessor.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VFacet.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VNotifier.hh
  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VPhysicalVolume.hh

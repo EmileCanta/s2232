@@ -1,7 +1,10 @@
 #include "DetectorConstruction.hh"
 #include "DetectorMessenger.hh"
 #include "G4Material.hh"
+#include "G4NistManager.hh"
 #include "G4Box.hh"
+#include "G4Tubs.hh"
+#include "G4SubtractionSolid.hh"
 #include "G4LogicalVolume.hh"
 #include "G4PVPlacement.hh"
 #include "G4GeometryManager.hh"
@@ -21,17 +24,7 @@ DetectionSystemRCMP::DetectionSystemRCMP() : fDSSSDpixelLog(0)
 	fYLength = 64.*mm;
 	
     fDetectorThickness = 1.*mm;
-
-	fDetectorDistance1 = 44.92*mm;
-	fDetectorDistance2 = 45.29*mm;
-	fDetectorDistance3 = 44.98*mm;
-    fDetectorDistance4 = 44.62*mm;
-	fDetectorDistance5 = 42.63*mm;
-	fDetectorDistance6 = 42.68*mm;
-
-	fXPosOffset = 0.;
-	fYPosOffset = 0.;
-	fZPosOffset = 0.;
+    fOffsetPCB = 2.*mm;
 
 	fPixelsXRow = (G4int)(32);
 	fPixelsYRow = (G4int)(32);
@@ -71,7 +64,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
     G4RotationMatrix* FrameRotate2 = new G4RotationMatrix();
     G4RotationMatrix* FrameRotate3 = new G4RotationMatrix();
 
-    //GriffinRotate->rotateZ(-22.5*deg);n
+    //GriffinRotate->rotateZ(-22.5*deg);
     //GriffinRotate->rotateZ(-0.*deg); 
     //GriffinRotate->rotateY(36.75*deg);
     FrameRotate1->rotateY(37.*deg);
@@ -95,7 +88,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
             G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 9.03*mm;
-            G4double posX = 44.92*mm + (fDetectorThickness/2.) + 2.*mm;
+            G4double posX = 44.92*mm + (fDetectorThickness/2.) + fOffsetPCB;
 
             G4ThreeVector localPos1(posX, posY, posZ);
 
@@ -111,17 +104,14 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
         }
     }
 
-
-
-
     for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
     {
         G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0;
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 8.08*mm;
-            G4double posX = 45.29*mm + (fDetectorThickness/2.) + 2.*mm;
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 7.68*mm;
+            G4double posX = 44.98*mm + (fDetectorThickness/2.) + fOffsetPCB;
 
             G4ThreeVector localPos2(-posX,posY,posZ);
 
@@ -145,8 +135,8 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 7.68*mm;
-            G4double posX = 44.98*mm + (fDetectorThickness/2.) + 2.*mm;
+            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 8.08*mm;
+            G4double posX = 45.29*mm + (fDetectorThickness/2.) + fOffsetPCB;
 
             G4ThreeVector localPos3(posX, posY, posZ);
 
@@ -169,7 +159,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
             G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 8.63*mm;
-            G4double posX = 44.62*mm + (fDetectorThickness/2.) + 2.*mm;
+            G4double posX = 44.62*mm + (fDetectorThickness/2.) + fOffsetPCB;
 
             G4ThreeVector localPos4(-posX,posY,posZ);
 
@@ -194,7 +184,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
             G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 1.59*mm;
-            G4double posX = 36.55*mm + (fDetectorThickness/2.) + 2.*mm;
+            G4double posX = 36.55*mm + (fDetectorThickness/2.) + fOffsetPCB;
 
             G4ThreeVector localPos5(posX, posY, posZ);
 
@@ -216,7 +206,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
             G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 2.12*mm;
-            G4double posX = 36.55*mm + (fDetectorThickness/2.) + 2.*mm;
+            G4double posX = 36.55*mm + (fDetectorThickness/2.) + fOffsetPCB;
 
             G4ThreeVector localPos6(-posX,posY,posZ);
 
@@ -232,7 +222,10 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
         }
     }
 
+    G4NistManager* nist = G4NistManager::Instance();
+
     G4Material* FrameMaterial = G4Material::GetMaterial("G4_POLYETHYLENE");
+    G4Material* MylarMaterial = nist->FindOrBuildMaterial("G4_MYLAR");
 
     if(!FrameMaterial) 
     {
@@ -241,9 +234,9 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
         return 0;
     }
 
-    G4VisAttributes* visAtt = new G4VisAttributes(G4Colour(1.0,0.0,0.0));
+    G4VisAttributes* visAttTape = new G4VisAttributes(G4Colour(0.0,1.0,0.0));
 
-    visAtt->SetVisibility(true);
+    visAttTape->SetVisibility(true);
 
     auto mesh = CADMesh::TessellatedMesh::FromSTL("../../frame_3d/frame.stl");
 
@@ -259,8 +252,26 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
     G4LogicalVolume* WindLog = new G4LogicalVolume(solidWind, FrameMaterial, "WindLog");
 
-//    G4VPhysicalVolume* WindPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), WindLog, "WindPhys", expHallLog, false, 0, true); 
+    //G4VPhysicalVolume* WindPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), WindLog, "WindPhys", expHallLog, false, 0, true);
 
+    G4Box* solidHolderPreSub = new G4Box("solidHolderPreSub", 41.8*mm, 8.5*mm, 0.45*mm);
+
+    G4Tubs* solidHole = new G4Tubs("solidHole", 0., 7.5*mm, 0.9*mm, 0., 360.);
+
+    G4VSolid* solidHolder = new G4SubtractionSolid("solidHolder", solidHolderPreSub, solidHole);
+    
+    G4LogicalVolume* logHolder = new G4LogicalVolume(solidHolder, FrameMaterial, "logHolder");
+    
+    G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.45*mm), logHolder, "physHolder", expHallLog, false, 0, true);
+
+    G4Tubs* solidTape = new G4Tubs("solidTape", 0., 7.5*mm, 0.55*um, 0., 360.);
+    
+    G4LogicalVolume* logTape = new G4LogicalVolume(solidTape, MylarMaterial, "logTape");
+
+    logTape->SetVisAttributes(visAttTape);
+
+    G4VPhysicalVolume* physTape = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.*mm), logTape, "physTape", expHallLog, false, 0, true);
+    
     return 1;
 }
 

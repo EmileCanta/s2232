@@ -1,4 +1,3 @@
-### After running ./Griffinv10/process/em/fluo true # atomic dexcitations (apparently required otherwise exception thrown)
 /process/em/auger true # auger electrons
 /process/em/pixe true # particle induced X-ray emission
 /control/verbose 2
@@ -6,12 +5,10 @@
 /event/verbose 0
 /tracking/verbose 0
 /run/initialize
+/Histo/RecordGun true
 /DetSys/world/material Vacuum
-/DetSys/app/add8piVacuumChamber
-
 /DetSys/det/addRCMP
-/DetSys/gun/position 0.0 0.0 0.0 cm
-/gun/particle alpha
-/DetSys/gun/efficiencyEnergy 3. MeV
-/run/beamOn 10000000
-
+#/DetSys/gun/position 0.0 0.0 0.0 cm
+/gun/particle proton
+/DetSys/gun/efficiencyEnergy 5. MeV
+/run/beamOn 10000

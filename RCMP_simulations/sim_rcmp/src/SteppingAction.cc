@@ -105,33 +105,45 @@ void SteppingAction::UserSteppingAction(const G4Step* aStep) {
 	G4int trackID = theTrack->GetTrackID();
 	G4int parentID = theTrack->GetParentID();
 
-	//G4StepPoint* prePoint = aStep->GetPreStepPoint();
+	G4StepPoint* prePoint = aStep->GetPreStepPoint();
 	G4StepPoint* postPoint = aStep->GetPostStepPoint();
 	G4ThreeVector postPos = postPoint->GetPosition();
+	G4ThreeVector prePos = prePoint->GetPosition();
+	G4ThreeVector prePosMom = prePoint->GetMomentumDirection();
 	G4double postTime = postPoint->GetGlobalTime();
+    
+    if(fDetector->HasProperties(volume)) {
+        DetectorProperties prop = fDetector->GetProperties(volume);
+
+        theTrack->SetTrackStatus(fStopAndKill); //Kills particle as soon as it enters an active volume
+
+        fEventAction->AddHitTracker(prop, evntNb, trackID, parentID, stepNumber, particleType, processType, edep, prePos, postTime, targetZ, ekin);
+    }
 
 	// check if this volume has its properties set, i.e. it's an active detector
-	if((edep > 0 || (fDetector->GridCell() && ekin > 0)) && fDetector->HasProperties(volume)) {
-		DetectorProperties prop = fDetector->GetProperties(volume);
+    /* if((edep > 0 || (fDetector->GridCell() && ekin > 0)) && fDetector->HasProperties(volume)) {
+       DetectorProperties prop = fDetector->GetProperties(volume);
 
-		if(fDetector->GridCell()) {
-			G4String volumeName = volume->GetName();
-			if(volumeName.find("gridcellLog") != G4String::npos) {
-				// use ekin as edep
-				edep = ekin;
-				// Now kill the track!
-				theTrack->SetTrackStatus(fStopAndKill);
-			}
-		}
+       theTrack->SetTrackStatus(fStopAndKill); //Kills particle as soon as it enters an active volume
 
-		// check edep again in case we use the grid cell but haven't hit it
-		if(edep <= 0) return;
+       if(fDetector->GridCell()) {
+       G4String volumeName = volume->GetName();
+       if(volumeName.find("gridcellLog") != G4String::npos) {
+    // use ekin as edep
+    edep = ekin;
+    // Now kill the track!
+    theTrack->SetTrackStatus(fStopAndKill);
+    }
+    }
 
-		fEventAction->AddHitTracker(prop, evntNb, trackID, parentID, stepNumber, particleType, processType, edep, postPos, postTime, targetZ, ekin);
+    // check edep again in case we use the grid cell but haven't hit it
+    if(edep <= 0) return;
 
-		if(trackSteps) {
-			fEventAction->AddStepTracker(prop, evntNb, trackID, parentID, stepNumber, particleType, processType, edep, postPos, postTime, targetZ);
-		}
-	}// if(fDetector->HasProperties(volume))
+    fEventAction->AddHitTracker(prop, evntNb, trackID, parentID, stepNumber, particleType, processType, edep, postPos, postTime, targetZ, ekin);
+
+    if(trackSteps) {
+    fEventAction->AddStepTracker(prop, evntNb, trackID, parentID, stepNumber, particleType, processType, edep, postPos, postTime, targetZ);
+    }
+    } */// if(fDetector->HasProperties(volume))
 }
 
