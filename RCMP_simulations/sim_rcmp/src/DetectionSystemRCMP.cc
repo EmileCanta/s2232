@@ -16,7 +16,7 @@
 #include "G4Colour.hh"
 #include "DetectionSystemRCMP.hh"
 #include "G4SystemOfUnits.hh"
-#include "CADMesh.hh"
+#include "G4GDMLParser.hh"
 
 DetectionSystemRCMP::DetectionSystemRCMP() : fDSSSDpixelLog(0)
 { 	
@@ -26,12 +26,12 @@ DetectionSystemRCMP::DetectionSystemRCMP() : fDSSSDpixelLog(0)
     fDetectorThickness = 1.*mm;
     fOffsetPCB = 2.*mm;
 
-	fPixelsXRow = (G4int)(32);
-	fPixelsYRow = (G4int)(32);
+	fPixelsXRow = (G4int)(1);
+	fPixelsYRow = (G4int)(1);
 
 	fNumberOfPixels = fPixelsXRow*fPixelsYRow;
 	
-	fPixelWidth = 2.*mm;
+	fPixelWidth = 64.*mm;
 }
 
 DetectionSystemRCMP::~DetectionSystemRCMP() 
@@ -271,7 +271,10 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
     logTape->SetVisAttributes(visAttTape);
 
     G4VPhysicalVolume* physTape = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.*mm), logTape, "physTape", expHallLog, false, 0, true);
-    
+   
+    G4GDMLParser parser;
+    parser.Write("det.gdml", expHallLog);
+
     return 1;
 }
 

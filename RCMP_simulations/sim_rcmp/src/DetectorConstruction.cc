@@ -928,6 +928,7 @@ void DetectorConstruction::AddDetectionSystemRCMP() {
 		DetectionSystemRCMP* pRCMP = new DetectionSystemRCMP() ;
 		pRCMP->Build();
 		pRCMP->PlaceDetector(fLogicWorld);
+
 	fRCMP = true;
 }
 

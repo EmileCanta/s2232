@@ -9680,6 +9680,7 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemQED.cc.o: /home/emile/postdoc/analy
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemRCMP.cc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Evaluator/Evaluator.h \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Geometry/Normal3D.h \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Geometry/Point3D.h \
@@ -9755,12 +9756,18 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: /home/emile/postdoc/anal
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/TwoVector.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AffineTransform.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AffineTransform.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Allocator.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AllocatorPool.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ApplicationState.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AssemblyTriplet.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AssemblyTriplet.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AssemblyVolume.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AssemblyVolume.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AutoLock.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AuxiliaryNavServices.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AuxiliaryNavServices.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BlockingList.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BlockingList.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BooleanSolid.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BooleanSolid.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Box.hh \
@@ -9768,6 +9775,8 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: /home/emile/postdoc/anal
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4CSGSolid.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Color.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Colour.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Cons.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Cons.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DataVector.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DataVector.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DensityEffectCalculator.hh \
@@ -9775,15 +9784,42 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: /home/emile/postdoc/anal
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Element.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ElementTable.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ElementVector.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Ellipsoid.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Ellipsoid.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EnvironmentUtils.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Evaluator.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Exception.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExceptionSeverity.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Exp.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExtrudedSolid.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExtrudedSolid.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLAuxStructType.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLEvaluator.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLMessenger.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLParameterisation.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLParser.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLParser.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLRead.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLReadDefine.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLReadMaterials.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLReadParamvol.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLReadSetup.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLReadSolids.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLReadStructure.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWrite.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWriteDefine.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWriteMaterials.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWriteParamvol.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWriteSetup.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWriteSolids.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWriteStructure.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeomConfig.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeomSplitter.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeomTypes.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeometryManager.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GlobalConfig.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Hype.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Hype.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ICRU90StoppingData.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4IEEE754.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4IonisParamElm.hh \
@@ -9799,26 +9835,69 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: /home/emile/postdoc/anal
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MaterialPropertiesTable.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MaterialPropertyVector.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MaterialTable.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MultiUnion.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MultiUnion.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationHistory.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationHistory.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationHistoryPool.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationLevel.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationLevel.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationLevelRep.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationLevelRep.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationLogger.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Navigator.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Navigator.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NistElementBuilder.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NistManager.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NistMaterialBuilder.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Normal3D.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NormalNavigation.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NormalNavigation.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Orb.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Orb.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OrderedTable.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PVPlacement.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Para.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Para.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParameterisedNavigation.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParameterisedNavigation.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicalVolumeStore.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicsFreeVector.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicsVector.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicsVector.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicsVectorType.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Point3D.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Polycone.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Polycone.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PolyconeHistorical.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PolyconeSide.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Polyhedra.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Polyhedra.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PolyhedraHistorical.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PolyhedraSide.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Polyhedron.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Pow.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ReferenceCountedHandle.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Region.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Region.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RegularNavigation.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ReplicaNavigation.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ReplicaNavigation.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RotationMatrix.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4STRead.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SafetyHelper.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SafetyHelper.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SandiaTable.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SmartVoxelHeader.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SmartVoxelHeader.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SmartVoxelNode.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SmartVoxelNode.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SmartVoxelProxy.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SmartVoxelProxy.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SmartVoxelStat.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SolidStore.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Sphere.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Sphere.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4String.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4String.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SubtractionSolid.hh \
@@ -9829,7 +9908,18 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: /home/emile/postdoc/anal
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Tet.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Threading.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ThreeVector.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Torus.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Torus.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TouchableHandle.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TouchableHistory.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TouchableHistory.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Transform3D.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TransportationManager.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TransportationManager.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Trap.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Trap.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Trd.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Trd.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TriangularFacet.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TriangularFacet.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Tubs.hh \
@@ -9841,18 +9931,28 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: /home/emile/postdoc/anal
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UImessenger.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIparameter.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VBooleanProcessor.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VCSGface.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VCSGfaceted.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VExternalNavigation.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VFacet.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VNavigation.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VNotifier.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VPVParameterisation.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VPhysicalVolume.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VPhysicalVolume.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VSolid.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VSolid.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VStoreNotifier.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VTouchable.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VUserDetectorConstruction.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VVolumeMaterialScanner.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Vector3D.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VisAttributes.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VisAttributes.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Visible.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Visible.icc \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VoxelNavigation.hh \
+  /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VoxelNavigation.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Voxelizer.hh \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Voxelizer.icc \
   /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ios.hh \
@@ -10028,6 +10128,7 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: /home/emile/postdoc/anal
   /usr/include/c++/13/set \
   /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
+  /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
@@ -10055,6 +10156,7 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: /home/emile/postdoc/anal
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/inttypes.h \
   /usr/include/libintl.h \
   /usr/include/limits.h \
   /usr/include/linux/errno.h \
@@ -10169,6 +10271,147 @@ CMakeFiles/Griffinv10.dir/src/DetectionSystemRCMP.cc.o: /home/emile/postdoc/anal
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/xercesc/dom/DOM.hpp \
+  /usr/include/xercesc/dom/DOMAttr.hpp \
+  /usr/include/xercesc/dom/DOMCDATASection.hpp \
+  /usr/include/xercesc/dom/DOMCharacterData.hpp \
+  /usr/include/xercesc/dom/DOMComment.hpp \
+  /usr/include/xercesc/dom/DOMConfiguration.hpp \
+  /usr/include/xercesc/dom/DOMDocument.hpp \
+  /usr/include/xercesc/dom/DOMDocumentFragment.hpp \
+  /usr/include/xercesc/dom/DOMDocumentRange.hpp \
+  /usr/include/xercesc/dom/DOMDocumentTraversal.hpp \
+  /usr/include/xercesc/dom/DOMDocumentType.hpp \
+  /usr/include/xercesc/dom/DOMElement.hpp \
+  /usr/include/xercesc/dom/DOMEntity.hpp \
+  /usr/include/xercesc/dom/DOMEntityReference.hpp \
+  /usr/include/xercesc/dom/DOMError.hpp \
+  /usr/include/xercesc/dom/DOMErrorHandler.hpp \
+  /usr/include/xercesc/dom/DOMException.hpp \
+  /usr/include/xercesc/dom/DOMImplementation.hpp \
+  /usr/include/xercesc/dom/DOMImplementationLS.hpp \
+  /usr/include/xercesc/dom/DOMImplementationList.hpp \
+  /usr/include/xercesc/dom/DOMImplementationRegistry.hpp \
+  /usr/include/xercesc/dom/DOMImplementationSource.hpp \
+  /usr/include/xercesc/dom/DOMLSException.hpp \
+  /usr/include/xercesc/dom/DOMLSInput.hpp \
+  /usr/include/xercesc/dom/DOMLSOutput.hpp \
+  /usr/include/xercesc/dom/DOMLSParser.hpp \
+  /usr/include/xercesc/dom/DOMLSParserFilter.hpp \
+  /usr/include/xercesc/dom/DOMLSResourceResolver.hpp \
+  /usr/include/xercesc/dom/DOMLSSerializer.hpp \
+  /usr/include/xercesc/dom/DOMLSSerializerFilter.hpp \
+  /usr/include/xercesc/dom/DOMLocator.hpp \
+  /usr/include/xercesc/dom/DOMNamedNodeMap.hpp \
+  /usr/include/xercesc/dom/DOMNode.hpp \
+  /usr/include/xercesc/dom/DOMNodeFilter.hpp \
+  /usr/include/xercesc/dom/DOMNodeIterator.hpp \
+  /usr/include/xercesc/dom/DOMNodeList.hpp \
+  /usr/include/xercesc/dom/DOMNotation.hpp \
+  /usr/include/xercesc/dom/DOMPSVITypeInfo.hpp \
+  /usr/include/xercesc/dom/DOMProcessingInstruction.hpp \
+  /usr/include/xercesc/dom/DOMRange.hpp \
+  /usr/include/xercesc/dom/DOMRangeException.hpp \
+  /usr/include/xercesc/dom/DOMStringList.hpp \
+  /usr/include/xercesc/dom/DOMText.hpp \
+  /usr/include/xercesc/dom/DOMTreeWalker.hpp \
+  /usr/include/xercesc/dom/DOMTypeInfo.hpp \
+  /usr/include/xercesc/dom/DOMUserDataHandler.hpp \
+  /usr/include/xercesc/dom/DOMXPathEvaluator.hpp \
+  /usr/include/xercesc/dom/DOMXPathException.hpp \
+  /usr/include/xercesc/dom/DOMXPathExpression.hpp \
+  /usr/include/xercesc/dom/DOMXPathNSResolver.hpp \
+  /usr/include/xercesc/dom/DOMXPathNamespace.hpp \
+  /usr/include/xercesc/dom/DOMXPathResult.hpp \
+  /usr/include/xercesc/framework/LocalFileFormatTarget.hpp \
+  /usr/include/xercesc/framework/MemoryManager.hpp \
+  /usr/include/xercesc/framework/ValidationContext.hpp \
+  /usr/include/xercesc/framework/XMLAttDef.hpp \
+  /usr/include/xercesc/framework/XMLAttDefList.hpp \
+  /usr/include/xercesc/framework/XMLAttr.hpp \
+  /usr/include/xercesc/framework/XMLBuffer.hpp \
+  /usr/include/xercesc/framework/XMLBufferMgr.hpp \
+  /usr/include/xercesc/framework/XMLContentModel.hpp \
+  /usr/include/xercesc/framework/XMLDocumentHandler.hpp \
+  /usr/include/xercesc/framework/XMLElementDecl.hpp \
+  /usr/include/xercesc/framework/XMLEntityDecl.hpp \
+  /usr/include/xercesc/framework/XMLEntityHandler.hpp \
+  /usr/include/xercesc/framework/XMLErrorReporter.hpp \
+  /usr/include/xercesc/framework/XMLFormatter.hpp \
+  /usr/include/xercesc/framework/XMLNotationDecl.hpp \
+  /usr/include/xercesc/framework/psvi/PSVIHandler.hpp \
+  /usr/include/xercesc/framework/psvi/XSConstants.hpp \
+  /usr/include/xercesc/framework/psvi/XSObject.hpp \
+  /usr/include/xercesc/framework/psvi/XSSimpleTypeDefinition.hpp \
+  /usr/include/xercesc/framework/psvi/XSTypeDefinition.hpp \
+  /usr/include/xercesc/internal/XProtoType.hpp \
+  /usr/include/xercesc/internal/XSerializable.hpp \
+  /usr/include/xercesc/internal/XSerializationException.hpp \
+  /usr/include/xercesc/internal/XSerializeEngine.hpp \
+  /usr/include/xercesc/parsers/AbstractDOMParser.hpp \
+  /usr/include/xercesc/parsers/XercesDOMParser.hpp \
+  /usr/include/xercesc/sax/DTDHandler.hpp \
+  /usr/include/xercesc/sax/DocumentHandler.hpp \
+  /usr/include/xercesc/sax/EntityResolver.hpp \
+  /usr/include/xercesc/sax/ErrorHandler.hpp \
+  /usr/include/xercesc/sax/HandlerBase.hpp \
+  /usr/include/xercesc/sax/SAXException.hpp \
+  /usr/include/xercesc/sax/SAXParseException.hpp \
+  /usr/include/xercesc/util/ArrayIndexOutOfBoundsException.hpp \
+  /usr/include/xercesc/util/BaseRefVectorOf.c \
+  /usr/include/xercesc/util/BaseRefVectorOf.hpp \
+  /usr/include/xercesc/util/EmptyStackException.hpp \
+  /usr/include/xercesc/util/Hashers.hpp \
+  /usr/include/xercesc/util/IllegalArgumentException.hpp \
+  /usr/include/xercesc/util/Janitor.c \
+  /usr/include/xercesc/util/Janitor.hpp \
+  /usr/include/xercesc/util/KVStringPair.hpp \
+  /usr/include/xercesc/util/Mutexes.hpp \
+  /usr/include/xercesc/util/NameIdPool.c \
+  /usr/include/xercesc/util/NameIdPool.hpp \
+  /usr/include/xercesc/util/NoSuchElementException.hpp \
+  /usr/include/xercesc/util/NullPointerException.hpp \
+  /usr/include/xercesc/util/PanicHandler.hpp \
+  /usr/include/xercesc/util/PlatformUtils.hpp \
+  /usr/include/xercesc/util/QName.hpp \
+  /usr/include/xercesc/util/RefArrayVectorOf.c \
+  /usr/include/xercesc/util/RefArrayVectorOf.hpp \
+  /usr/include/xercesc/util/RefHashTableOf.c \
+  /usr/include/xercesc/util/RefHashTableOf.hpp \
+  /usr/include/xercesc/util/RefVectorOf.c \
+  /usr/include/xercesc/util/RefVectorOf.hpp \
+  /usr/include/xercesc/util/RuntimeException.hpp \
+  /usr/include/xercesc/util/SecurityManager.hpp \
+  /usr/include/xercesc/util/ValueStackOf.c \
+  /usr/include/xercesc/util/ValueStackOf.hpp \
+  /usr/include/xercesc/util/ValueVectorOf.c \
+  /usr/include/xercesc/util/ValueVectorOf.hpp \
+  /usr/include/xercesc/util/XMLEnumerator.hpp \
+  /usr/include/xercesc/util/XMLExceptMsgs.hpp \
+  /usr/include/xercesc/util/XMLException.hpp \
+  /usr/include/xercesc/util/XMLFileMgr.hpp \
+  /usr/include/xercesc/util/XMLMutexMgr.hpp \
+  /usr/include/xercesc/util/XMLString.hpp \
+  /usr/include/xercesc/util/XMLUni.hpp \
+  /usr/include/xercesc/util/XMLUniDefs.hpp \
+  /usr/include/xercesc/util/XMemory.hpp \
+  /usr/include/xercesc/util/XercesDefs.hpp \
+  /usr/include/xercesc/util/XercesVersion.hpp \
+  /usr/include/xercesc/util/Xerces_autoconf_config.hpp \
+  /usr/include/xercesc/util/regx/BMPattern.hpp \
+  /usr/include/xercesc/util/regx/Op.hpp \
+  /usr/include/xercesc/util/regx/OpFactory.hpp \
+  /usr/include/xercesc/util/regx/RegularExpression.hpp \
+  /usr/include/xercesc/util/regx/RegxUtil.hpp \
+  /usr/include/xercesc/util/regx/Token.hpp \
+  /usr/include/xercesc/util/regx/TokenFactory.hpp \
+  /usr/include/xercesc/validators/DTD/DTDAttDef.hpp \
+  /usr/include/xercesc/validators/DTD/DTDElementDecl.hpp \
+  /usr/include/xercesc/validators/DTD/DTDEntityDecl.hpp \
+  /usr/include/xercesc/validators/DTD/DocTypeHandler.hpp \
+  /usr/include/xercesc/validators/common/Grammar.hpp \
+  /usr/include/xercesc/validators/datatype/DatatypeValidator.hpp \
+  /usr/include/xercesc/validators/schema/SchemaSymbols.hpp \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
@@ -22332,8 +22575,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4LossTableManager.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4IonPhysics.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4IonBinaryCascadePhysics.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadronPhysicsQGSP_BIC.hh:
@@ -22363,8 +22604,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DNAModelSubType.hh:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/PhysicsList.cc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MesonConstructor.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4XicZero.hh:
 
@@ -22406,15 +22645,11 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TableTemplate.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFMicroPartition.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFMicroCanonical.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFMacroTriNucleon.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFMacroTetraNucleon.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFMacroTemperature.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFMacroMultiNucleon.hh:
 
@@ -22472,8 +22707,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleHPProduct.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleHPPhotonDist.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleHPPartial.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleHPInterpolator.hh:
@@ -22490,15 +22723,9 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleHPDataPoint.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleHPChannelList.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleHPCaptureFS.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleChangeForRadDecay.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OmegacZero.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OmegabMinus.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OmegaMinus.hh:
 
@@ -22515,8 +22742,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NeutronRadCapture.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NeutronInelasticXS.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NeutronHPInelasticData.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NeutronHPElastic.hh:
 
@@ -22556,8 +22781,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4InuclNuclei.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4InterpolationManager.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4InteractionContent.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Integrator.icc:
@@ -22566,10 +22789,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HyperNucleiProperties.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4He3.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadronicProcessType.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadronicInteraction.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadronInelasticProcess.hh:
@@ -22577,8 +22796,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VHighEnergyGenerator.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadronElasticProcess.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadronElastic.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadXSTypes.hh:
 
@@ -22620,8 +22837,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ENDFTapeRead.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DsMesonMinus.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DiffractiveStringBuilder.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Deuteron.hh:
@@ -22638,13 +22853,9 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DMesonMinus.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4CrossSectionDataStore.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SigmabZero.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ComponentGGNuclNuclXsc.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChargedUnknownParticle.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4CascadeInterface.hh:
 
@@ -22678,7 +22889,277 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmacPlusPlus.hh:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmabPlus.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmabMinus.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmaZero.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleHPEnAngCorrelation.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmaPlus.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmaMinus.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiProton.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiOmegabMinus.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiNeutron.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiNeutrinoE.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiLambdacPlus.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiLambdab.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VDiscreteProcess.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiLambda.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiKaonZero.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiHe3.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiDeuteron.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiDMesonZero.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiBsMesonZero.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiBMesonZero.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiAlpha.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/LorentzRotation.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/LorentzRotation.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/BoostZ.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/BoostY.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/BoostX.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFFragment.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExcitedString.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/Boost.h:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/TabulatedMagneticField.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SimpleHeum.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RKG3_Stepper.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Mag_UsualEqRhs.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EmExtraPhysics.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagHelicalStepper.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ImplicitEuler.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HelixExplicitEuler.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExplicitEuler.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4CashKarpRKF45.hh:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/NonUniformMagneticField.cc:
+
+/usr/include/gsl/gsl_sf_result.h:
+
+/usr/include/gsl/gsl_inline.h:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/HistoMessenger.cc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UnitsTable.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UnitsTable.hh:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/HistoManager.cc:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/EventAction.cc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWithoutParameter.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PionMinus.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWithAnInteger.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWithADoubleAndUnit.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWithADouble.hh:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectorMessenger.cc:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/NonUniformMagneticField.hh:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemTrific.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VStatMFEnsemble.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VIntegrationDriver.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UniformElectricField.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RKIntegrationDriver.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RKIntegrationDriver.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagIntegratorStepper.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagIntegratorDriver.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadProjectile.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagErrorStepper.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4IntegrationDriver.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4FieldUtils.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4FieldUtils.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4FieldTrack.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4FieldTrack.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ElectroMagneticField.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ElectricField.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ClassicalRK4.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChordFinderDelegate.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChordFinder.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4QGSModel.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EtaPrime.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChordFinder.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChargeState.hh:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemTestcan.hh:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemTestcan.cc:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemSpice.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VDivisionParameterisation.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VDivisionParameterisation.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PVReplica.hh:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemSpice.cc:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemSceptar.cc:
+
+/usr/include/xercesc/validators/common/Grammar.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleHPChannelList.hh:
+
+/usr/include/xercesc/validators/DTD/DocTypeHandler.hpp:
+
+/usr/include/xercesc/validators/DTD/DTDElementDecl.hpp:
+
+/usr/include/xercesc/validators/DTD/DTDAttDef.hpp:
+
+/usr/include/xercesc/util/regx/TokenFactory.hpp:
+
+/usr/include/xercesc/util/regx/Token.hpp:
+
+/usr/include/xercesc/util/regx/RegxUtil.hpp:
+
+/usr/include/xercesc/util/regx/Op.hpp:
+
+/usr/include/xercesc/util/regx/BMPattern.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFMicroPartition.hh:
+
+/usr/include/xercesc/util/Xerces_autoconf_config.hpp:
+
+/usr/include/xercesc/util/XercesVersion.hpp:
+
+/usr/include/xercesc/util/XercesDefs.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OmegabMinus.hh:
+
+/usr/include/xercesc/util/XMemory.hpp:
+
+/usr/include/xercesc/util/XMLUniDefs.hpp:
+
+/usr/include/xercesc/util/XMLMutexMgr.hpp:
+
+/usr/include/xercesc/util/XMLFileMgr.hpp:
+
+/usr/include/xercesc/util/XMLException.hpp:
+
+/usr/include/xercesc/util/ValueVectorOf.c:
+
+/usr/include/xercesc/util/ValueStackOf.hpp:
+
+/usr/include/xercesc/util/ValueStackOf.c:
+
+/usr/include/xercesc/util/SecurityManager.hpp:
+
+/usr/include/xercesc/util/RefVectorOf.c:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmabZero.hh:
+
+/usr/include/xercesc/util/RefHashTableOf.hpp:
+
+/usr/include/xercesc/util/RefHashTableOf.c:
+
+/usr/include/xercesc/util/RefArrayVectorOf.c:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFMacroTemperature.hh:
+
+/usr/include/xercesc/util/QName.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DsMesonMinus.hh:
+
+/usr/include/xercesc/util/PlatformUtils.hpp:
+
+/usr/include/xercesc/util/PanicHandler.hpp:
+
+/usr/include/xercesc/util/NoSuchElementException.hpp:
+
+/usr/include/xercesc/util/NameIdPool.c:
+
+/usr/include/xercesc/util/Mutexes.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NeutronHPInelasticData.hh:
+
+/usr/include/xercesc/util/KVStringPair.hpp:
+
+/usr/include/xercesc/util/Janitor.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadronElastic.hh:
+
+/usr/include/xercesc/util/Janitor.c:
+
+/usr/include/xercesc/util/Hashers.hpp:
+
+/usr/include/xercesc/util/EmptyStackException.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4CrossSectionDataStore.hh:
+
+/usr/include/xercesc/util/BaseRefVectorOf.c:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLReadMaterials.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWriteStructure.hh:
+
 /usr/include/c++/13/iosfwd:
+
+/usr/include/xercesc/util/XMLEnumerator.hpp:
 
 /usr/include/c++/13/ios:
 
@@ -22704,23 +23185,13 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/c++/13/cwchar:
 
+/usr/include/xercesc/util/BaseRefVectorOf.hpp:
+
 /usr/include/c++/13/ctime:
 
 /usr/include/c++/13/cstdio:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Region.hh:
-
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4QGSModel.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EtaPrime.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChordFinder.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4IntegrationDriver.icc:
-
-/usr/include/c++/13/bits/uses_allocator.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TessellatedSolid.hh:
 
@@ -22742,25 +23213,31 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
+/usr/include/xercesc/internal/XProtoType.hpp:
+
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/PhysListParticles.hh:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/13/ext/numeric_traits.h:
 
 /usr/include/c++/13/bits/stl_construct.h:
 
 /usr/include/c++/13/initializer_list:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4FieldUtils.hh:
-
 /usr/include/c++/13/bits/std_thread.h:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/Boost.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicsVectorType.hh:
+
 /usr/include/c++/13/bits/std_mutex.h:
+
+/usr/include/xercesc/dom/DOMRangeException.hpp:
 
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VUserDetectorConstruction.hh:
+
+/usr/include/xercesc/sax/ErrorHandler.hpp:
 
 /usr/include/c++/13/bits/shared_ptr.h:
 
@@ -22768,9 +23245,15 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/c++/13/bits/std_abs.h:
 
+/usr/include/gsl/gsl_sf_legendre.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ThreadLocalSingleton.hh:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4QGSModel.hh:
 
 /usr/include/linux/errno.h:
+
+/usr/include/xercesc/util/RuntimeException.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VModelFactory.hh:
 
@@ -22784,15 +23267,21 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/c++/13/bits/node_handle.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWithADoubleAndUnit.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandGaussQ.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagIntegratorDriver.icc:
+
+/usr/include/c++/13/bits/localefwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/c++/13/bits/list.tcc:
 
 /usr/include/c++/13/type_traits:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWith3VectorAndUnit.hh:
+
+/usr/include/features-time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
@@ -22806,9 +23295,11 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/c++/13/bits/istream.tcc:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiDMesonZero.hh:
-
 /usr/include/c++/13/bits/invoke.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PVDivision.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/RotationX.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Exp.hh:
 
@@ -22836,6 +23327,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/c++/13/bits/codecvt.h:
 
+/usr/include/xercesc/framework/XMLDocumentHandler.hpp:
+
 /usr/include/c++/13/limits:
 
 /usr/include/c++/13/bits/chrono.h:
@@ -22848,17 +23341,27 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandStudentT.icc:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4He3.hh:
+
+/usr/include/xercesc/framework/XMLAttDef.hpp:
+
 /usr/include/c++/13/bits/basic_ios.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagIntegratorStepper.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeomSplitter.hh:
 
 /usr/include/c++/13/bits/atomic_futex.h:
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiOmegaMinus.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExtrudedSolid.icc:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicsListOrderingParameter.hh:
 
 /usr/include/c++/13/backward/binders.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/BoostY.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExcitedStringVector.hh:
 
@@ -22873,6 +23376,10 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /usr/include/c++/13/bits/hash_bytes.h:
 
 /usr/include/c++/13/iostream:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemTrific.cc:
+
+/usr/include/alloca.h:
 
 /usr/include/c++/13/tr1/riemann_zeta.tcc:
 
@@ -22894,9 +23401,9 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/root/include/TF1AbsComposition.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VisManager.icc:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/BoostZ.icc:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Voxelizer.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AnalysisManagerState.hh:
 
@@ -22904,15 +23411,7 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UserLimits.icc:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/BoostX.icc:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VisExecutive.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NeutrinoE.hh:
-
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiBsMesonZero.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VDecayChannel.hh:
 
@@ -22926,19 +23425,13 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4THnToolsManager.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/EventAction.hh:
-
 /usr/include/c++/13/bits/concept_check.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VVolumeMaterialScanner.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/globals.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemTrific.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VVisManager.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationLevelRep.hh:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectorConstruction.hh:
 
@@ -22949,6 +23442,10 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/c++/13/bits/predefined_ops.h:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemSodiumIodide.cc:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TNtupleManager.hh:
 
@@ -22966,7 +23463,13 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VTrajectoryModel.hh:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiNeutrinoTau.hh:
+
+/usr/include/c++/13/bits/cxxabi_init_exception.h:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4LambdacPlus.hh:
+
+/usr/include/xercesc/util/XMLString.hpp:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemQED.hh:
 
@@ -22979,10 +23482,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VStateDependent.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TrackingMessenger.hh:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
-
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemSodiumIodide.cc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VSolid.icc:
 
@@ -23000,17 +23499,23 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VRML2File.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VDivisionParameterisation.icc:
-
 /usr/include/c++/13/condition_variable:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Lambda.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VProcess.hh:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Mag_EqRhs.hh:
+
+/usr/include/c++/13/chrono:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UImessenger.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VPhysicsConstructor.hh:
+
+/usr/include/xercesc/dom/DOMEntityReference.hpp:
+
+/usr/include/xercesc/dom/DOMLSResourceResolver.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VPhysicalVolume.hh:
 
@@ -23026,9 +23531,9 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/stdlib.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VModularPhysicsList.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExtrudedSolid.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiNeutron.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VModularPhysicsList.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Fancy3DNucleus.hh:
 
@@ -23037,6 +23542,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/ActionInitialization.cc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VModel.hh:
+
+/usr/include/xercesc/dom/DOMXPathNamespace.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SDStructure.hh:
 
@@ -23047,6 +23554,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VMarker.icc:
 
 /usr/include/stdc-predef.h:
+
+/usr/include/xercesc/dom/DOMImplementationRegistry.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VHit.hh:
 
@@ -23060,9 +23569,7 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/c++/13/ext/atomicity.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagIntegratorStepper.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExplicitEuler.hh:
+/usr/include/xercesc/dom/DOMImplementationList.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4FieldManager.icc:
 
@@ -23078,13 +23585,11 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/icomsdefs.hh:
 
+/usr/include/inttypes.h:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ViewParameters.icc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NormalNavigation.hh:
-
-/usr/include/c++/13/vector:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIparameter.hh:
 
 /usr/include/c++/13/bits/ios_base.h:
 
@@ -23104,6 +23609,14 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandGaussQ.icc:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExitonConfiguration.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EqMagElectricField.hh:
+
+/usr/include/c++/13/bits/uniform_int_dist.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWriteDefine.hh:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Trd.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NoProcess.hh:
@@ -23119,6 +23632,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VPreCompoundModel.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4LogicalSurface.icc:
+
+/usr/include/xercesc/dom/DOMXPathNSResolver.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleChange.icc:
 
@@ -23136,17 +23651,11 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/c++/13/bits/utility.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ElectroMagneticField.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Track.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TouchableHistory.icc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Cons.icc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VAnalysisManager.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HelixExplicitEuler.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TouchableHistory.hh:
 
@@ -23167,6 +23676,10 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/Kentucky.hh:
 
 /usr/include/c++/13/array:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/EventAction.hh:
+
+/usr/include/xercesc/dom/DOMNodeList.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ToolsSGQtGLES.hh:
 
@@ -23192,6 +23705,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
+/usr/include/xercesc/util/regx/RegularExpression.hpp:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ThreeVector.hh:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
@@ -23209,6 +23724,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4THitsMap.hh:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/Apparatus8piVacuumChamber.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLEvaluator.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4FFGDefaultValues.hh:
 
@@ -23232,15 +23749,9 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UImanager.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ElementVector.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/histo/h1d:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VoxelNavigation.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SimpleHeum.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ElementTable.hh:
 
@@ -23292,11 +23803,23 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VExternalNavigation.hh:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Decay.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/BoostY.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TwoVector.hh:
+
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TrajectoriesModel.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/MixMaxRng.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiNeutrinoMu.hh:
+
+/usr/include/xercesc/validators/schema/SchemaSymbols.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Para.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StringModel.hh:
 
@@ -23312,19 +23835,13 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandLandau.icc:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VModel.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VRestDiscreteProcess.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4InuclParticleNames.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StepStatus.hh:
 
+/usr/include/xercesc/sax/DTDHandler.hpp:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4CacheDetails.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VStatMFEnsemble.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VIntegrationDriver.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SPPartonInfo.hh:
 
@@ -23337,12 +23854,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Box.hh:
 
 /usr/include/c++/13/tr1/ell_integral.tcc:
-
-/usr/include/c++/13/exception:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Para.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiNeutrinoMu.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DMesonPlus.hh:
 
@@ -23360,10 +23871,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4LogicalSurface.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/PhysListParticles.cc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VGraphicsSystem.hh:
-
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemBox.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RayTracerQt.hh:
@@ -23375,6 +23882,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VParticipants.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Physics2DVector.hh:
+
+/usr/include/xercesc/dom/DOMComment.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
@@ -23398,6 +23907,10 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/TwoVector.h:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleHPPhotonDist.hh:
+
+/usr/include/xercesc/dom/DOMElement.hpp:
+
 /usr/include/c++/13/bits/stl_list.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Polyhedron.hh:
@@ -23408,15 +23921,15 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLReadStructure.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MultiUnion.hh:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RotationMatrix.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/ThreeVector.icc:
 
 /home/emile/root/include/TMathBase.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleHPEnAngCorrelation.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmaPlus.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Electron.hh:
 
@@ -23425,6 +23938,10 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SteppingControl.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/forit:
+
+/usr/include/c++/13/ext/numeric_traits.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLReadSolids.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/Ranlux64Engine.h:
 
@@ -23464,13 +23981,11 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParticleHPReactionWhiteBoard.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeomSplitter.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagIntegratorStepper.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicsFreeVector.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Cons.hh:
+
+/usr/include/xercesc/dom/DOMNotation.hpp:
 
 /home/emile/root/include/TGenericClassInfo.h:
 
@@ -23488,19 +24003,21 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SmartVoxelNode.icc:
 
+/usr/include/xercesc/dom/DOMCDATASection.hpp:
+
+/usr/include/xercesc/framework/psvi/XSConstants.hpp:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChemTimeStepModel.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/RotationZ.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4THnMessenger.hh:
 
-/usr/include/c++/13/bits/localefwd.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagIntegratorDriver.icc:
-
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/RunAction.cc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicsVector.hh:
+
+/usr/include/xercesc/dom/DOMAttr.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandBreitWigner.icc:
 
@@ -23517,10 +24034,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /usr/include/c++/13/bits/basic_string.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/RotationX.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PVDivision.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HelixImplicitEuler.hh:
 
@@ -23550,6 +24063,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VHitsCollection.hh:
 
+/usr/include/xercesc/dom/DOMProcessingInstruction.hpp:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandGamma.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Utility/defs.h:
@@ -23558,15 +24073,23 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MCCIndexConversionTable.hh:
 
+/usr/include/xercesc/util/XMLUni.hpp:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BaseFileManager.hh:
 
 /usr/include/c++/13/bits/allocated_ptr.h:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Hype.icc:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Isotope.hh:
+
+/usr/include/xercesc/dom/DOMText.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AllocatorPool.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ProcessVector.icc:
+
+/usr/include/xercesc/validators/DTD/DTDEntityDecl.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Trd.icc:
 
@@ -23580,10 +24103,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/usr/include/alloca.h:
-
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemTrific.cc:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/TwoVector.icc:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemDescant.hh:
@@ -23594,8 +24113,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/wroot/branch:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiOmegaMinus.hh:
-
 /usr/include/c++/13/bits/sstream.tcc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Normal3D.hh:
@@ -23603,6 +24120,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MaterialPropertyVector.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Geometry/Transform3D.h:
+
+/usr/include/xercesc/util/RefVectorOf.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MaterialPropertiesTable.hh:
 
@@ -23616,25 +24135,15 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Units/PhysicalConstants.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicsModelCatalog.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiLambdacPlus.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SurfBits.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWithAString.hh:
 
 /usr/include/c++/13/bits/new_allocator.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWithAString.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandBinomial.h:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SurfBits.hh:
 
 /usr/include/c++/13/bits/functexcept.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DataVector.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadProjectile.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagErrorStepper.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StepPoint.hh:
 
@@ -23662,13 +24171,25 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/ThreeVector.h:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RadioactivityTable.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagHelicalStepper.icc:
+
+/usr/include/xercesc/util/IllegalArgumentException.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Trap.hh:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/BeamDistribution.hh:
+
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/Apparatus8piVacuumChamberAuxMatShell.cc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Evaluator/Evaluator.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Geometry/Vector3D.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AttValue.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4FieldTrack.icc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadronicException.hh:
 
@@ -23679,6 +24200,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Navigator.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RayTracer.hh:
+
+/usr/include/xercesc/dom/DOMImplementationSource.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4coutDestination.hh:
 
@@ -23692,6 +24215,10 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/c++/13/fstream:
 
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemSodiumIodide.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcommand.hh:
+
 /home/emile/root/include/TObject.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VStatMFMacroCluster.hh:
@@ -23699,8 +24226,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/LorentzVector.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VSceneHandler.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ClassicalRK4.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandGeneral.icc:
 
@@ -23716,8 +24241,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PolyhedraHistorical.hh:
 
-/usr/include/c++/13/bits/hashtable.h:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TrajectoryModelFactories.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h:
@@ -23728,8 +24251,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4FieldUtils.icc:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/Random.h:
 
 /usr/include/c++/13/bits/range_access.h:
@@ -23737,6 +24258,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFMacroCanonical.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandGaussZiggurat.h:
+
+/usr/include/xercesc/util/XMLExceptMsgs.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RootNtupleManager.hh:
 
@@ -23754,15 +24277,9 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/histo/p2:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandPoisson.icc:
-
 /usr/include/time.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Tubs.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadTmpUtil.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/wroot/branch_object:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandPoissonQ.h:
 
@@ -23790,13 +24307,11 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/root/include/TF1.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EmExtraPhysics.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DynamicParticleVector.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagHelicalStepper.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EquationOfMotion.hh:
 
-/usr/include/c++/13/bits/stl_vector.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExceptionSeverity.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIExecutive.hh:
 
 /usr/include/c++/13/bits/algorithmfwd.h:
 
@@ -23817,12 +24332,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TriangularFacet.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ProcessManager.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4InuclElementaryParticle.hh:
-
-/home/emile/root/include/TVirtualIsAProxy.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DynamicParticle.icc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EmLivermorePhysics.hh:
 
@@ -23886,10 +24395,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MaterialCutsCouple.hh:
 
-/usr/include/features-time64.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWith3VectorAndUnit.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DCofThisEvent.hh:
 
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
@@ -23920,6 +24425,10 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/c++/13/bits/fstream.tcc:
 
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectorConstructionSuppressed.cc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationHistory.icc:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GeomConfig.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4LogicalBorderSurface.hh:
@@ -23936,6 +24445,14 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationLevel.hh:
 
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/Kentucky.cc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicalConstants.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChargedUnknownParticle.hh:
+
+/usr/include/xercesc/dom/DOMLSSerializerFilter.hpp:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EmTableType.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VUserTrackInformation.hh:
@@ -23951,8 +24468,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/PhysicsListMessenger.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Navigator.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/BoostX.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4QGSDiffractiveExcitation.hh:
 
@@ -23972,8 +24487,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OpenGLImmediateQt.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmaMinus.hh:
-
 /usr/include/c++/13/bits/unique_lock.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OpenGLStoredQt.hh:
@@ -23990,15 +24503,15 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/c++/13/bits/unordered_map.h:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandPoisson.icc:
+
+/usr/include/xercesc/framework/psvi/PSVIHandler.hpp:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Voxelizer.icc:
 
+/usr/include/xercesc/framework/XMLElementDecl.hpp:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ParameterisedNavigation.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFFragment.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExcitedString.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/Boost.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OpenGLQt.hh:
 
@@ -24070,19 +24583,33 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PrimaryParticle.hh:
 
+/usr/include/xercesc/util/ValueVectorOf.hpp:
+
 /usr/include/c++/13/bits/vector.tcc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PrimaryTransformer.hh:
 
 /usr/include/endian.h:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SimpleRunge.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Torus.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Scene.icc:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ProcessManager.icc:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/PhysListHadron.cc:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadronBuilder.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ProcessType.hh:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemAncillaryBGO.hh:
+
+/usr/include/xercesc/framework/psvi/XSTypeDefinition.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BlockingList.icc:
 
@@ -24092,7 +24619,9 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Region.icc:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RegularNavigation.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Alpha.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RunManagerKernel.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFMacroBiNucleon.hh:
 
@@ -24102,11 +24631,15 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationLogger.hh:
 
+/usr/include/xercesc/util/RefArrayVectorOf.hpp:
+
 /usr/include/c++/13/bits/basic_ios.tcc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VSceneHandler.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/histo/b3:
+
+/usr/include/xercesc/dom/DOMNodeFilter.hpp:
 
 /usr/include/c++/13/bits/stl_multimap.h:
 
@@ -24119,6 +24652,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/AxisAngle.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/JamesRandom.h:
+
+/usr/include/xercesc/util/regx/OpFactory.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SmartTrackStack.hh:
 
@@ -24135,8 +24670,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /usr/include/c++/13/tr1/hypergeometric.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmaZero.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MaterialPropertiesIndex.hh:
 
@@ -24158,11 +24691,7 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TFileManager.icc:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemSpice.cc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RunManagerKernel.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Alpha.hh:
+/usr/include/xercesc/dom/DOMDocumentRange.hpp:
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
@@ -24180,19 +24709,11 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/c++/13/set:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExitonConfiguration.hh:
-
-/usr/include/c++/13/bits/uniform_int_dist.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EqMagElectricField.hh:
-
 /usr/include/c++/13/sstream:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SubEventTrackStack.hh:
 
 /usr/include/c++/13/stdlib.h:
-
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/EventAction.cc:
 
 /usr/include/c++/13/string:
 
@@ -24216,10 +24737,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/c++/13/math.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/PhysListHadron.cc:
-
 /usr/include/c++/13/streambuf:
 
 /usr/include/c++/13/tr1/gamma.tcc:
@@ -24234,15 +24751,15 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
+/usr/include/xercesc/parsers/AbstractDOMParser.hpp:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NeutronHPElasticData.hh:
 
 /usr/include/c++/13/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/13/tr1/special_function_util.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ThreadLocalSingleton.hh:
-
-/usr/include/gsl/gsl_sf_legendre.h:
+/usr/include/xercesc/dom/DOMNodeIterator.hpp:
 
 /usr/include/c++/13/queue:
 
@@ -24251,8 +24768,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /usr/include/c++/13/typeinfo:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/histo/p1:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiHe3.hh:
 
 /usr/include/ctype.h:
 
@@ -24302,11 +24817,11 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiLambdab.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmabZero.hh:
-
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagErrorStepper.icc:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4StatMFMacroNucleon.hh:
 
@@ -24324,11 +24839,17 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemS3.cc:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ios.hh:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/xercesc/sax/SAXException.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
@@ -24346,8 +24867,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/scast:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/TabulatedMagneticField.hh:
-
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
@@ -24359,10 +24878,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /usr/include/libintl.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PionMinus.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWithAnInteger.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Types.hh:
 
@@ -24386,8 +24901,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
-/usr/include/gsl/gsl_inline.h:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AuxiliaryNavServices.hh:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
@@ -24395,6 +24908,18 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /usr/include/c++/13/complex:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWith3Vector.hh:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AssemblyTriplet.icc:
+
+/usr/include/c++/13/bits/uses_allocator.h:
+
+/usr/include/xercesc/dom/DOMLSSerializer.hpp:
+
+/usr/include/xercesc/sax/SAXParseException.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -24409,6 +24934,12 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagneticField.hh:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Reggeons.hh:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemSceptar.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OpticalSurface.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VParticleHPEnergyAngular.hh:
 
@@ -24425,6 +24956,10 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Tokenizer.hh:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/ApparatusDescantStructure.cc:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/PhysicsUtilities.hh:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
@@ -24450,8 +24985,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWithoutParameter.hh:
-
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
@@ -24470,19 +25003,21 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NtupleBookingManager.icc:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/BoostZ.h:
-
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/c++/13/memory:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLRead.hh:
+
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/c++/13/clocale:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
+
+/usr/include/xercesc/dom/DOMCharacterData.hpp:
 
 /home/emile/root/include/TVirtualRWMutex.h:
 
@@ -24491,6 +25026,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/ApparatusLayeredTarget.cc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4CollectionNameVector.hh:
+
+/usr/include/xercesc/dom/DOMDocumentTraversal.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VCSGfaceted.hh:
 
@@ -24530,13 +25067,19 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OmegacZero.hh:
+
+/usr/include/xercesc/framework/XMLContentModel.hpp:
+
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
-/usr/include/c++/13/chrono:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadTmpUtil.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Mag_EqRhs.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/wroot/branch_object:
+
+/usr/include/xercesc/framework/psvi/XSObject.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
 
@@ -24550,13 +25093,17 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BinScheme.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/HistoManager.cc:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Etac.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Fcn.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NtupleBookingManager.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VModel.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VRestDiscreteProcess.hh:
+
+/usr/include/xercesc/dom/DOMImplementationLS.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RootAnalysisManager.hh:
 
@@ -24572,10 +25119,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SystemOfUnits.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicsVectorType.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/Boost.icc:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TFileInformation.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TFileManager.hh:
@@ -24583,6 +25126,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/Rotation.icc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TH1ToolsManager.hh:
+
+/usr/include/xercesc/dom/DOMDocumentFragment.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SurfBits.icc:
 
@@ -24614,11 +25159,15 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VNtupleFileManager.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VPrimaryGenerator.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EquationOfMotion.icc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VNtupleManager.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VTouchable.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SensitiveVolumeList.hh:
+
+/usr/include/xercesc/framework/XMLAttr.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BaryonConstructor.hh:
 
@@ -24640,17 +25189,17 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/charp_out:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RegularNavigation.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWriteSolids.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChargeState.icc:
 
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/cid:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RKG3_Stepper.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/cids:
-
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemTestcan.cc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/cmemT:
 
@@ -24685,6 +25234,10 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/ApparatusGriffinStructure.cc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/histo/h2d:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiOmegacZero.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/histo/h3:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BCLateParticle.hh:
 
@@ -24752,12 +25305,6 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/wroot/columns.icc:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NuclearFormfactorType.hh:
-
-/usr/include/c++/13/unordered_map:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/wroot/date:
-
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemGrid.cc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/wroot/ibo:
@@ -24771,6 +25318,14 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/wroot/ifile:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/wroot/imutex:
+
+/usr/include/xercesc/util/NullPointerException.hpp:
+
+/usr/include/xercesc/util/NameIdPool.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLReadParamvol.hh:
+
+/usr/include/xercesc/dom/DOMUserDataHandler.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/wroot/named:
 
@@ -24786,6 +25341,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AssemblyVolume.hh:
 
+/usr/include/xercesc/framework/LocalFileFormatTarget.hpp:
+
 /usr/include/c++/13/bits/locale_facets_nonio.h:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/HistoMessenger.hh:
@@ -24796,11 +25353,13 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/RunAction.hh:
 
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemS3.hh:
+
 /usr/include/c++/13/bits/stl_function.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Point3D.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLReadSetup.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemS3.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Point3D.hh:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/SteppingAction.hh:
 
@@ -24824,9 +25383,9 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/root/include/TAttFill.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PVReplica.hh:
-
 /home/emile/root/include/TAttLine.h:
+
+/usr/include/xercesc/sax/HandlerBase.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TrackStack.hh:
 
@@ -24862,6 +25421,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PionZero.hh:
 
+/usr/include/xercesc/validators/datatype/DatatypeValidator.hpp:
+
 /home/emile/root/include/TVirtualMutex.h:
 
 /home/emile/root/include/strtok.h:
@@ -24875,6 +25436,8 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4THitsCollection.hh:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLParser.icc:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AssemblyTriplet.hh:
 
@@ -24900,25 +25463,27 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Ellipsoid.hh:
 
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLAuxStructType.hh:
+
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/Apparatus8piVacuumChamberAuxMatShell.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DisplacedSolid.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VBooleanProcessor.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/vmanip:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChordFinderDelegate.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/vmanip:
 
 /home/emile/root/include/TInterpreter.h:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemQED.cc:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChordFinder.icc:
-
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/ApparatusDescantStructure.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Neutron.hh:
+
+/usr/include/xercesc/dom/DOMConfiguration.hpp:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/ApparatusGenericTarget.hh:
 
@@ -24940,31 +25505,15 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/Global.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiNeutrinoE.hh:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4LogicalBorderSurface.icc:
 
 /home/emile/root/include/ROOT/RVersion.hxx:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OpticalPhoton.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Decay.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TwoVector.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/BoostY.icc:
-
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Step.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OpticalPhysics.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagIntegratorDriver.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Torus.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Scene.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SimpleRunge.hh:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemAries.cc:
 
@@ -24972,17 +25521,23 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemDescant.cc:
 
+/usr/include/xercesc/dom/DOMTypeInfo.hpp:
+
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4FieldParameters.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UniformMagField.hh:
 
+/usr/include/xercesc/dom/DOMStringList.hpp:
+
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemGrid.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicsModelCatalog.hh:
+
+/usr/include/xercesc/framework/XMLBufferMgr.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWithABool.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HCtable.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VDivisionParameterisation.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4BooleanSolid.hh:
 
@@ -24992,7 +25547,7 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VReadOutGeometry.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UnitsTable.icc:
+/usr/include/xercesc/dom/DOMLSInput.hpp:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VSDFilter.hh:
 
@@ -25012,65 +25567,55 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemRCMP.cc:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Tet.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Evaluator.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TriangularFacet.icc:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLMessenger.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/CADMesh.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationLevelRep.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemRCMP.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLParameterisation.hh:
 
-/usr/include/x86_64-linux-gnu/bits/environments.h:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLParser.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemS3.cc:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLReadDefine.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectionSystemSceptar.cc:
+/usr/include/c++/13/bits/stl_vector.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Reggeons.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ExceptionSeverity.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OpticalSurface.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWrite.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemSceptar.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWriteMaterials.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcommand.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NeutrinoE.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemSodiumIodide.hh:
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemSpice.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWriteParamvol.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemTestcan.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4HadronicProcessType.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChargeState.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4GDMLWriteSetup.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ChordFinderDelegate.icc:
+/usr/include/c++/13/vector:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ElectricField.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIparameter.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DynamicParticleVector.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Hype.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIExecutive.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MesonConstructor.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EquationOfMotion.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MultiUnion.icc:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VNtupleManager.hh:
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4EquationOfMotion.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWithADouble.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4FieldTrack.hh:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagErrorStepper.icc:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RKIntegrationDriver.hh:
-
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RKIntegrationDriver.icc:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4STRead.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Field.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4SafetyHelper.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Tet.hh:
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4OpticalParameters.hh:
 
@@ -25080,88 +25625,128 @@ CMakeFiles/Griffinv10.dir/src/TabulatedMagneticField.cc.o: /home/emile/postdoc/a
 
 /home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TransportationManager.icc:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UniformElectricField.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4TriangularFacet.icc:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/CADMesh.hh:
+
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/DetectionSystemRCMP.hh:
+
+/usr/include/xercesc/dom/DOM.hpp:
+
+/usr/include/xercesc/dom/DOMDocument.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VisManager.icc:
+
+/usr/include/xercesc/dom/DOMDocumentType.hpp:
+
+/usr/include/xercesc/dom/DOMXPathResult.hpp:
+
+/usr/include/c++/13/exception:
+
+/usr/include/xercesc/dom/DOMEntity.hpp:
+
+/usr/include/xercesc/dom/DOMError.hpp:
+
+/usr/include/xercesc/dom/DOMErrorHandler.hpp:
+
+/usr/include/xercesc/dom/DOMException.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VPrimaryGenerator.hh:
+
+/usr/include/xercesc/dom/DOMImplementation.hpp:
 
 /home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectorConstruction.cc:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/NonUniformMagneticField.hh:
+/usr/include/xercesc/dom/DOMLSException.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NavigationHistory.icc:
+/usr/include/xercesc/dom/DOMLSOutput.hpp:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectorConstructionSuppressed.cc:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Track.hh:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/DetectorMessenger.cc:
+/usr/include/xercesc/util/ArrayIndexOutOfBoundsException.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+/usr/include/xercesc/dom/DOMLSParser.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AssemblyTriplet.icc:
+/usr/include/c++/13/bits/hashtable.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UIcmdWith3Vector.hh:
+/usr/include/xercesc/dom/DOMLSParserFilter.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UnitsTable.hh:
+/usr/include/xercesc/dom/DOMLocator.hpp:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/HistoMessenger.cc:
+/usr/include/xercesc/dom/DOMNamedNodeMap.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4PhysicalConstants.hh:
+/usr/include/xercesc/internal/XSerializable.hpp:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/Kentucky.cc:
+/usr/include/xercesc/dom/DOMNode.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+/usr/include/xercesc/dom/DOMPSVITypeInfo.hpp:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/PhysicsUtilities.hh:
+/usr/include/xercesc/internal/XSerializeEngine.hpp:
 
-/usr/include/gsl/gsl_sf_result.h:
+/usr/include/xercesc/dom/DOMRange.hpp:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/NonUniformMagneticField.cc:
+/usr/include/xercesc/dom/DOMTreeWalker.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4CashKarpRKF45.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4IonPhysics.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ImplicitEuler.hh:
+/usr/include/xercesc/dom/DOMXPathEvaluator.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4RadioactivityTable.hh:
+/usr/include/xercesc/dom/DOMXPathException.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Trap.hh:
+/usr/include/xercesc/framework/psvi/XSSimpleTypeDefinition.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
+/usr/include/xercesc/dom/DOMXPathExpression.hpp:
 
-/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/include/BeamDistribution.hh:
+/usr/include/xercesc/framework/MemoryManager.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4MagHelicalStepper.icc:
+/usr/include/xercesc/framework/ValidationContext.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Mag_UsualEqRhs.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Region.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4Voxelizer.hh:
+/usr/include/xercesc/framework/XMLAttDefList.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/BoostZ.icc:
+/usr/include/xercesc/framework/XMLBuffer.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/LorentzRotation.h:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/BoostX.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Vector/LorentzRotation.icc:
+/usr/include/xercesc/framework/XMLEntityDecl.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiAlpha.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4NuclearFormfactorType.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiBMesonZero.hh:
+/usr/include/c++/13/unordered_map:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiDeuteron.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/wroot/date:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiKaonZero.hh:
+/usr/include/xercesc/framework/XMLEntityHandler.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VDiscreteProcess.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4InterpolationManager.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiLambda.hh:
+/usr/include/xercesc/framework/XMLErrorReporter.hpp:
 
-/usr/include/c++/13/bits/cxxabi_init_exception.h:
+/usr/include/xercesc/framework/XMLFormatter.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiNeutrinoTau.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4InuclElementaryParticle.hh:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiOmegabMinus.hh:
+/home/emile/root/include/TVirtualIsAProxy.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/tools/histo/h3:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4DynamicParticle.icc:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiOmegacZero.hh:
+/usr/include/xercesc/framework/XMLNotationDecl.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiProton.hh:
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/CLHEP/Random/RandBinomial.h:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmabMinus.hh:
+/usr/include/xercesc/internal/XSerializationException.hpp:
 
-/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4AntiSigmabPlus.hh:
+/home/emile/postdoc/analysis/S2232/RCMP_simulations/sim_rcmp/src/PhysListParticles.cc:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4VGraphicsSystem.hh:
+
+/usr/include/xercesc/parsers/XercesDOMParser.hpp:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4UImanager.hh:
+
+/home/emile/geant4/geant4-v11.4.0-install/include/Geant4/G4ElementVector.hh:
+
+/usr/include/xercesc/sax/DocumentHandler.hpp:
+
+/usr/include/xercesc/sax/EntityResolver.hpp:

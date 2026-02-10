@@ -4,7 +4,7 @@ using namespace TMath;
 
 void AngleHist()
 {	
-    TFile *filein = TFile::Open("~/postdoc/data/RCMPsim_data/test.root", "READ");
+    TFile *filein = TFile::Open("~/postdoc/data/RCMPsim_data/geantino_fullgeo_goodAngleDef.root", "READ");
     
     TFile *fileout = new TFile("./anglehist.root","RECREATE");
     
@@ -48,7 +48,7 @@ void AngleHist()
 
     vector<int> map = {5,0,4,1,2,3};
 
-    TH3D *hist3D = new TH3D("hist", "hist", 200, -100., 100., 200, -100., 100., 200, -100., 100.);
+    TH3D *hist3D = new TH3D("hist", "hist", 20, -100., 100., 20, -100., 100., 20, -100., 100.);
 
     int fEntries = tree->GetEntries();
     

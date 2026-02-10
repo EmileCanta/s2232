@@ -1,6 +1,7 @@
 /run/initialize
 
 /DetSys/world/material Vacuum
+/DetSys/det/addGriffinForward 8
 /DetSys/det/addRCMP
 
 /tracking/storeTrajectory 1
