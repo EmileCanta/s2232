@@ -1,11 +1,11 @@
 /run/initialize
 
 /DetSys/world/material Vacuum
-/DetSys/det/addGriffinForward 8
+#/DetSys/det/addGriffinForward 8
 /DetSys/det/addRCMP
 
 /tracking/storeTrajectory 1
-/vis/open OGL
+/vis/open OGLIQt
 /vis/drawVolume
 /vis/viewer/set/autoRefresh true
 /vis/scene/add/trajectories smooth
@@ -14,6 +14,6 @@
 /vis/viewer/set/style surface
 /vis/scene/endOfEventAction accumulate 10000
 #/DetSys/gun/position 0.0 0.0 0.0 cm
-/gun/particle proton
+/gun/particle geantino
 /DetSys/gun/efficiencyEnergy 5. MeV
-#/run/beamOn 10
+#/run/beamOn 1000

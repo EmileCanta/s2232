@@ -1,0 +1,14 @@
+/process/em/auger true # auger electrons
+/process/em/pixe true # particle induced X-ray emission
+/control/verbose 2
+/run/verbose 2
+/event/verbose 0
+/tracking/verbose 0
+/run/initialize
+/Histo/RecordGun true
+/DetSys/world/material Vacuum
+/DetSys/det/addRCMP
+#/DetSys/gun/position 0.0 0.0 0.0 cm
+/gun/particle geantino
+/DetSys/gun/efficiencyEnergy 5. MeV
+/run/beamOn 100000
