@@ -1,14 +1,21 @@
 #!/bin/bash
 
-HELPER=/home/emile/postdoc/analysis/s2232/macros/rcmp/RCMPHelper.cxx 
+HELPER=/home/emile/postdoc/analysis/s2232/helper/rcmp/RCMPHelper.cxx 
 HELPERNAME=RCMP
-OPTIONS="--max-workers 8"
-ANALYSISDIR=/home/emile/postdoc/data/s2232/sorted 
+HELPERDIR=/home/emile/postdoc/analysis/s2232/helper/rcmp
+OPTIONS="--max-workers 20"
+ANALYSISDIR=/home/emile/postdoc/data/s2232/sorted/analysis 
 HISTDIR=/home/emile/postdoc/analysis/s2232/histograms/rcmp
-LOGDIR=/home/emile/postdoc/s2232/helper/logs
+LOGDIR=/home/emile/postdoc/analysis/s2232/helper/logs
 
 firstRun=1 
 lastRun=1
+
+# Force rebuild if helper changed
+if [ $HELPER -nt ${HELPERDIR}/${HELPERNAME}Helper.so ]; then
+    echo "Rebuilding helper..."
+    rm -f ${HELPERDIR}/${HELPERNAME}Helper.so ${HELPERDIR}/${HELPERNAME}Helper.o
+fi
 
 if [ $# -eq 0 ] ; then
    echo "usage: $0 <first run> <last run>"
@@ -62,4 +69,5 @@ for run in `seq $firstRun $lastRun` ; do
    # (2>&1 redirects stderr to stdout so we get error messages in the log file as well)
    grsiframe $OPTIONS $HELPER $analysisFiles 2>&1 | tee -a $logFile
    mv $HELPERNAME${run}_*.root $HISTDIR
+   mv *.log $LOGDIR 
 done

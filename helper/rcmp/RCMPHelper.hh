@@ -1,11 +1,11 @@
-/******************* Taken from GRSI collaboration and adapted by Emile Cantacuzene, 2026 *******************/
-
 #ifndef RCMPHELPER_HH
 #define RCMPHELPER_HH
 
 #include "/home/emile/GRSISort/include/TGRSIHelper.h"
 
 #include "/home/emile/GRSISort/GRSIData/include/TRcmp.h"
+#include "/home/emile/GRSISort/GRSIData/include/TGriffin.h"
+#include "/home/emile/GRSISort/GRSIData/include/TGriffinBgo.h"
 
 class RCMPHelper : public TGRSIHelper, public ROOT::Detail::RDF::RActionImpl<RCMPHelper> {
 public:
@@ -18,12 +18,12 @@ public:
 
    ROOT::RDF::RResultPtr<std::map<std::string, TList>> Book(ROOT::RDataFrame* d) override
    {
-      return d->Book<TRcmp>(std::move(*this), {"TRcmp"});
+      return d->Book<TRcmp, TGriffin, TGriffinBgo>(std::move(*this), {"TRcmp", "TGriffin", "TGriffinBgo"});
    }
 
    void CreateHistograms(unsigned int slot) override;
 
-   void Exec(unsigned int slot, TRcmp& rcmp);
+   void Exec(unsigned int slot, TRcmp& rcmp, TGriffin& griffin, TGriffinBgo& griffinbgo);
 
    void EndOfSort(std::shared_ptr<std::map<std::string, TList>>& list) override;
 

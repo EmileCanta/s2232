@@ -9,6 +9,6 @@
 /DetSys/world/material Vacuum
 /DetSys/det/addRCMP
 #/DetSys/gun/position 0.0 0.0 0.0 cm
-/gun/particle geantino
-/DetSys/gun/efficiencyEnergy 5. MeV
-/run/beamOn 1000000
+/gun/particle alpha
+/DetSys/gun/efficiencyEnergy 2. MeV
+/run/beamOn 100000
