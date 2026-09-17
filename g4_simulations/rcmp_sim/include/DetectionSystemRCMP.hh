@@ -62,6 +62,7 @@ private:
 
     //    SensitiveDetector* crystalBlockSD;
     G4double fPixelWidth;
+    G4double fDeadLayerWidth;
     G4double fDetectorThickness;
     G4double fOffsetPCB;
     

@@ -33,6 +33,7 @@ DetectionSystemRCMP::DetectionSystemRCMP() : fDSSSDpixelLog(0)
 	fNumberOfPixels = fPixelsXRow*fPixelsYRow;
 	
 	fPixelWidth = 2.*mm;
+	fDeadLayerWidth = 2.*mm;
 
     fDeadLayerThickness = 805.*nm;
 }
@@ -98,11 +99,11 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
     for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
     {
-        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0;
+        G4double posY = startX + fDeadLayerWidth*rowX + fDeadLayerWidth/2.0;
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 9.03*mm;
+            G4double posZ = startY + fDeadLayerWidth*rowY + fDeadLayerWidth/2.0 - 9.03*mm;
             G4double posX = 44.92*mm + ((fDetectorThickness + fDeadLayerThickness)/2.) + fOffsetPCB;
 
             G4ThreeVector localPos1(posX, posY, posZ);
@@ -123,11 +124,11 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
     for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
     {
-        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0;
+        G4double posY = startX + fDeadLayerWidth*rowX + fDeadLayerWidth/2.0;
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 7.68*mm;
+            G4double posZ = startY + fDeadLayerWidth*rowY + fDeadLayerWidth/2.0 + 7.68*mm;
             G4double posX = 44.98*mm + ((fDetectorThickness + fDeadLayerThickness)/2.) + fOffsetPCB;
 
             G4ThreeVector localPos2(posX,posY,-posZ);
@@ -150,11 +151,11 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
     for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
     {
-        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0;
+        G4double posY = startX + fDeadLayerWidth*rowX + fDeadLayerWidth/2.0;
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 8.08*mm;
+            G4double posZ = startY + fDeadLayerWidth*rowY + fDeadLayerWidth/2.0 + 8.08*mm;
             G4double posX = 45.29*mm + ((fDetectorThickness + fDeadLayerThickness)/2.) + fOffsetPCB;
 
             G4ThreeVector localPos3(posX, posY, posZ);
@@ -175,11 +176,11 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
     for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
     {
-        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0;
+        G4double posY = startX + fDeadLayerWidth*rowX + fDeadLayerWidth/2.0;
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 8.63*mm;
+            G4double posZ = startY + fDeadLayerWidth*rowY + fDeadLayerWidth/2.0 - 8.63*mm;
             G4double posX = 44.62*mm + ((fDetectorThickness + fDeadLayerThickness)/2.) + fOffsetPCB;
 
             G4ThreeVector localPos4(posX,posY,-posZ);
@@ -202,11 +203,11 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
     for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
     {
-        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0 + 2.15*mm; //Can play on offset here +/- 1.25 mm
+        G4double posY = startX + fDeadLayerWidth*rowX + fDeadLayerWidth/2.0 + 2.15*mm; //Can play on offset here +/- 1.25 mm
         
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 + 1.59*mm;
+            G4double posZ = startY + fDeadLayerWidth*rowY + fDeadLayerWidth/2.0 + 1.59*mm;
             G4double posX = 36.55*mm + ((fDetectorThickness + fDeadLayerThickness)/2.) + fOffsetPCB;
 
             G4ThreeVector localPos5(posX, posY, posZ);
@@ -227,11 +228,11 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
     for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
     {
-        G4double posY = startX + fPixelWidth*rowX + fPixelWidth/2.0 - 1.94*mm;
+        G4double posY = startX + fDeadLayerWidth*rowX + fDeadLayerWidth/2.0 - 1.94*mm;
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fPixelWidth*rowY + fPixelWidth/2.0 - 3.37*mm; //Can play on offset here +/- 1.25 mm
+            G4double posZ = startY + fDeadLayerWidth*rowY + fDeadLayerWidth/2.0 - 3.37*mm; //Can play on offset here +/- 1.25 mm
             G4double posX = 36.55*mm + ((fDetectorThickness + fDeadLayerThickness)/2.) + fOffsetPCB;
 
             G4ThreeVector localPos6(posX,-posY,posZ);
@@ -270,7 +271,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
     auto mesh = CADMesh::TessellatedMesh::FromSTL("../../frame_3d/frame.stl");
     auto solid = mesh->GetSolid();
     G4LogicalVolume* MeshLog = new G4LogicalVolume(solid, FrameMaterial, "MeshLog");
-    //G4VPhysicalVolume* MeshPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), MeshLog, "MeshPhys", expHallLog, false, 0, true); 
+    G4VPhysicalVolume* MeshPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), MeshLog, "MeshPhys", expHallLog, false, 0, true); 
 
     auto windows = CADMesh::TessellatedMesh::FromSTL("../../frame_3d/windows.stl");
     auto solidWind = windows->GetSolid();
@@ -304,7 +305,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
     logHolder->SetVisAttributes(visAttHolder);
     //G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., 4.0*mm), logHolder, "physHolder", expHallLog, false, 0, true);
     //G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., -1.*mm, 3.0*mm), logHolder, "physHolder", expHallLog, false, 0, true);
-    //G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., 2.*mm), logHolder, "physHolder", expHallLog, false, 0, true);
+    G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., 2.*mm), logHolder, "physHolder", expHallLog, false, 0, true);
 
     //////HOLDER//////////////////////////////////////////////////////////////////////////////////////////
     
@@ -312,7 +313,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
     G4LogicalVolume* logTape = new G4LogicalVolume(solidTape, MylarMaterial, "logTape");
     logTape->SetVisAttributes(visAttTape);
     //G4VPhysicalVolume* physTape = new G4PVPlacement(0, G4ThreeVector(0., -1.*mm, 3.*mm - 0.000275*mm - 0.45*mm), logTape, "physTape", expHallLog, false, 0, true);
-    //G4VPhysicalVolume* physTape = new G4PVPlacement(0, G4ThreeVector(0., 0., -0.000275*mm - 0.45*mm + 2.*mm), logTape, "physTape", expHallLog, false, 0, true);
+    G4VPhysicalVolume* physTape = new G4PVPlacement(0, G4ThreeVector(0., 0., -0.000275*mm - 0.45*mm + 2.*mm), logTape, "physTape", expHallLog, false, 0, true);
     
     G4Tubs* solidSource = new G4Tubs("solidSource", 0., 5.55*mm, 100.*um, 0., 360.);
     G4LogicalVolume* logSource = new G4LogicalVolume(solidSource, PlatinumMaterial, "logSource");
@@ -355,6 +356,7 @@ G4int DetectionSystemRCMP::BuildPixelVolume()
 	}
 
 	G4VisAttributes* visAtt = new G4VisAttributes(G4Colour(1.0,0.0,0.0));
+	G4VisAttributes* visAttBis = new G4VisAttributes(G4Colour(0.0,1.0,0.0));
 	
     visAtt->SetVisibility(true);
 	
@@ -374,6 +376,7 @@ G4int DetectionSystemRCMP::BuildPixelVolume()
 		fDSSSDpixelLog->SetVisAttributes(visAtt);
 
         fDSSSDdeadlayerLog = new G4LogicalVolume(DSSSDdeadlayer, material, "DSSSDpdeadlayerLog", 0, 0, 0);
+		fDSSSDdeadlayerLog->SetVisAttributes(visAttBis);
 	}
 
 	fAssembly->AddPlacedVolume(fDSSSDpixelLog, move, rotate);
@@ -395,8 +398,8 @@ G4Box* DetectionSystemRCMP::BuildPixel()
 
 G4Box* DetectionSystemRCMP::BuildDeadLayer() 
 {
-	G4double halfLengthX = fPixelWidth/2.0;
-	G4double halfLengthY = fPixelWidth/2.0;
+	G4double halfLengthX = fDeadLayerWidth/2.0;
+	G4double halfLengthY = fDeadLayerWidth/2.0;
 	G4double halfLengthZ = fDeadLayerThickness/2.0;
 	
     G4Box* deadlayer = new G4Box("deadlayer", halfLengthZ, halfLengthY, halfLengthX);

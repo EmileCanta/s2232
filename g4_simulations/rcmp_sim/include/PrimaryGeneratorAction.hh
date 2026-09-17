@@ -50,6 +50,9 @@
 #include "Kentucky.hh"
 #include "G4SystemOfUnits.hh"
 #pragma GCC diagnostic pop
+#include "G4BetaPlusDecay.hh"
+#include "G4DynamicParticle.hh"
+#include "G4DecayProducts.hh"
 
 class G4ParticleGun;
 class G4Event;
@@ -96,6 +99,9 @@ public:
 	 void SetMaximumTheta(G4double val);
     
 	 void SetVerbosityLevel(G4int val) { fVerbosityLevel = val; }
+    
+     G4double GenerateBetaPlus(std::vector<float>, std::vector<float>);
+	std::pair<std::vector<float>, std::vector<float>> LoadDecayFile();
 
 private:
     //variables

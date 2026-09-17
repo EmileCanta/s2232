@@ -19,7 +19,6 @@
 /Histo/RecordGun true
 
 /DetSys/gun/BeamSpot 0.5 mm
-#/DetSys/gun/BeamSpot 0.5 mm
 #/DetSys/gun/coneMaxAngle 90 deg
 #/DetSys/gun/coneMinAngle 0 deg
 /DetSys/gun/position 0.0 0.0 1.54945 mm
@@ -27,8 +26,8 @@
 
 #/gun/particle ion
 #/gun/ion 12 20
-#/gun/particle proton
-/gun/particle e-
+/gun/particle proton
+#/gun/particle e+
 
 /DetSys/gun/efficiencyEnergy 1. MeV
 #/DetSys/gun/efficiencyEnergy 0. MeV

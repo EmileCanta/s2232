@@ -51,6 +51,8 @@
 #include "DetectorConstruction.hh" //for detector based information
 #include "BeamDistribution.hh"
 
+using namespace std;
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 	PrimaryGeneratorAction::PrimaryGeneratorAction(HistoManager* histoManager)
@@ -283,24 +285,29 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 		fParticleGun->SetParticlePosition(thisEffPosition);
 		fParticleGun->SetParticleMomentumDirection(effdirection);
 		fParticleGun->SetParticleEnergy(fEffEnergy);
+        
+        //Beta decay
+        //pair<vector<float>, vector<float>> pair = LoadDecayFile();
+        //G4double fenergy = GenerateBetaPlus(pair.first, pair.second);
+        //fParticleGun->SetParticleEnergy(fenergy); //Switch off when not doing beta decay and put previous energy back on
 
 		if(fHistoManager->RecordGun()){
 			fHistoManager->BeamEnergy(fEffEnergy);
+			//fHistoManager->BeamEnergy(fenergy);
 			fHistoManager->BeamTheta(effdirection.theta()); 
 			fHistoManager->BeamPhi(effdirection.phi());
 			fHistoManager->BeamPos(thisEffPosition);
 		}
 	}
 
+    // Set Optional Polarization
+    if(fEffPolarization) {
+        fParticleGun->SetParticlePolarization(fEffPolarizationVector);
+    }
 
-	// Set Optional Polarization
-	if(fEffPolarization) {
-		fParticleGun->SetParticlePolarization(fEffPolarizationVector);
-	}
+    //create vertex
 
-	//create vertex
-	//
-	fParticleGun->GeneratePrimaryVertex(anEvent);
+    fParticleGun->GeneratePrimaryVertex(anEvent);
 }
 
 void PrimaryGeneratorAction::PassEfficiencyPosition(G4ThreeVector  num)
@@ -477,3 +484,63 @@ void PrimaryGeneratorAction::GenerateKentuckyPrimaries(G4Event* anEvent)
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+pair<vector<float>, vector<float>> PrimaryGeneratorAction::LoadDecayFile()
+{
+    vector<float> v1;
+    vector<float> v2;
+
+    ifstream coeff("/home/emile/postdoc/analysis/s2232/g4_simulations/rcmp_sim/src/20Mg.decay");
+
+    if (!coeff.is_open())
+    {
+        cerr << "Error: could not open decay file." << endl;
+        return {v1, v2};
+    }
+
+    float a1, a2;
+
+    while (coeff >> a1 >> a2)
+    {
+        v2.push_back(a1);
+        v1.push_back(a2);
+    }
+
+    coeff.close();
+
+    return {v1, v2};
+}
+
+G4double PrimaryGeneratorAction::GenerateBetaPlus(vector<float> v1, vector<float> v2)
+{
+    G4int Z = 12, A = 20;
+    G4double excitEnergy = 0.*keV;
+
+    G4ParticleDefinition* ion = G4IonTable::GetIonTable()->GetIon(Z,A,excitEnergy);
+
+    G4double r = G4UniformRand();
+
+    G4double cumulative = 0.0;
+    G4int value = 0;
+
+    for (G4int i = 0; i < v2.size(); ++i)
+    {
+        cumulative += v2[i];
+
+        if (r < cumulative)
+        {
+            value = i;
+            break;
+        }
+    }
+
+    G4BetaPlusDecay *fBetaPlusDecay = new G4BetaPlusDecay(ion, v2[value], v1[value]*keV, 0., G4Ions::G4FloatLevelBase::no_Float, allowed);
+
+    G4DecayProducts* aaa = fBetaPlusDecay->DecayIt(0.);
+
+    const G4DynamicParticle* beta = (*aaa)[0];
+
+    const G4double energy = beta->GetKineticEnergy();
+
+    return energy;
+}

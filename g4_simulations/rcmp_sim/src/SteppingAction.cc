@@ -150,12 +150,12 @@ void SteppingAction::UserSteppingAction(const G4Step* aStep) {
         //G4cout << fromProcess << " " << evntNb << " " << prop.systemID << " " << parentID << " " << trackID << " " << particleName << " " << processName << " " << ekin << G4endl;
         
         //To have conditions on what increments histos
-        //if(particleName == "proton") fEventAction->AddHitTracker(prop, evntNb, trackID, parentID, stepNumber, particleType, processType, edep, prePos, postTime, targetZ, ekin, fromProcess);
+        //if(particleName == "e+") fEventAction->AddHitTracker(prop, evntNb, trackID, parentID, stepNumber, particleType, processType, edep, prePos, postTime, targetZ, ekin, fromProcess);
         
         //To have normal sensitive detectors
         fEventAction->AddHitTracker(prop, evntNb, trackID, parentID, stepNumber, particleType, processType, edep, prePos, postTime, targetZ, ekin, fromProcess);
 
-        theTrack->SetTrackStatus(fStopAndKill); //Kills particle as soon as it enters an active volume
+        //theTrack->SetTrackStatus(fStopAndKill); //Kills particle as soon as it enters an active volume
     }
 
 	// check if this volume has its properties set, i.e. it's an active detector

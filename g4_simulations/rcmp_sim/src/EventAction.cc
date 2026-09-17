@@ -108,6 +108,7 @@ void EventAction::EndOfEventAction(const G4Event* evt) {
 void EventAction::AddHitTracker(const DetectorProperties& properties, const G4int& eventNumber, const G4int& trackID, const G4int& parentID, const G4int& stepNumber, const G4int& particleType, const G4int& processType, const G4double& depEnergy, const G4ThreeVector& pos, const G4double& time, const G4int& targetZ, const G4double& kinEnergy, const G4bool fromProcess) {
 	for(G4int i = 0; i < fNumberOfHits; i++) {
 		//if(fProperties[i].systemID == properties.systemID) //If same ID, same hit here. 
+		//if(fProperties[i].detectorNumber == properties.detectorNumber) //If same det number, same hit here. 
         {
 			// sum the new energy
 			fHitTrackerD[0][i] = fHitTrackerD[0][i] + depEnergy;
