@@ -19,10 +19,10 @@
 #include "/home/emile/GRSISort/include/TRWPeak.h"
 #include "./FindHistogramFile.h"
 
-void RCMPEnergyCalProtonDet1_2(int run_number, int vis) 
+void RCMPEnergyCalProtonDetBis(int run_number, int vis) 
 {
     std::string log_directory = "./logs/";
-    std::string histogram_directory = "/home/emile/postdoc/analysis/s2232/histograms/rcmp";
+    std::string histogram_directory = "/home/emile/postdoc/data/s2232/histograms/rcmp";
     std::string histogram_prefix = "RCMP";
 
     const int NStrips = 32;
@@ -53,7 +53,10 @@ void RCMPEnergyCalProtonDet1_2(int run_number, int vis)
     std::ifstream gin;
 
     //gin.open("./charge_estimate_front_det1.dat"); 
-    gin.open("./charge_estimate_front_det2.dat"); 
+    //gin.open("./charge_estimate_front_det2.dat"); 
+    //gin.open("./charge_estimate_back_det1.dat"); 
+    //gin.open("./charge_estimate_back_det2.dat"); 
+    gin.open("./charge_estimate_front_det6_front_run28318.dat"); 
 
     if(!gin.is_open())
     {
@@ -101,13 +104,14 @@ void RCMPEnergyCalProtonDet1_2(int run_number, int vis)
     
     TSpectrum* peak_search = new TSpectrum();
 
-    for(int i = 2; i <= 2; i++) 
+    for(int i = 6; i <= 6; i++) //Change between det 1 and 2
     { 
         double mean_chi_square;
 
         TH2D* py_charge;
 
         py_charge = (TH2D*)my_file->Get(Form("ChargeVSFrontStrip_MultTwo%d", i)); 
+        //py_charge = (TH2D*)my_file->Get(Form("ChargeVSBackStrip_MultTwo%d", i)); 
 
         for(int strip = 0; strip < NStrips; strip++) 
         { 
@@ -258,6 +262,7 @@ void RCMPEnergyCalProtonDet1_2(int run_number, int vis)
             std::string channel_name;
 
             channel_name = Form("RCS%02dXP%02dX", i, strip); 
+            //channel_name = Form("RCS%02dXN%02dX", i, strip); 
                                                                          
             TChannel* detector_channel = TChannel::FindChannelByName(channel_name.c_str());
 

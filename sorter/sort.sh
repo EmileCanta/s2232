@@ -1,8 +1,10 @@
 #DATADIR=/home/emile/postdoc/data/s2232/raw
 DATADIR=/media/emile/RCMP_SG/S2232_midas_files
 SORTOPTIONS="--recommended"
+#SORTOPTIONS="--recommended --write-fragment-tree --extract-waves"
 #CALFILES=/home/emile/postdoc/analysis/s2232/sorter/calfiles/energy_calibration_base_swapped.cal
 CALFILES=/home/emile/postdoc/analysis/s2232/sorter/calfiles/energy_calibration28267.cal
+#CALFILES=/home/emile/postdoc/analysis/s2232/sorter/calfiles/energy_calibration28318.cal
 ANALYSISDIR=/home/emile/postdoc/data/s2232/sorted/analysis
 FRAGMENTDIR=/home/emile/postdoc/data/s2232/sorted/fragment
 LOGDIR=/home/emile/postdoc/analysis/s2232/sorter/logs

@@ -1,0 +1,94 @@
+grsisort --recommended --write-fragment-tree --extract-waves /home/emile/postdoc/analysis/s2232/sorter/calfiles/energy_calibration28267.cal /media/emile/RCMP_SG/S2232_midas_files/run28268_001.mid
+	grsisort version 4.0.0.5
+	Using library /home/emile/GRSISort/GRSIData/lib/libGRSIData.so version 0.1.1.2
+Already loaded handle 0x5d2649193a30
+Title: [0;34m20Mg long cycles[m
+Comment: [0;34m55 s beam on, 5 s beam off[m
+using GRIFFIN path to analyzer info: /DAQ/PSC...
+910	 TChannels created.
+found 910 channels
+	file [1;34m/media/emile/RCMP_SG/S2232_midas_files/run28268_001.mid[m opened as [1;34m_raw0[m
+Already loaded handle 0x5d2649193a30
+Reading from calibration file: [1;36m/home/emile/postdoc/analysis/s2232/sorter/calfiles/energy_calibration28267.cal[m.....found 910 channels
+[1;34mfBuildWindow: [0;36m2000
+[1;34mfBuildEventsByTimeStamp: [0;36m0
+[1;34mfAddbackWindow: [0;36m300
+[1;34mfSuppressionWindow: [0;36m300
+[1;34mfSuppressionEnergy: [0;36m0
+[1;34mfStaticWindow: [0;36m0
+[1;34mfWaveformFitting: [0;36m0
+[1;34mfIsCorrectingCrossTalk: [0;36m0
+[m
+[0;33mSorting input by time: [0;33msorting by time, using build window of 2000![m
+1_input_loop       |2_unpack_loop      |4_frag_write_loop  |5_event_build_loop |6_det_build_loop   |8_analysis_write_lo|
+*                  |****************   |                   |                   |N/A: 0             |N/A: 0             |                              8_analysis_write_loop: added "TRcmp" branch, 0x7e3698000cb0, 0x7e3698000c40                              
+                              8_analysis_write_loop: added "TGriffinBgo" branch, 0x7e36a4000da0, 0x7e36a4000d70                              
+                              8_analysis_write_loop: added "TGriffin" branch, 0x7e369807b380, 0x7e369807b2c0                              
+                              8_analysis_write_loop: added "TTAC" branch, 0x7e36a8c35bb0, 0x7e36a40013e0                              
+                              8_analysis_write_loop: added "TLaBr" branch, 0x7e36a40036c0, 0x7e36a4003520                              
+                              8_analysis_write_loop: added "TLaBrBgo" branch, 0x7e36b00060d0, 0x7e36a4003f50                              
+
+Sorting depth of 200000 was insufficient. time: 825031718.186 Last: 141829556562 
+Not all events were built correctly
+Please increase sort depth with --sort-depth=N
+**                 |*******            |***                |****************** |****************** |**********         |***                |*********          |***                |****************** |****************** |**********         |****               |**********         |***                |****************** |****************** |***********        |*****              |**********         |***                |****************** |****************** |************       |******             |***********        |***                |****************** |****************** |***********        |*******            |***********        |***                |****************** |****************** |***********        |Warning, unknown ppg pattern 0x0c81f0f1, setting old pattern to kJunk!
+Warning, unknown ppg pattern 0x0c84f0f4, setting old pattern to kJunk!
+********           |***********        |***                |****************** |****************** |***********        |*********          |***********        |**                 |****************** |****************** |***********        |  1169078/  2000849|    20567/    32855|  1163663/  7676707|  7626738/  7676738|  1638186/  1638186|   974224/  1638186|
+***********        |***********        |**                 |****************** |****************** |***********        |************       |************       |**                 |****************** |****************** |***********        |*************      |************       |**                 |****************** |****************** |***********        |**************     |************       |**                 |****************** |****************** |***********        |***************    |************       |**                 |****************** |****************** |***********        |****************   |************       |**                 |****************** |****************** |***********        |*****************  |***********        |***                |****************** |****************** |************       |****************** |***********        |***                |****************** |****************** |************       |
+not running        |***********        |***                |****************** |****************** |*************      |not running        |***********        |***                |****************** |****************** |**************     |not running        |    33155/    56204|  2358169/ 12350892| 12300891/ 12300891|  2651483/  2651483|  2171940/  2651483|
+not running        |***********        |***                |****************** |****************** |***************    |not running        |***********        |***                |****************** |****************** |****************   |not running        |***********        |***                |****************** |****************** |*****************  |not running        |***********        |***                |****************** |****************** |*****************  |not running        |***********        |****               |****************** |****************** |*****************  |not running        |***********        |****               |****************** |****************** |*****************  |not running        |************       |****               |****************** |****************** |****************** |not running        |************       |*****              |****************** |****************** |****************** |not running        |************       |*****              |****************** |****************** |****************** |not running        |************       |*****              |****************** |****************** |****************** |not running        |    38027/    56204|  4383629/ 14158159| 14108158/ 14108158|  3042173/  3042173|  3010176/  3042173|
+not running        |************       |*****              |****************** |****************** |****************** |Warning, unknown ppg pattern 0x0c81f0f1, setting old pattern to kJunk!
+Warning, unknown ppg pattern 0x0c84f0f4, setting old pattern to kJunk!
+not running        |*************      |******             |****************** |****************** |****************** |not running        |*************      |******             |****************** |****************** |****************** |not running        |*************      |******             |****************** |****************** |****************** |not running        |*************      |******             |****************** |****************** |****************** |not running        |**************     |*******            |****************** |****************** |****************** |not running        |**************     |*******            |****************** |****************** |****************** |not running        |**************     |*******            |****************** |****************** |****************** |not running        |**************     |*******            |****************** |****************** |****************** |not running        |***************    |*******            |****************** |****************** |****************** |not running        |    45727/    56204|  7058939/ 17058939| 17056335/ 17056335|  3708264/  3708264|  3637441/  3708264|
+not running        |***************    |*******            |****************** |****************** |****************** |not running        |***************    |********           |****************** |****************** |****************** |not running        |***************    |********           |****************** |****************** |****************** |not running        |****************   |********           |****************** |****************** |****************** |not running        |****************   |********           |****************** |****************** |****************** |not running        |****************   |********           |****************** |****************** |****************** |not running        |****************   |********           |****************** |****************** |****************** |not running        |*****************  |*********          |****************** |****************** |****************** |not running        |*****************  |*********          |****************** |****************** |****************** |not running        |*****************  |*********          |****************** |****************** |****************** |not running        |    52558/    56204|  9861917/ 19609733| 19559732/ 19559732|  4260553/  4260553|  4228775/  4260553|
+not running        |*****************  |*********          |****************** |****************** |****************** |not running        |****************** |*********          |****************** |****************** |****************** |not running        |****************** |*********          |****************** |****************** |****************** |not running        |****************** |*********          |****************** |****************** |****************** |not running        |****************** |*********          |****************** |****************** |****************** |not running        |****************** |**********         |****************** |****************** |****************** |
+not running        |not running        |**********         |****************** |****************** |****************** |
+not running        |not running        |**********         |not running        |****************** |****************** |not running        |not running        |***********        |not running        |****************** |****************** |
+not running        |not running        |***********        |not running        |not running        |****************** |
+  910 TChannels saved to analysis28268_001.root
+Writing TRunInfo to analysis28268_001.root
+Writing TAnalysisOptions to analysis28268_001.root
+Writing PPG with 4 events and 2 ODB settings
+not running        |not running        | 13307775/ 20965981|not running        |not running        |not running        |
+not running        |not running        |************       |not running        |not running        |not running        |not running        |not running        |************       |not running        |not running        |not running        |not running        |not running        |************       |not running        |not running        |not running        |not running        |not running        |*************      |not running        |not running        |not running        |not running        |not running        |*************      |not running        |not running        |not running        |not running        |not running        |**************     |not running        |not running        |not running        |not running        |not running        |**************     |not running        |not running        |not running        |not running        |not running        |***************    |not running        |not running        |not running        |not running        |not running        |***************    |not running        |not running        |not running        |not running        |not running        |****************   |not running        |not running        |not running        |not running        |not running        | 18569299/ 20965981|not running        |not running        |not running        |
+not running        |not running        |****************   |not running        |not running        |not running        |not running        |not running        |*****************  |not running        |not running        |not running        |not running        |not running        |*****************  |not running        |not running        |not running        |not running        |not running        |****************** |not running        |not running        |not running        |not running        |not running        |****************** |not running        |not running        |not running        |
+not running        |not running        |not running        |not running        |not running        |not running        |
+Stopping thread 1_input_loop
+
+
+Stopping thread 1_input_loop
+
+Joining thread 1_input_loop
+Joining thread 2_unpack_loop
+2_unpack_loop:	21103382 good fragments out of 21104088 fragments => 99.9967% passed
+********************************************************************************
+good_frag_queue_0: 20965982 pushed, 20965982 popped, 0 left
+good_frag_queue_1: 20965982 pushed, 20965982 popped, 0 left
+********************************************************************************
+Joining thread 4_frag_write_loop
+
+4_frag_write_loop: 20965982/20965982, 20965982 good fragments, 644 bad fragments
+Joining thread 5_event_build_loop
+good_frag_queue_1: 20965982/20965982 items popped
+Joining thread 6_det_build_loop
+Joining thread 8_analysis_write_loop
+8_analysis_write_loop:	 4612523/4612523, ??? good events
+Deleting thread 1_input_loop
+Deleting thread 2_unpack_loop
+Deleting thread 4_frag_write_loop
+  910 TChannels saved to fragment28268_001.root
+Writing TRunInfo to fragment28268_001.root
+Writing TAnalysisOptions to fragment28268_001.root
+Writing TGRSIOptions to fragment28268_001.root
+Writing PPG with 4 events and 2 ODB settings
+Starting to write dead time scalers
+Starting to write rate scalers
+Done writing scaler trees
+Deleting thread 5_event_build_loop
+Deleting thread 6_det_build_loop
+Deleting thread 8_analysis_write_loop
+[0;32mNo hits were removed![m
+[0;31m49 fragments were out of order, maximum entry difference was 19045318!
+Please consider increasing the sort depth with --sort-depth=19045318[m
+[0;35m
+bye,bye	[0;36memile[m after 0:01:16.226 h:m:s

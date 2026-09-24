@@ -1,0 +1,94 @@
+grsisort --recommended --write-fragment-tree --extract-waves /home/emile/postdoc/analysis/s2232/sorter/calfiles/energy_calibration28267.cal /media/emile/RCMP_SG/S2232_midas_files/run28268_009.mid
+	grsisort version 4.0.0.5
+	Using library /home/emile/GRSISort/GRSIData/lib/libGRSIData.so version 0.1.1.2
+Already loaded handle 0x5a3211441850
+Title: [0;34m20Mg long cycles[m
+Comment: [0;34m55 s beam on, 5 s beam off[m
+using GRIFFIN path to analyzer info: /DAQ/PSC...
+910	 TChannels created.
+found 910 channels
+	file [1;34m/media/emile/RCMP_SG/S2232_midas_files/run28268_009.mid[m opened as [1;34m_raw0[m
+Already loaded handle 0x5a3211441850
+Reading from calibration file: [1;36m/home/emile/postdoc/analysis/s2232/sorter/calfiles/energy_calibration28267.cal[m.....found 910 channels
+[1;34mfBuildWindow: [0;36m2000
+[1;34mfBuildEventsByTimeStamp: [0;36m0
+[1;34mfAddbackWindow: [0;36m300
+[1;34mfSuppressionWindow: [0;36m300
+[1;34mfSuppressionEnergy: [0;36m0
+[1;34mfStaticWindow: [0;36m0
+[1;34mfWaveformFitting: [0;36m0
+[1;34mfIsCorrectingCrossTalk: [0;36m0
+[m
+[0;33mSorting input by time: [0;33msorting by time, using build window of 2000![m
+1_input_loop       |2_unpack_loop      |4_frag_write_loop  |5_event_build_loop |6_det_build_loop   |8_analysis_write_lo|
+                   |****************   |N/A: 0             |                   |N/A: 0             |N/A: 0             |                              8_analysis_write_loop: added "TRcmp" branch, 0x7ff2f4000cb0, 0x7ff2f4000c40                              
+                              8_analysis_write_loop: added "TGriffin" branch, 0x7ff304c35d90, 0x7ff2f403fa30                              
+                              8_analysis_write_loop: added "TGriffinBgo" branch, 0x7ff304c35db0, 0x7ff2f4090d00                              
+                              8_analysis_write_loop: added "TLaBr" branch, 0x7ff2f4008dd0, 0x7ff3000019b0                              
+                              8_analysis_write_loop: added "TLaBrBgo" branch, 0x7ff300002aa0, 0x7ff300002bc0                              
+                              8_analysis_write_loop: added "TTAC" branch, 0x7ff2f41310d0, 0x7ff304c36550                              
+*                  |**********         |***                |****************** |****************** |**********         |
+Sorting depth of 200000 was insufficient. time: 456528150.47 Last: 1.28501142046e+12 
+Not all events were built correctly
+Please increase sort depth with --sort-depth=N
+**                 |*************      |***                |****************** |****************** |***********        |***                |**************     |***                |****************** |****************** |***********        |***                |***************    |***                |****************** |****************** |************       |****               |***************    |***                |****************** |****************** |***********        |*****              |***************    |**                 |****************** |****************** |***********        |******             |****************   |***                |****************** |****************** |***********        |Warning, unknown ppg pattern 0x0c81f0f1, setting old pattern to kJunk!
+Warning, unknown ppg pattern 0x0c84f0f4, setting old pattern to kJunk!
+*******            |****************   |**                 |****************** |****************** |***********        |   832487/  2000824|    20277/    23359|  1169827/  7563721|  7513733/  7563720|  1609675/  1609675|   988495/  1609673|
+*******            |****************   |**                 |****************** |****************** |***********        |********           |****************   |**                 |****************** |****************** |***********        |*********          |****************   |**                 |****************** |****************** |***********        |**********         |****************   |**                 |****************** |****************** |************       |***********        |****************   |**                 |****************** |****************** |***********        |***********        |****************   |**                 |****************** |****************** |***********        |************       |****************   |**                 |****************** |****************** |************       |*************      |***************    |***                |****************** |****************** |*************      |**************     |**************     |***                |****************** |****************** |**************     |**************     |*************      |***                |****************** |****************** |**************     |  1660876/  2000824|    32874/    46624|  2249497/ 12249497| 12218177/ 12218177|  2628543/  2628543|  2182650/  2628543|
+***************    |*************      |***                |****************** |****************** |***************    |****************   |************       |***                |****************** |****************** |****************   |*****************  |************       |***                |****************** |****************** |*****************  |****************** |************       |***                |****************** |****************** |****************** |****************** |***********        |****               |****************** |****************** |****************** |
+not running        |***********        |****               |****************** |****************** |****************** |not running        |************       |****               |****************** |****************** |****************** |not running        |************       |****               |****************** |****************** |****************** |not running        |************       |*****              |****************** |****************** |****************** |not running        |************       |*****              |****************** |****************** |****************** |not running        |    37951/    56153|  4333820/ 14136258| 14086257/ 14086257|  3034846/  3034846|  3018542/  3034846|
+not running        |************       |*****              |****************** |****************** |****************** |Warning, unknown ppg pattern 0x0c81f0f1, setting old pattern to kJunk!
+not running        |*************      |******             |****************** |****************** |****************** |not running        |*************      |******             |****************** |****************** |****************** |Warning, unknown ppg pattern 0x0c84f0f4, setting old pattern to kJunk!
+not running        |*************      |******             |****************** |****************** |****************** |not running        |*************      |******             |****************** |****************** |****************** |not running        |**************     |*******            |****************** |****************** |****************** |not running        |**************     |*******            |****************** |****************** |****************** |not running        |**************     |*******            |****************** |****************** |****************** |not running        |**************     |*******            |****************** |****************** |****************** |not running        |***************    |*******            |****************** |****************** |****************** |not running        |    45631/    56153|  7022665/ 16902543| 16990931/ 17022667|  3687277/  3687277|  3629621/  3657623|
+not running        |***************    |*******            |****************** |****************** |****************** |not running        |***************    |********           |****************** |****************** |****************** |not running        |***************    |********           |****************** |****************** |****************** |not running        |****************   |********           |****************** |****************** |****************** |not running        |****************   |********           |****************** |****************** |****************** |not running        |****************   |********           |****************** |****************** |****************** |not running        |****************   |********           |****************** |****************** |****************** |not running        |*****************  |********           |****************** |****************** |****************** |not running        |*****************  |*********          |****************** |****************** |****************** |not running        |*****************  |*********          |****************** |****************** |****************** |not running        |    52938/    56153|  9856853/ 19733166| 19683165/ 19683165|  4270759/  4270759|  4233343/  4270759|
+not running        |*****************  |*********          |****************** |****************** |****************** |not running        |****************** |*********          |****************** |****************** |****************** |not running        |****************** |*********          |****************** |****************** |****************** |not running        |****************** |*********          |****************** |****************** |****************** |not running        |****************** |*********          |****************** |****************** |****************** |not running        |****************** |**********         |****************** |****************** |****************** |
+not running        |not running        |**********         |****************** |****************** |****************** |
+not running        |not running        |**********         |not running        |****************** |****************** |
+not running        |not running        |***********        |not running        |not running        |****************** |
+  910 TChannels saved to analysis28268_009.root
+Writing TRunInfo to analysis28268_009.root
+Writing TAnalysisOptions to analysis28268_009.root
+Writing PPG with 4 events and 2 ODB settings
+not running        |not running        |***********        |not running        |not running        |not running        |not running        |not running        | 13534929/ 20931570|not running        |not running        |not running        |
+not running        |not running        |************       |not running        |not running        |not running        |not running        |not running        |************       |not running        |not running        |not running        |not running        |not running        |*************      |not running        |not running        |not running        |not running        |not running        |*************      |not running        |not running        |not running        |not running        |not running        |**************     |not running        |not running        |not running        |not running        |not running        |**************     |not running        |not running        |not running        |not running        |not running        |***************    |not running        |not running        |not running        |not running        |not running        |***************    |not running        |not running        |not running        |not running        |not running        |****************   |not running        |not running        |not running        |not running        |not running        |****************   |not running        |not running        |not running        |not running        |not running        | 18861551/ 20931569|not running        |not running        |not running        |
+not running        |not running        |*****************  |not running        |not running        |not running        |not running        |not running        |*****************  |not running        |not running        |not running        |not running        |not running        |****************** |not running        |not running        |not running        |not running        |not running        |****************** |not running        |not running        |not running        |
+not running        |not running        |not running        |not running        |not running        |not running        |
+Stopping thread 1_input_loop
+
+
+Stopping thread 1_input_loop
+
+Joining thread 1_input_loop
+Joining thread 2_unpack_loop
+2_unpack_loop:	21069826 good fragments out of 21070569 fragments => 99.9965% passed
+********************************************************************************
+good_frag_queue_0: 20931570 pushed, 20931570 popped, 0 left
+good_frag_queue_1: 20931570 pushed, 20931570 popped, 0 left
+********************************************************************************
+Joining thread 4_frag_write_loop
+
+4_frag_write_loop: 20931570/20931570, 20931570 good fragments, 684 bad fragments
+Joining thread 5_event_build_loop
+good_frag_queue_1: 20931570/20931570 items popped
+Joining thread 6_det_build_loop
+Joining thread 8_analysis_write_loop
+8_analysis_write_loop:	 4585638/4585638, ??? good events
+Deleting thread 1_input_loop
+Deleting thread 2_unpack_loop
+Deleting thread 4_frag_write_loop
+  910 TChannels saved to fragment28268_009.root
+Writing TRunInfo to fragment28268_009.root
+Writing TAnalysisOptions to fragment28268_009.root
+Writing TGRSIOptions to fragment28268_009.root
+Writing PPG with 4 events and 2 ODB settings
+Starting to write dead time scalers
+Starting to write rate scalers
+Done writing scaler trees
+Deleting thread 5_event_build_loop
+Deleting thread 6_det_build_loop
+Deleting thread 8_analysis_write_loop
+[0;32mNo hits were removed![m
+[0;31m51 fragments were out of order, maximum entry difference was 20405052!
+Please consider increasing the sort depth with --sort-depth=20405052[m
+[0;35m
+bye,bye	[0;36memile[m after 0:01:16.347 h:m:s

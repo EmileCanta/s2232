@@ -6416,7 +6416,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  96.8625	1.24531	
+ENGCoeff:  57.2508	1.26556	
 }
 //====================================//
 
@@ -6429,7 +6429,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  53.8181	1.34734	
+ENGCoeff:  63.2106	1.36596	
 }
 //====================================//
 
@@ -6442,7 +6442,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  58.0598	1.32803	
+ENGCoeff:  66.5292	1.31363	
 }
 //====================================//
 
@@ -6455,7 +6455,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  53.0893	1.36456	
+ENGCoeff:  56.0974	1.34658	
 }
 //====================================//
 
@@ -6468,7 +6468,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  52.9617	1.29431	
+ENGCoeff:  58.0809	1.32802	
 }
 //====================================//
 
@@ -6481,7 +6481,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  56.512	1.32081	
+ENGCoeff:  53.0914	1.36456	
 }
 //====================================//
 
@@ -6494,7 +6494,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  50.7367	1.32576	
+ENGCoeff:  52.9639	1.2943	
 }
 //====================================//
 
@@ -6507,7 +6507,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  56.1128	1.29994	
+ENGCoeff:  56.4934	1.32081	
 }
 //====================================//
 
@@ -6520,7 +6520,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  48.3152	1.36806	
+ENGCoeff:  50.9315	1.32538	
 }
 //====================================//
 
@@ -6533,7 +6533,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  -1.55648	1.32154	
+ENGCoeff:  56.1112	1.29994	
 }
 //====================================//
 
@@ -6546,7 +6546,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  110.068	1.30756	
+ENGCoeff:  51.1165	1.36251	
 }
 //====================================//
 
@@ -6559,7 +6559,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  92.3395	1.23323	
+ENGCoeff:  50.7705	1.22841	
 }
 //====================================//
 
@@ -6572,7 +6572,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  4.27704	1.44865	
+ENGCoeff:  52.2651	1.42735	
 }
 //====================================//
 
@@ -6585,7 +6585,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  51.777	1.27037	
+ENGCoeff:  50.6779	1.31244	
 }
 //====================================//
 
@@ -6598,7 +6598,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  100.457	1.2867	
+ENGCoeff:  54.6496	1.34961	
 }
 //====================================//
 
@@ -6611,7 +6611,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  100.417	1.28672	
+ENGCoeff:  51.7952	1.27037	
 }
 //====================================//
 
@@ -6624,7 +6624,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  69.0755	1.37544	
+ENGCoeff:  53.6579	1.38071	
 }
 //====================================//
 
@@ -6637,7 +6637,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  60.2531	1.36987	
+ENGCoeff:  48.1248	1.39175	
 }
 //====================================//
 
@@ -6650,7 +6650,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  1.84208	1.43177	
+ENGCoeff:  48.5714	1.41741	
 }
 //====================================//
 
@@ -6663,7 +6663,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  49.3484	1.31465	
+ENGCoeff:  60.2426	1.36987	
 }
 //====================================//
 
@@ -6676,7 +6676,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  84.9022	1.33164	
+ENGCoeff:  53.9216	1.33089	
 }
 //====================================//
 
@@ -6689,7 +6689,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  74.7639	1.29592	
+ENGCoeff:  49.3496	1.31465	
 }
 //====================================//
 
@@ -6702,7 +6702,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  6.75603	1.39312	
+ENGCoeff:  53.646	1.3946	
 }
 //====================================//
 
@@ -6715,7 +6715,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  55.8852	1.28001	
+ENGCoeff:  54.0772	1.33615	
 }
 //====================================//
 
@@ -6728,7 +6728,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  94.096	1.27105	
+ENGCoeff:  55.6904	1.30027	
 }
 //====================================//
 
@@ -6741,7 +6741,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  107.057	1.22934	
+ENGCoeff:  55.8257	1.28003	
 }
 //====================================//
 
@@ -6754,7 +6754,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  8.51825	1.33244	
+ENGCoeff:  61.63	1.33644	
 }
 //====================================//
 
@@ -6767,7 +6767,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  68.3065	1.29084	
+ENGCoeff:  56.832	1.32672	
 }
 //====================================//
 
@@ -6780,7 +6780,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  92.2254	1.28316	
+ENGCoeff:  57.1484	1.24398	
 }
 //====================================//
 
@@ -6793,7 +6793,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  188.553	1.27386	
+ENGCoeff:  71.362	1.28986	
 }
 //====================================//
 
@@ -6806,7 +6806,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  194.832	1.33572	
+ENGCoeff:  51.1023	1.3622	
 }
 //====================================//
 
@@ -6845,7 +6845,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  136.118	1.30079	
+ENGCoeff:  136.102	1.3008	
 }
 //====================================//
 
@@ -6858,7 +6858,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  115.172	1.30887	
+ENGCoeff:  115.176	1.30886	
 }
 //====================================//
 
@@ -6884,7 +6884,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  91.5796	1.37733	
+ENGCoeff:  91.5925	1.37733	
 }
 //====================================//
 
@@ -6897,7 +6897,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  83.9979	1.31289	
+ENGCoeff:  83.9922	1.31289	
 }
 //====================================//
 
@@ -6910,7 +6910,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  81.2969	1.28427	
+ENGCoeff:  81.2963	1.28427	
 }
 //====================================//
 
@@ -6923,7 +6923,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  76.3252	1.29377	
+ENGCoeff:  76.3251	1.29377	
 }
 //====================================//
 
@@ -6936,7 +6936,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  68.0173	1.34222	
+ENGCoeff:  68.0073	1.34223	
 }
 //====================================//
 
@@ -6949,7 +6949,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  61.2908	1.36998	
+ENGCoeff:  61.2911	1.36998	
 }
 //====================================//
 
@@ -6962,7 +6962,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  60.8942	1.34047	
+ENGCoeff:  60.8953	1.34047	
 }
 //====================================//
 
@@ -6975,7 +6975,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  56.9382	1.32506	
+ENGCoeff:  56.9293	1.32506	
 }
 //====================================//
 
@@ -7001,7 +7001,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  62.2653	1.30614	
+ENGCoeff:  62.2748	1.30614	
 }
 //====================================//
 
@@ -7014,7 +7014,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  53.482	1.31914	
+ENGCoeff:  53.481	1.31914	
 }
 //====================================//
 
@@ -7040,7 +7040,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  59.1807	1.32359	
+ENGCoeff:  190.968	1.35464	
 }
 //====================================//
 
@@ -7053,7 +7053,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  49.1416	1.25085	
+ENGCoeff:  49.1475	1.25085	
 }
 //====================================//
 
@@ -7066,7 +7066,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  59.153	1.32365	
+ENGCoeff:  59.1527	1.32365	
 }
 //====================================//
 
@@ -7079,7 +7079,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  53.5255	1.41944	
+ENGCoeff:  50.4772	1.42670	
 }
 //====================================//
 
@@ -7092,7 +7092,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  49.2173	1.32636	
+ENGCoeff:  49.219	1.32636	
 }
 //====================================//
 
@@ -7118,7 +7118,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  44.5245	1.31614	
+ENGCoeff:  44.5011	1.31615	
 }
 //====================================//
 
@@ -7131,7 +7131,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  47.0678	1.3518	
+ENGCoeff:  47.0592	1.3518	
 }
 //====================================//
 
@@ -7157,7 +7157,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  48.9887	1.38353	
+ENGCoeff:  48.9879	1.38353	
 }
 //====================================//
 
@@ -7183,7 +7183,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  49.4568	1.3031	
+ENGCoeff:  49.4531	1.3031	
 }
 //====================================//
 
@@ -7209,7 +7209,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  49.1133	1.33259	
+ENGCoeff:  49.1233	1.33259	
 }
 //====================================//
 
@@ -7235,7 +7235,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  61.3483	1.34695	
+ENGCoeff:  61.3517	1.34695	
 }
 //====================================//
 
@@ -7248,7 +7248,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  -3.28277	1.36009	
+ENGCoeff:  47.6838	1.33451	
 }
 //====================================//
 
@@ -7261,7 +7261,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  48.6439	1.30716	
+ENGCoeff:  52.4918	1.31279	
 }
 //====================================//
 
@@ -7274,7 +7274,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  87.653	1.23835	
+ENGCoeff:  46.9288	1.26834	
 }
 //====================================//
 
@@ -7287,7 +7287,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  44.9939	1.31478	
+ENGCoeff:  47.7671	1.30744	
 }
 //====================================//
 
@@ -7300,7 +7300,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  44.5297	1.29799	
+ENGCoeff:  44.7314	1.31971	
 }
 //====================================//
 
@@ -7313,7 +7313,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  43.9315	1.29126	
+ENGCoeff:  44.6488	1.31489	
 }
 //====================================//
 
@@ -7326,7 +7326,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  47.6308	1.29613	
+ENGCoeff:  44.5344	1.29798	
 }
 //====================================//
 
@@ -7339,7 +7339,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  87.3238	1.25195	
+ENGCoeff:  42.9067	1.29159	
 }
 //====================================//
 
@@ -7352,7 +7352,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  42.75	1.28598	
+ENGCoeff:  47.6214	1.29613	
 }
 //====================================//
 
@@ -7365,7 +7365,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  46.0359	1.29807	
+ENGCoeff:  44.273	1.33441	
 }
 //====================================//
 
@@ -7378,7 +7378,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  46.2638	1.28037	
+ENGCoeff:  42.7495	1.28598	
 }
 //====================================//
 
@@ -7391,7 +7391,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  89.2888	1.28008	
+ENGCoeff:  46.0228	1.29807	
 }
 //====================================//
 
@@ -7404,7 +7404,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  87.4132	1.24522	
+ENGCoeff:  46.264	1.28037	
 }
 //====================================//
 
@@ -7417,7 +7417,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  48.4821	1.35046	
+ENGCoeff:  46.4891	1.36414	
 }
 //====================================//
 
@@ -7430,7 +7430,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  50.3359	1.31302	
+ENGCoeff:  47.014	1.32219	
 }
 //====================================//
 
@@ -7443,7 +7443,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  48.0904	1.34253	
+ENGCoeff:  48.469	1.35046	
 }
 //====================================//
 
@@ -7456,7 +7456,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  54.3155	1.29212	
+ENGCoeff:  50.3225	1.31302	
 }
 //====================================//
 
@@ -7469,7 +7469,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  52.7952	1.30412	
+ENGCoeff:  48.2375	1.34248	
 }
 //====================================//
 
@@ -7482,7 +7482,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  100.268	1.24349	
+ENGCoeff:  54.3306	1.29211	
 }
 //====================================//
 
@@ -7495,7 +7495,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  81.0619	1.30291	
+ENGCoeff:  52.7943	1.30412	
 }
 //====================================//
 
@@ -7508,7 +7508,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  96.9182	1.29775	
+ENGCoeff:  60.9495	1.31982	
 }
 //====================================//
 
@@ -7521,7 +7521,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  64.8394	1.28644	
+ENGCoeff:  54.7449	1.35487	
 }
 //====================================//
 
@@ -7534,7 +7534,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  76.821	1.30348	
+ENGCoeff:  65.8264	1.35818	
 }
 //====================================//
 
@@ -7547,7 +7547,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  171.343	1.2703	
+ENGCoeff:  64.8373	1.28644	
 }
 //====================================//
 
@@ -7560,7 +7560,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  90.6234	1.24625	
+ENGCoeff:  76.8201	1.30348	
 }
 //====================================//
 
@@ -7573,7 +7573,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  80.5387	1.3033	
+ENGCoeff:  154.02	1.33	0	
 }
 //====================================//
 
@@ -7586,7 +7586,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  152.37	1.21436	
+ENGCoeff:  90.6233	1.24625	
 }
 //====================================//
 
@@ -7599,7 +7599,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  97.9281	1.29886	
+ENGCoeff:  80.5392	1.3033	
 }
 //====================================//
 
@@ -7612,7 +7612,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  271.528	1.21887	
+ENGCoeff:  114.905	1.30142	
 }
 //====================================//
 
@@ -7625,7 +7625,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  125.039	1.30364	
+ENGCoeff:  97.9371	1.29885	
 }
 //====================================//
 
@@ -7638,7 +7638,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  0	1	0	
+ENGCoeff:  300.878	1.20949	
 }
 //====================================//
 
@@ -7651,7 +7651,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  192.716	1.30372	
+ENGCoeff:  126.857	1.30305	
 }
 //====================================//
 
@@ -7690,7 +7690,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  53.3784	1.25241	
+ENGCoeff:  53.3968	1.25239	
 }
 //====================================//
 
@@ -7703,7 +7703,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  55.4893	1.32485	
+ENGCoeff:  55.4877	1.32485	
 }
 //====================================//
 
@@ -7729,7 +7729,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  54.8699	1.31141	
+ENGCoeff:  54.8702	1.31141	
 }
 //====================================//
 
@@ -7742,7 +7742,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  52.4298	1.34285	
+ENGCoeff:  52.4293	1.34285	
 }
 //====================================//
 
@@ -7768,7 +7768,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  47.6642	1.31233	
+ENGCoeff:  47.6635	1.31233	
 }
 //====================================//
 
@@ -7781,7 +7781,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  51.5907	1.34766	
+ENGCoeff:  171.244	1.31172	
 }
 //====================================//
 
@@ -7794,7 +7794,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  46.9946	1.3279	
+ENGCoeff:  46.9963	1.3279	
 }
 //====================================//
 
@@ -7833,7 +7833,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  48.3859	1.33704	
+ENGCoeff:  48.3766	1.33704	
 }
 //====================================//
 
@@ -7898,7 +7898,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  47.0181	1.30105	
+ENGCoeff:  47.0094	1.30106	
 }
 //====================================//
 
@@ -7911,7 +7911,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  47.7533	1.24961	
+ENGCoeff:  47.7593	1.2496	
 }
 //====================================//
 
@@ -7924,7 +7924,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  48.0953	1.35559	
+ENGCoeff:  48.0845	1.3556	
 }
 //====================================//
 
@@ -7950,7 +7950,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  47.6407	1.2698	
+ENGCoeff:  47.6292	1.26981	
 }
 //====================================//
 
@@ -7976,7 +7976,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  46.3288	1.36791	
+ENGCoeff:  46.3172	1.36791	
 }
 //====================================//
 
@@ -7989,7 +7989,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  -423.549	1.46414	
+ENGCoeff:  0	1	0	
 }
 //====================================//
 
@@ -8002,7 +8002,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  53.1779	1.30943	
+ENGCoeff:  52.1486	1.30976	
 }
 //====================================//
 
@@ -8015,7 +8015,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  49.9354	1.33558	
+ENGCoeff:  49.9355	1.33558	
 }
 //====================================//
 
@@ -8028,7 +8028,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  50.8285	1.33911	
+ENGCoeff:  50.8438	1.3391	
 }
 //====================================//
 
@@ -8054,7 +8054,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  57.3273	1.29756	
+ENGCoeff:  57.342	1.29754	
 }
 //====================================//
 
@@ -8067,7 +8067,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  55.1022	1.32656	
+ENGCoeff:  55.096	1.32657	
 }
 //====================================//
 
@@ -9744,7 +9744,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  34.2417	1.33861	
+ENGCoeff:  34.2591	1.33861	
 }
 //====================================//
 
@@ -9757,7 +9757,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  33.1919	1.3535	
+ENGCoeff:  33.1786	1.3535	
 }
 //====================================//
 
@@ -9770,7 +9770,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  28.6336	1.25824	
+ENGCoeff:  28.6317	1.25824	
 }
 //====================================//
 
@@ -9783,7 +9783,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  33.9312	1.31112	
+ENGCoeff:  33.9314	1.31112	
 }
 //====================================//
 
@@ -9796,7 +9796,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  29.0512	1.30313	
+ENGCoeff:  29.0617	1.30312	
 }
 //====================================//
 
@@ -9809,7 +9809,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  31.9565	1.33078	
+ENGCoeff:  31.9569	1.33078	
 }
 //====================================//
 
@@ -9822,7 +9822,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  30.1449	1.23286	
+ENGCoeff:  30.1457	1.23286	
 }
 //====================================//
 
@@ -9835,7 +9835,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  26.7285	1.29848	
+ENGCoeff:  26.7266	1.29848	
 }
 //====================================//
 
@@ -9887,7 +9887,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  28.6944	1.31732	
+ENGCoeff:  28.6952	1.31732	
 }
 //====================================//
 
@@ -9900,7 +9900,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  27.7732	1.37165	
+ENGCoeff:  27.7675	1.37166	
 }
 //====================================//
 
@@ -9913,7 +9913,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  27.1206	1.34961	
+ENGCoeff:  27.1294	1.3496	
 }
 //====================================//
 
@@ -9926,7 +9926,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  27.3993	1.31239	
+ENGCoeff:  27.4098	1.31239	
 }
 //====================================//
 
@@ -9939,7 +9939,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  26.2358	1.27683	
+ENGCoeff:  26.2474	1.27682	
 }
 //====================================//
 
@@ -9952,7 +9952,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  24.0608	1.32037	
+ENGCoeff:  24.0541	1.32037	
 }
 //====================================//
 
@@ -9978,7 +9978,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  25.2348	1.31859	
+ENGCoeff:  25.2347	1.31859	
 }
 //====================================//
 
@@ -9991,7 +9991,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  30.6501	1.35071	
+ENGCoeff:  30.6548	1.3507	
 }
 //====================================//
 
@@ -10004,7 +10004,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  28.6962	1.34079	
+ENGCoeff:  28.6973	1.34079	
 }
 //====================================//
 
@@ -10017,7 +10017,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  16.5209	1.3298	
+ENGCoeff:  16.5337	1.3298	
 }
 //====================================//
 
@@ -10043,7 +10043,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  26.0105	1.36344	
+ENGCoeff:  26.0117	1.36344	
 }
 //====================================//
 
@@ -10069,7 +10069,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  25.0796	1.33918	
+ENGCoeff:  25.0787	1.33918	
 }
 //====================================//
 
@@ -10082,7 +10082,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  31.4558	1.34948	
+ENGCoeff:  31.4437	1.34948	
 }
 //====================================//
 
@@ -10108,7 +10108,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  33.3423	1.34829	
+ENGCoeff:  33.3433	1.34829	
 }
 //====================================//
 
@@ -10134,7 +10134,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  33.3813	1.37059	
+ENGCoeff:  33.3962	1.37058	
 }
 //====================================//
 
@@ -10147,7 +10147,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  33.1949	1.32622	
+ENGCoeff:  33.1987	1.32622	
 }
 //====================================//
 
@@ -10160,7 +10160,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  41.8997	1.29384	
+ENGCoeff:  41.8826	1.29385	
 }
 //====================================//
 
@@ -10173,7 +10173,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  37.6967	1.32457	
+ENGCoeff:  37.6968	1.32457	
 }
 //====================================//
 
@@ -10199,7 +10199,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  29.808	1.25052	
+ENGCoeff:  29.8018	1.25053	
 }
 //====================================//
 
@@ -10225,7 +10225,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  29.4193	1.40031	
+ENGCoeff:  29.4267	1.4003	
 }
 //====================================//
 
@@ -10251,7 +10251,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  29.0246	1.27902	
+ENGCoeff:  29.0237	1.27902	
 }
 //====================================//
 
@@ -10264,7 +10264,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  27.7891	1.38011	
+ENGCoeff:  27.7889	1.38011	
 }
 //====================================//
 
@@ -10290,7 +10290,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  29.1994	1.32817	
+ENGCoeff:  29.2094	1.32817	
 }
 //====================================//
 
@@ -10303,7 +10303,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  21.8643	1.30746	
+ENGCoeff:  21.8618	1.30746	
 }
 //====================================//
 
@@ -10316,7 +10316,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  26.1079	1.34879	
+ENGCoeff:  26.1078	1.34879	
 }
 //====================================//
 
@@ -10329,7 +10329,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  25.636	1.32926	
+ENGCoeff:  25.6271	1.32926	
 }
 //====================================//
 
@@ -10342,7 +10342,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  24.8577	1.36474	
+ENGCoeff:  24.85	1.36474	
 }
 //====================================//
 
@@ -10355,7 +10355,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  16.9781	1.37549	
+ENGCoeff:  16.9826	1.37549	
 }
 //====================================//
 
@@ -10381,7 +10381,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  26.2781	1.3793	
+ENGCoeff:  26.2782	1.3793	
 }
 //====================================//
 
@@ -10394,7 +10394,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  24.0554	1.29575	
+ENGCoeff:  24.0546	1.29575	
 }
 //====================================//
 
@@ -10420,7 +10420,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  23.7877	1.36858	
+ENGCoeff:  23.7888	1.36858	
 }
 //====================================//
 
@@ -10433,7 +10433,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  24.7085	1.33297	
+ENGCoeff:  24.7126	1.33297	
 }
 //====================================//
 
@@ -10459,7 +10459,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  27.5286	1.32557	
+ENGCoeff:  27.5347	1.32557	
 }
 //====================================//
 
@@ -10472,7 +10472,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  31.2847	1.31797	
+ENGCoeff:  31.2817	1.31798	
 }
 //====================================//
 
@@ -10485,7 +10485,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  31.4388	1.32206	
+ENGCoeff:  31.467	1.32205	
 }
 //====================================//
 
@@ -10524,7 +10524,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  29.3145	1.46467	
+ENGCoeff:  29.3068	1.46467	
 }
 //====================================//
 
@@ -10537,7 +10537,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  30.4502	1.35104	
+ENGCoeff:  30.4564	1.35104	
 }
 //====================================//
 
@@ -10550,7 +10550,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  33.7805	1.34272	
+ENGCoeff:  33.7718	1.34272	
 }
 //====================================//
 
@@ -10563,7 +10563,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  27.648	1.29663	
+ENGCoeff:  27.6816	1.29662	
 }
 //====================================//
 
@@ -10576,7 +10576,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  311.363	1.24868	
+ENGCoeff:  311.368	1.24868	
 }
 //====================================//
 
@@ -10602,7 +10602,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  27.9713	1.35865	
+ENGCoeff:  28.0007	1.35864	
 }
 //====================================//
 
@@ -10615,7 +10615,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  23.3291	1.41663	
+ENGCoeff:  23.3304	1.41663	
 }
 //====================================//
 
@@ -10628,7 +10628,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  26.2285	1.38722	
+ENGCoeff:  26.1958	1.38723	
 }
 //====================================//
 
@@ -10641,7 +10641,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  21.8228	1.36866	
+ENGCoeff:  21.8223	1.36866	
 }
 //====================================//
 
@@ -10680,7 +10680,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  26.8189	1.39621	
+ENGCoeff:  26.8177	1.39621	
 }
 //====================================//
 
@@ -10693,7 +10693,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  25.858	1.41003	
+ENGCoeff:  25.8564	1.41003	
 }
 //====================================//
 
@@ -10706,7 +10706,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  23.5307	1.41615	
+ENGCoeff:  23.5354	1.41615	
 }
 //====================================//
 
@@ -10732,7 +10732,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  23.3457	1.3421	
+ENGCoeff:  23.3463	1.3421	
 }
 //====================================//
 
@@ -10771,7 +10771,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  19.4757	1.42054	
+ENGCoeff:  19.4764	1.42054	
 }
 //====================================//
 
@@ -10784,7 +10784,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  23.2865	1.41289	
+ENGCoeff:  23.2881	1.41289	
 }
 //====================================//
 
@@ -10797,7 +10797,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  21.601	1.36093	
+ENGCoeff:  21.6154	1.36093	
 }
 //====================================//
 
@@ -10810,7 +10810,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  22.8434	1.41115	
+ENGCoeff:  22.8428	1.41115	
 }
 //====================================//
 
@@ -10823,7 +10823,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  24.4467	1.32537	
+ENGCoeff:  24.4356	1.32539	
 }
 //====================================//
 
@@ -10849,7 +10849,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  20.5633	1.37827	
+ENGCoeff:  20.5495	1.37827	
 }
 //====================================//
 
@@ -10862,7 +10862,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  25.5109	1.42254	
+ENGCoeff:  25.4994	1.42254	
 }
 //====================================//
 
@@ -10914,7 +10914,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  26.3373	1.36426	
+ENGCoeff:  26.3354	1.36426	
 }
 //====================================//
 
@@ -10927,7 +10927,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  31.8474	1.40904	
+ENGCoeff:  31.8508	1.40904	
 }
 //====================================//
 
@@ -10940,7 +10940,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  32.4814	1.41009	
+ENGCoeff:  32.481	1.41009	
 }
 //====================================//
 
@@ -10953,7 +10953,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  32.5306	1.41134	
+ENGCoeff:  32.5307	1.41134	
 }
 //====================================//
 
@@ -10966,7 +10966,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  36.947	1.34784	
+ENGCoeff:  36.9481	1.34784	
 }
 //====================================//
 
@@ -10979,7 +10979,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  35.5315	1.37954	
+ENGCoeff:  35.5321	1.37954	
 }
 //====================================//
 
@@ -10992,7 +10992,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  33.4265	1.37042	
+ENGCoeff:  33.4268	1.37042	
 }
 //====================================//
 
@@ -11005,7 +11005,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  29.6923	1.40584	
+ENGCoeff:  29.6936	1.40584	
 }
 //====================================//
 
@@ -11018,7 +11018,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  31.5359	1.37234	
+ENGCoeff:  31.5361	1.37234	
 }
 //====================================//
 
@@ -11044,7 +11044,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  28.4731	1.42354	
+ENGCoeff:  28.4651	1.42354	
 }
 //====================================//
 
@@ -11070,7 +11070,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  26.9018	1.42091	
+ENGCoeff:  27.1297	1.42084	
 }
 //====================================//
 
@@ -11096,7 +11096,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  20.192	1.43239	
+ENGCoeff:  20.1822	1.43241	
 }
 //====================================//
 
@@ -11109,7 +11109,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  28.693	1.36357	
+ENGCoeff:  28.6869	1.36358	
 }
 //====================================//
 
@@ -11148,7 +11148,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  23.327	1.36352	
+ENGCoeff:  23.3325	1.36352	
 }
 //====================================//
 
@@ -11161,7 +11161,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  26.9674	1.4104	
+ENGCoeff:  26.9656	1.4104	
 }
 //====================================//
 
@@ -11187,7 +11187,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  17.8936	1.46289	
+ENGCoeff:  17.8944	1.46289	
 }
 //====================================//
 
@@ -11200,7 +11200,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  22.7225	1.39217	
+ENGCoeff:  22.7117	1.39217	
 }
 //====================================//
 
@@ -11226,7 +11226,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  24.3099	1.42433	
+ENGCoeff:  24.3115	1.42433	
 }
 //====================================//
 
@@ -11252,7 +11252,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  28.2541	1.34006	
+ENGCoeff:  28.2523	1.34006	
 }
 //====================================//
 
@@ -11278,7 +11278,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  26.1868	1.41956	
+ENGCoeff:  26.1873	1.41956	
 }
 //====================================//
 
@@ -11291,7 +11291,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  25.8703	1.4077	
+ENGCoeff:  25.8701	1.4077	
 }
 //====================================//
 
@@ -11304,7 +11304,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  29.3243	1.37622	
+ENGCoeff:  29.3196	1.37622	
 }
 //====================================//
 
@@ -11317,7 +11317,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  31.9625	1.34746	
+ENGCoeff:  31.9623	1.34746	
 }
 //====================================//
 
@@ -11330,7 +11330,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  27.8184	1.41158	
+ENGCoeff:  27.8124	1.41158	
 }
 //====================================//
 
@@ -11343,7 +11343,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  27.2056	1.3837	
+ENGCoeff:  27.2045	1.3837	
 }
 //====================================//
 
@@ -11356,7 +11356,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  31.1041	1.35964	
+ENGCoeff:  31.0911	1.35964	
 }
 //====================================//
 
@@ -11395,7 +11395,7 @@ Digitizer: FMC32
 TimeOffset: 0
 TimeDrift: 0
 Integration: 0
-ENGCoeff:  34.6195	1.37938	
+ENGCoeff:  34.5839	1.37939	
 }
 //====================================//
 

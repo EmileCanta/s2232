@@ -1,0 +1,80 @@
+grsisort --recommended /home/emile/postdoc/analysis/s2232/sorter/calfiles/energy_calibration28267.cal /media/emile/RCMP_SG/S2232_midas_files/run28294_002.mid
+	grsisort version 4.0.0.5
+	Using library /home/emile/GRSISort/GRSIData/lib/libGRSIData.so version 0.1.1.2
+Already loaded handle 0x5c7856143a10
+Title: [0;34m20Mg_cycle-55sbeamson_5s-beam-off [m
+Comment: [0;34m20Mg_cycle-55sbeamson_5s-beam-off [m
+using GRIFFIN path to analyzer info: /DAQ/PSC...
+910	 TChannels created.
+found 910 channels
+	file [1;34m/media/emile/RCMP_SG/S2232_midas_files/run28294_002.mid[m opened as [1;34m_raw0[m
+Already loaded handle 0x5c7856143a10
+Reading from calibration file: [1;36m/home/emile/postdoc/analysis/s2232/sorter/calfiles/energy_calibration28267.cal[m.....found 910 channels
+[1;34mfBuildWindow: [0;36m2000
+[1;34mfBuildEventsByTimeStamp: [0;36m0
+[1;34mfAddbackWindow: [0;36m300
+[1;34mfSuppressionWindow: [0;36m300
+[1;34mfSuppressionEnergy: [0;36m0
+[1;34mfStaticWindow: [0;36m0
+[1;34mfWaveformFitting: [0;36m0
+[1;34mfIsCorrectingCrossTalk: [0;36m0
+[m
+[0;33mSorting input by time: [0;33msorting by time, using build window of 2000![m
+1_input_loop       |2_unpack_loop      |5_event_build_loop |6_det_build_loop   |8_analysis_write_lo|
+*                  |****************   |N/A: 0             |N/A: 0             |N/A: 0             |Warning, unknown ppg pattern 0x0c81f0f1, setting old pattern to kJunk!
+                              8_analysis_write_loop: added "TGriffinBgo" branch, 0x729eb0000cb0, 0x729eb0000c40                              
+                              8_analysis_write_loop: added "TGriffin" branch, 0x729eb000d700, 0x729eb000d640                              
+                              8_analysis_write_loop: added "TRcmp" branch, 0x729ebc000dd0, 0x729ebc000c40                              
+                              8_analysis_write_loop: added "TLaBr" branch, 0x729ec80016d0, 0x729ebc0018d0                              
+                              8_analysis_write_loop: added "TTAC" branch, 0x729eb0132570, 0x729ebc003d80                              
+                              8_analysis_write_loop: added "TLaBrBgo" branch, 0x729ec8007250, 0x729ebc0064c0                              
+Warning, unknown ppg pattern 0x0c84f0f4, setting old pattern to kJunk!
+
+Sorting depth of 200000 was insufficient. time: 973404830.308 Last: 534365989090 
+Not all events were built correctly
+Please increase sort depth with --sort-depth=N
+**                 |*****              |****************** |****************** |**************     |***                |*******            |****************** |****************** |***************    |*****              |********           |****************** |****************** |*****************  |******             |********           |****************** |****************** |****************   |*******            |********           |****************** |****************** |****************   |*********          |********           |****************** |****************** |****************   |Warning, unknown ppg pattern 0x0c81f0f1, setting old pattern to kJunk!
+Warning, unknown ppg pattern 0x0c84f0f4, setting old pattern to kJunk!
+**********         |*********          |****************** |****************** |****************   |***********        |*********          |****************** |****************** |****************   |  1391373/  2000853|    18558/    38149|  7262003/  7312002|  1757018/  1757018|  1532506/  1748671|
+*************      |*********          |****************** |****************** |****************   |**************     |*********          |****************** |****************** |****************   |***************    |*********          |****************** |****************** |****************   |*****************  |*********          |****************** |****************** |****************   |****************** |*********          |****************** |****************** |****************   |
+Warning, unknown ppg pattern 0x0c81f0f1, setting old pattern to kJunk!
+Warning, unknown ppg pattern 0x0c84f0f4, setting old pattern to kJunk!
+not running        |*********          |****************** |****************** |****************   |not running        |**********         |****************** |****************** |****************   |not running        |***********        |****************** |****************** |****************   |not running        |***********        |****************** |****************** |****************   |not running        |************       |****************** |****************** |****************   |not running        |    37861/    54854| 14847893/ 14897892|  3623874/  3623874|  3178011/  3623873|
+not running        |*************      |****************** |****************** |****************   |not running        |*************      |****************** |****************** |****************   |Warning, unknown ppg pattern 0x0c81f0f1, setting old pattern to kJunk!
+Warning, unknown ppg pattern 0x0c84f0f4, setting old pattern to kJunk!
+not running        |**************     |****************** |****************** |****************   |not running        |***************    |****************** |****************** |****************   |not running        |***************    |****************** |****************** |****************   |not running        |****************   |****************** |****************** |****************   |not running        |*****************  |****************** |****************** |****************   |not running        |*****************  |****************** |****************** |****************   |not running        |****************** |****************** |****************** |****************   |not running        |****************** |****************** |****************** |****************   |not running        |    54854/    54854| 21554282/ 21554282|  5261000/  5261000|  4814990/  5261000|
+not running        |****************** |****************** |****************** |*****************  |
+
+not running        |not running        |not running        |****************** |*****************  |
+not running        |not running        |not running        |not running        |****************** |not running        |not running        |not running        |not running        |****************** |not running        |not running        |not running        |not running        |****************** |
+  910 TChannels saved to analysis28294_002.root
+Writing TRunInfo to analysis28294_002.root
+Writing TAnalysisOptions to analysis28294_002.root
+Writing PPG with 8 events and 2 ODB settings
+not running        |not running        |not running        |not running        |not running        |
+Stopping thread 1_input_loop
+
+
+Stopping thread 1_input_loop
+
+Joining thread 1_input_loop
+Joining thread 2_unpack_loop
+2_unpack_loop:	21738948 good fragments out of 21739939 fragments => 99.9954% passed
+********************************************************************************
+good_frag_queue_0: 21554282 pushed, 21554282 popped, 0 left
+********************************************************************************
+Joining thread 5_event_build_loop
+good_frag_queue_0: 21554282/21554282 items popped
+Joining thread 6_det_build_loop
+Joining thread 8_analysis_write_loop
+8_analysis_write_loop:	 5309277/5309277, ??? good events
+Deleting thread 1_input_loop
+Deleting thread 2_unpack_loop
+Deleting thread 5_event_build_loop
+Deleting thread 6_det_build_loop
+Deleting thread 8_analysis_write_loop
+[0;32mNo hits were removed![m
+[0;31m108 fragments were out of order, maximum entry difference was 21322611!
+Please consider increasing the sort depth with --sort-depth=21322611[m
+[0;35m
+bye,bye	[0;36memile[m after 0:00:36.192 h:m:s

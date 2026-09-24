@@ -22,7 +22,7 @@
 void RCMPEnergyCalProton(const std::string& run_type, int run_number, const std::string& side, int vis) 
 {
     std::string log_directory = "./logs/";
-    std::string histogram_directory = "/home/emile/postdoc/analysis/s2232/histograms/rcmp";
+    std::string histogram_directory = "/home/emile/postdoc/data/s2232/histograms/rcmp";
     std::string histogram_prefix = "RCMP";
 
     const int NStrips = 32;
@@ -137,7 +137,7 @@ void RCMPEnergyCalProton(const std::string& run_type, int run_number, const std:
     
     TSpectrum* peak_search = new TSpectrum();
 
-    for(int i = 5; i <= 6; i++) 
+    for(int i = 6; i <= 6; i++) 
     { 
         double mean_chi_square;
 

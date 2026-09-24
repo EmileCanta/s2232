@@ -7,6 +7,12 @@
 #include "/home/emile/GRSISort/GRSIData/include/TGriffin.h"
 #include "/home/emile/GRSISort/GRSIData/include/TGriffinBgo.h"
 
+struct HitInfo {
+    double energy;
+    double time;
+    int det;
+};
+
 class RCMPHelper : public TGRSIHelper, public ROOT::Detail::RDF::RActionImpl<RCMPHelper> {
 public:
 
