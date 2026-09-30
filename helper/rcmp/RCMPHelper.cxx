@@ -8,7 +8,7 @@ using namespace std;
 
 void RCMPHelper::CreateHistograms(unsigned int slot)
 {
-    /*fH1[slot]["EnergyAll_MultTwo"] = new TH1F("EnergyAll_MultTwo", "EnergyAll_MultTwo", 10000, 0, 10000);
+    fH1[slot]["EnergyAll_MultTwo"] = new TH1F("EnergyAll_MultTwo", "EnergyAll_MultTwo", 10000, 0, 10000);
     fH1[slot]["TimeAll_MultTwo"] = new TH1F("TimeAll_MultTwo", "TimeAll_MultTwo", 6000, 0, 60e9); //1 bin = 0.01e9 ns = 10 ms
 
     fH1[slot]["EnergyGriffin_Singles"] = new TH1F("EnergyGriffin_Singles", "EnergyGriffin_Singles", 10000, 0, 10000);
@@ -21,18 +21,18 @@ void RCMPHelper::CreateHistograms(unsigned int slot)
     fH2[slot]["BackHitCorrelation_MultTwo"] = new TH2F("BackHitCorrelation_MultTwo", "BackHitCorrelation_MultTwo", 32, 0, 32, 32, 0, 32);
     fH2[slot]["DetRepartition_MultTwo"] = new TH2F("DetRepartition_MultTwo", "DetRepartition_MultTwo", 6, 1, 7, 6, 1, 7);
    
-    fH2[slot]["DetectorVSMultiplicity_Singles"] = new TH2F("DetectorVSMultiplicity_Singles", "DetectorVSMultiplicity_Singles", 100, 0, 100, 6, 1, 7);
+    /*fH2[slot]["DetectorVSMultiplicity_Singles"] = new TH2F("DetectorVSMultiplicity_Singles", "DetectorVSMultiplicity_Singles", 100, 0, 100, 6, 1, 7);
 
     fH2[slot]["EnergyFrontVSTimeFront_CondGRIF"] = new TH2F("EnergyFrontVSTimeFront_CondGRIF", "EnergyFrontVSTimeFront_CondGRIF", 6000, 0, 60e9, 1000, 0, 10000); //1 bin = 0.01e9 ns = 10 ms //Less bins
     fH2[slot]["EnergyFrontVSTimeFront_Singles"] = new TH2F("EnergyFrontVSTimeFront_Singles", "EnergyFrontVSTimeFront_Singles", 6000, 0, 60e9, 1000, 0, 10000); //1 bin = 0.01e9 ns = 10 ms //Less bins
     fH2[slot]["EnergyGriffinVSTimeGriffin_CondRCMP"] = new TH2F("EnergyGriffinVSTimeGriffin_CondRCMP", "EnergyGriffinVSTimeGriffin_CondRCMP", 6000, 0, 60e9, 10000, 0, 10000); //1 bin = 0.01e9 ns = 10 ms
-    fH2[slot]["EnergyGriffinVSTimeGriffin_Singles"] = new TH2F("EnergyGriffinVSTimeGriffin_Singles", "EnergyGriffinVSTimeGriffin_Singles", 6000, 0, 60e9, 10000, 0, 10000); //1 bin = 0.01e9 ns = 10 ms*/
+    fH2[slot]["EnergyGriffinVSTimeGriffin_Singles"] = new TH2F("EnergyGriffinVSTimeGriffin_Singles", "EnergyGriffinVSTimeGriffin_Singles", 6000, 0, 60e9, 10000, 0, 10000); //1 bin = 0.01e9 ns = 10 ms
                                                                                                                                                                             
     fH2[slot]["E1VSE2_Mult6RCMP"] = new TH2F("E1VSE2_Mult6RCMP", "E1VSE2_Mult6RCMP", 1000, 0, 10000, 1000, 0, 10000);
     fH2[slot]["E1VSE2Bgd_Mult6RCMP"] = new TH2F("E1VSE2Bgd_Mult6RCMP", "E1VSE2Bgd_Mult6RCMP", 1000, 0, 10000, 1000, 0, 10000);
-    fH1[slot]["TimeDiff_Mult6RCMP"] = new TH1F("TimeDiff_Mult6RCMP", "TimeDiff_Mult6RCMP", 500, 0, 5000);
+    fH1[slot]["TimeDiff_Mult6RCMP"] = new TH1F("TimeDiff_Mult6RCMP", "TimeDiff_Mult6RCMP", 500, 0, 5000);*/
 
-    /*for(int ndet = 1; ndet <= 6; ndet++)
+    for(int ndet = 1; ndet <= 6; ndet++)
     {
         fH2[slot][Form("EnergyVSFrontStrip_MultTwo%d", ndet)] = new TH2F(Form("EnergyVSFrontStrip_MultTwo%d", ndet), Form("EnergyVSFrontStrip_MultTwo%d", ndet), 32, 0, 32, 10000, 0, 10000);
         fH2[slot][Form("EnergyVSBackStrip_MultTwo%d", ndet)] = new TH2F(Form("EnergyVSBackStrip_MultTwo%d", ndet), Form("EnergyVSBackStrip_MultTwo%d", ndet), 32, 0, 32, 10000, 0, 10000);
@@ -53,7 +53,7 @@ void RCMPHelper::CreateHistograms(unsigned int slot)
 
         fH1[slot][Form("TimeDiffBackFront_MultTwo%d", ndet)] = new TH1F(Form("TimeDiffBackFront_MultTwo%d", ndet), Form("TimeDiffBackFront_MultTwo%d", ndet), 500, -2500, 2500);
 
-        fH2[slot][Form("EnergyVSFrontStrip_Singles%d", ndet)] = new TH2F(Form("EnergyVSFrontStrip_Singles%d", ndet), Form("EnergyVSFrontStrip_Singles%d", ndet), 32, 0, 32, 10000, 0, 10000);
+        /*fH2[slot][Form("EnergyVSFrontStrip_Singles%d", ndet)] = new TH2F(Form("EnergyVSFrontStrip_Singles%d", ndet), Form("EnergyVSFrontStrip_Singles%d", ndet), 32, 0, 32, 10000, 0, 10000);
         fH2[slot][Form("EnergyVSBackStrip_Singles%d", ndet)] = new TH2F(Form("EnergyVSBackStrip_Singles%d", ndet), Form("EnergyVSBackStrip_Singles%d", ndet), 32, 0, 32, 10000, 0, 10000);
 
         fH2[slot][Form("EnergyFrontVSMult_Singles%d", ndet)] = new TH2F(Form("EnergyFrontVSMult_Singles%d", ndet), Form("EnergyFrontVSMult_Singles%d", ndet), 20, 0, 20, 1000, 0, 10000); //Less bins
@@ -65,8 +65,8 @@ void RCMPHelper::CreateHistograms(unsigned int slot)
 
         fH2[slot][Form("EnergyBackVSEnergyFront_Gated%d", ndet)] = new TH2F(Form("EnergyBackVSEnergyFront_Gated%d", ndet), Form("EnergyBackVSEnergyFront_Gated%d", ndet), 1000, 0, 10000, 1000, 0, 10000); //Less bins
         
-        fH1[slot][Form("TimeDiffBackFront_Gated%d", ndet)] = new TH1F(Form("TimeDiffBackFront_Gated%d", ndet), Form("TimeDiffBackFront_Gated%d", ndet), 500, -2500, 2500);
-    }*/
+        fH1[slot][Form("TimeDiffBackFront_Gated%d", ndet)] = new TH1F(Form("TimeDiffBackFront_Gated%d", ndet), Form("TimeDiffBackFront_Gated%d", ndet), 500, -2500, 2500);*/
+    }
 
     /*for(int multi = 1; multi <= 10; multi++)
     {
@@ -77,8 +77,8 @@ void RCMPHelper::CreateHistograms(unsigned int slot)
 
 void RCMPHelper::Exec(unsigned int slot, TRcmp& rcmp, TGriffin& griffin, TGriffinBgo& griffinbgo)
 {
-    //TRcmpHit* hit1;
-    //TRcmpHit* hit2;
+    TRcmpHit* hit1;
+    TRcmpHit* hit2;
 
     int mult = rcmp.GetMultiplicity();
     //int multGriffin = griffin.GetMultiplicity();
@@ -86,7 +86,7 @@ void RCMPHelper::Exec(unsigned int slot, TRcmp& rcmp, TGriffin& griffin, TGriffi
     std::vector<HitInfo> frontvec;
     std::vector<HitInfo> backvec;
 
-    if(mult == 4)
+    /*if(mult == 4)
     {
         for(int i = 0; i < mult; i++)
         {
@@ -105,11 +105,11 @@ void RCMPHelper::Exec(unsigned int slot, TRcmp& rcmp, TGriffin& griffin, TGriffi
 
         if(frontvec.size() == 2 && backvec.size() == 2)
         {
-            /*for(auto it = frontvec.begin(); it != frontvec.end();)
+            //for(auto it = frontvec.begin(); it != frontvec.end();)
             {
-                if(it->energy < 300.) it = frontvec.erase(it);
-                else ++it;
-            }*/
+                //if(it->energy < 300.) it = frontvec.erase(it);
+                //else ++it;
+            }
 
             if(frontvec.size() == 2 && frontvec[0].det != frontvec[1].det)
             {
@@ -130,10 +130,10 @@ void RCMPHelper::Exec(unsigned int slot, TRcmp& rcmp, TGriffin& griffin, TGriffi
                 }
             }
         }
-    }
+    }*/
 
-    /*if(mult == 2) 
-      {
+    if(mult == 2) 
+    {
         if(rcmp.GetRcmpHit(0)->GetChannel()->GetMnemonic()->CollectedChargeString() == "P")
         {
             hit1 = rcmp.GetRcmpHit(0);
@@ -177,7 +177,7 @@ void RCMPHelper::Exec(unsigned int slot, TRcmp& rcmp, TGriffin& griffin, TGriffi
             fH1[slot].at("TimeAll_MultTwo")->Fill(hit1->GetTimeStampNs()%60000000000LL);
         }
 
-        if((det1 == det2) && (side1 != side2))
+        if((det1 == det2) && (side1 != side2) && mappedstrip1 >= 0 && mappedstrip1 <= 31 && mappedstrip2 > 0 && mappedstrip2 < 31)
         {
             fH2[slot].at(Form("EnergyVSFrontStrip_MultTwo%d", det1))->Fill(mappedstrip1, energy1);
             fH2[slot].at(Form("EnergyVSBackStrip_MultTwo%d", det1))->Fill(mappedstrip2, energy2);
@@ -213,13 +213,13 @@ void RCMPHelper::Exec(unsigned int slot, TRcmp& rcmp, TGriffin& griffin, TGriffi
         {
             fH2[slot].at("BackHitCorrelation_MultTwo")->Fill(mappedstrip1, mappedstrip2);
         }
-        
+
         fH2[slot].at("DetRepartition_MultTwo")->Fill(det1, det2);
     }
 
     //cout << "MULT IS: " << mult << endl;
 
-    for(int i = 0; i < mult; i++)
+    /*for(int i = 0; i < mult; i++)
     {
         TRcmpHit* hit = rcmp.GetRcmpHit(i);
 
@@ -318,7 +318,7 @@ void RCMPHelper::Exec(unsigned int slot, TRcmp& rcmp, TGriffin& griffin, TGriffi
 
             double tdiff = (hitbis->GetTimeStampNs() - hit->GetTimeStampNs());
 
-            if((side != sidebis) && (det == detbis) && TMath::Abs(tdiff) < 300.)
+            if((side != sidebis) && (det == detbis) && TMath::Abs(tdiff) < 300.) //-160 to 160 Sydney gate
             {
                 fH1[slot].at(Form("TimeDiffBackFront_Gated%d", det))->Fill(tdiff);
                 

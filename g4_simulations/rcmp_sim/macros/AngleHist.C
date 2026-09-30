@@ -98,11 +98,11 @@ void AngleHist()
                 //histsPhiIni[map[i-1]]->Fill(detnbr, newPhi_ini*rad);
                 //histsThetaIni[map[i-1]]->Fill(detnbr, theta_ini*rad);
                 //histsPhiIni[map[i-1]]->Fill(detnbr, phi_ini*rad);
-                if(map[i-1] == 0 && phi_ini*rad < 0.) histsPhiIni[map[i-1]]->Fill(detnbr, phi_ini*rad+360.);
-                if(map[i-1] == 0 && phi_ini*rad >= 0.) histsPhiIni[map[i-1]]->Fill(detnbr, phi_ini*rad);
-                if(map[i-1] == 4 && phi_ini*rad < 0.) histsPhiIni[map[i-1]]->Fill(detnbr, phi_ini*rad+360.);
-                if(map[i-1] == 4 && phi_ini*rad >= 0.) histsPhiIni[map[i-1]]->Fill(detnbr, phi_ini*rad);
-                if(map[i-1] != 0 && map[i-1] != 4) histsPhiIni[map[i-1]]->Fill(detnbr, phi_ini*rad);
+                //if(map[i-1] == 0 && phi_ini*rad < 0.) histsPhiIni[map[i-1]]->Fill(detnbr, phi_ini*rad+360.);
+                //if(map[i-1] == 0 && phi_ini*rad >= 0.) histsPhiIni[map[i-1]]->Fill(detnbr, phi_ini*rad);
+                //if(map[i-1] == 4 && phi_ini*rad < 0.) histsPhiIni[map[i-1]]->Fill(detnbr, phi_ini*rad+360.);
+                //if(map[i-1] == 4 && phi_ini*rad >= 0.) histsPhiIni[map[i-1]]->Fill(detnbr, phi_ini*rad);
+                //if(map[i-1] != 0 && map[i-1] != 4) histsPhiIni[map[i-1]]->Fill(detnbr, phi_ini*rad);
 
                 int modDet = detnbr - (i-1)*1024;
                 int strip1 = (modDet - 1) % 32;

@@ -279,7 +279,19 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 			effRandPhi      = (2.0*CLHEP::pi)*G4UniformRand();
 			effdirection = G4ThreeVector(effRandSinTheta*cos(effRandPhi), effRandSinTheta*sin(effRandPhi), effRandCosTheta);
 			//converts from Spherical polar(physics def.) to cartesian via (rsin(theta)cos(phi),rsin(theta)cos(phi),rcos(theta)) r=1,unit length
-		}
+
+            //For a fixed direction:
+            /*G4double theta = 80.0 * deg;
+            G4double phi   = 45.0 * deg; 
+            effdirection = G4ThreeVector(
+                    std::sin(theta) * std::cos(phi),
+                    std::sin(theta) * std::sin(phi),
+                    std::cos(theta)
+                    );
+
+            // Make sure it is normalized
+            effdirection = effdirection.unit();*/
+        }
 
 		//after running through if-statements above we now have particle type definition, position, mom. direction, and the energy (or their initialised values)
 		fParticleGun->SetParticlePosition(thisEffPosition);
@@ -297,6 +309,9 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 			fHistoManager->BeamTheta(effdirection.theta()); 
 			fHistoManager->BeamPhi(effdirection.phi());
 			fHistoManager->BeamPos(thisEffPosition);
+
+            //G4cout << "theta: " << effdirection.theta() * 180./ TMath::Pi() << G4endl;
+            //G4cout << "phi: " << effdirection.phi() *180. / TMath::Pi() << G4endl;
 		}
 	}
 

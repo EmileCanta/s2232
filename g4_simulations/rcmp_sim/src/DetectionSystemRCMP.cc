@@ -203,7 +203,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
     for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
     {
-        G4double posY = startX + fDeadLayerWidth*rowX + fDeadLayerWidth/2.0 + 2.15*mm; //Can play on offset here +/- 1.25 mm
+        G4double posY = startX + fDeadLayerWidth*rowX + fDeadLayerWidth/2.0; //Can play on offset here +/- 1.25 mm
         
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
@@ -232,7 +232,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fDeadLayerWidth*rowY + fDeadLayerWidth/2.0 - 3.37*mm; //Can play on offset here +/- 1.25 mm
+            G4double posZ = startY + fDeadLayerWidth*rowY + fDeadLayerWidth/2.0; //Can play on offset here +/- 1.25 mm
             G4double posX = 36.55*mm + ((fDetectorThickness + fDeadLayerThickness)/2.) + fOffsetPCB;
 
             G4ThreeVector localPos6(posX,-posY,posZ);
@@ -271,7 +271,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
     auto mesh = CADMesh::TessellatedMesh::FromSTL("../../frame_3d/frame.stl");
     auto solid = mesh->GetSolid();
     G4LogicalVolume* MeshLog = new G4LogicalVolume(solid, FrameMaterial, "MeshLog");
-    //G4VPhysicalVolume* MeshPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), MeshLog, "MeshPhys", expHallLog, false, 0, true); 
+    G4VPhysicalVolume* MeshPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), MeshLog, "MeshPhys", expHallLog, false, 0, true); 
 
     auto windows = CADMesh::TessellatedMesh::FromSTL("../../frame_3d/windows.stl");
     auto solidWind = windows->GetSolid();
@@ -301,20 +301,18 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
     G4VSolid* solidHolderUniF = new G4UnionSolid("solidHolderUniF", solidHolderUniE, solidHolderD, 0, G4ThreeVector(48.7*mm, -3.9*mm, 2.*mm));
     G4VSolid* solidHolderUniG = new G4UnionSolid("solidHolderUniG", solidHolderUniF, solidHolderD, 0, G4ThreeVector(-48.7*mm, -3.9*mm, 2.*mm));
     G4VSolid* solidHolder = new G4SubtractionSolid("solidHolder", solidHolderUniA, solidHolderSub);
+    //G4VSolid* solidHolder = new G4SubtractionSolid("solidHolder", solidHolderUniA, solidHolderSub); For more detailed holder but not very usefull
     G4LogicalVolume* logHolder = new G4LogicalVolume(solidHolder, FrameMaterial, "logHolder");
     logHolder->SetVisAttributes(visAttHolder);
-    //G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., 4.0*mm), logHolder, "physHolder", expHallLog, false, 0, true);
-    //G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., -1.*mm, 3.0*mm), logHolder, "physHolder", expHallLog, false, 0, true);
-    G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., 2.*mm), logHolder, "physHolder", expHallLog, false, 0, true);
+    G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., (0.45+0.00055)*mm), logHolder, "physHolder", expHallLog, false, 0, true); //Beam position
+    //G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., (0.45+0.00055+3.375)*mm), logHolder, "physHolder", expHallLog, false, 0, true); //Source position
 
     //////HOLDER//////////////////////////////////////////////////////////////////////////////////////////
     
     G4Tubs* solidTape = new G4Tubs("solidTape", 0., 7.5*mm, 0.000275*mm, 0., 360.); 
     G4LogicalVolume* logTape = new G4LogicalVolume(solidTape, MylarMaterial, "logTape");
     logTape->SetVisAttributes(visAttTape);
-    //G4VPhysicalVolume* physTape = new G4PVPlacement(0, G4ThreeVector(0., -1.*mm, 3.*mm - 0.000275*mm - 0.45*mm), logTape, "physTape", expHallLog, false, 0, true);
-    //G4VPhysicalVolume* physTape = new G4PVPlacement(0, G4ThreeVector(0., 0., -0.000275*mm - 0.45*mm + 2.*mm), logTape, "physTape", expHallLog, false, 0, true);
-    G4VPhysicalVolume* physTape = new G4PVPlacement(0, G4ThreeVector(0., 0., -0.000275*mm + 2.*mm), logTape, "physTape", expHallLog, false, 0, true);
+    G4VPhysicalVolume* physTape = new G4PVPlacement(0, G4ThreeVector(0., 0., (0.000275)*mm), logTape, "physTape", expHallLog, false, 0, true);
     
     G4Tubs* solidSource = new G4Tubs("solidSource", 0., 5.55*mm, 100.*um, 0., 360.);
     G4LogicalVolume* logSource = new G4LogicalVolume(solidSource, PlatinumMaterial, "logSource");
@@ -356,7 +354,7 @@ G4int DetectionSystemRCMP::BuildPixelVolume()
 		return 0;
 	}
 
-	G4VisAttributes* visAtt = new G4VisAttributes(G4Colour(1.0,0.0,0.0));
+	G4VisAttributes* visAtt = new G4VisAttributes(G4Colour(1.0,0.0,1.0));
 	G4VisAttributes* visAttBis = new G4VisAttributes(G4Colour(0.0,1.0,0.0));
 	
     visAtt->SetVisibility(true);

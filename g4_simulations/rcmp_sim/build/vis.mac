@@ -30,8 +30,8 @@
 /vis/modeling/trajectories/drawByParticleID-0/set alpha cyan
 
 /tracking/storeTrajectory 1
-#/vis/open OGL
-/vis/open OGLIQt
+/vis/open OGL
+#/vis/open OGLIQt
 /vis/drawVolume
 /vis/viewer/set/autoRefresh true
 /vis/scene/add/trajectories smooth
@@ -41,7 +41,7 @@
 /vis/scene/endOfEventAction accumulate 10000
 #/vis/viewer/set/viewpointThetaPhi 90 0
 /vis/viewer/set/viewpointVector 1 0 0
-/vis/viewer/set/upVector 0 0 1
+/vis/viewer/set/upVector 0 0 -1
 
 /Histo/RecordGun true
 
@@ -49,10 +49,11 @@
 #/DetSys/gun/BeamSpot 2.5 mm
 #/DetSys/gun/coneMaxAngle -90 deg
 #/DetSys/gun/coneMinAngle 0 deg
-#/DetSys/gun/position 0.0 0.0 3.9 mm
-#/DetSys/gun/position 0.0 -1.0 2.54945 mm
-#/DetSys/gun/position 0.0 0.0 1.54945 mm
-/DetSys/gun/position 0.0 0.0 1.99945 mm
+
+#Beam position
+/DetSys/gun/position 0.0 0.0 0.0 mm
+#Source position
+#/DetSys/gun/position 0.0 0.0 3.375 mm
 
 #/gun/particle ion
 #/gun/ion 12 20
@@ -62,4 +63,4 @@
 /DetSys/gun/efficiencyEnergy 1 MeV
 #/DetSys/gun/efficiencyEnergy 0. MeV
 
-/run/beamOn 0
+#/run/beamOn 0
