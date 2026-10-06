@@ -15,7 +15,7 @@ void FitMylarThickness()
     }
 
 
-    g1->Fit("f1","R");
-    f1->Draw();
-    g1->Draw("Psame");
+    g1->Fit("f1");
+    g1->Draw("AP");
+    //f1->Draw();
 }

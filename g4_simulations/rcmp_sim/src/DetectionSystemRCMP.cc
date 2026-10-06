@@ -203,11 +203,11 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
     for (G4int rowX = 0; rowX < fPixelsXRow; ++rowX) 
     {
-        G4double posY = startX + fDeadLayerWidth*rowX + fDeadLayerWidth/2.0; //Can play on offset here +/- 1.25 mm
+        G4double posY = startX + fDeadLayerWidth*rowX + fDeadLayerWidth/2.0 + 1.59*mm; //Can play on offset here +/- 1.2 mm ; initial value : +1.59
         
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fDeadLayerWidth*rowY + fDeadLayerWidth/2.0 + 1.59*mm;
+            G4double posZ = startY + fDeadLayerWidth*rowY + fDeadLayerWidth/2.0 + 1.77*mm;
             G4double posX = 36.55*mm + ((fDetectorThickness + fDeadLayerThickness)/2.) + fOffsetPCB;
 
             G4ThreeVector localPos5(posX, posY, posZ);
@@ -232,7 +232,7 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
 
         for (G4int rowY = 0; rowY < fPixelsYRow; ++rowY) 
         {
-            G4double posZ = startY + fDeadLayerWidth*rowY + fDeadLayerWidth/2.0; //Can play on offset here +/- 1.25 mm
+            G4double posZ = startY + fDeadLayerWidth*rowY + fDeadLayerWidth/2.0 - 3.32*mm; //Can play on offset here +/- 1.2 mm ; initial value : -2.12
             G4double posX = 36.55*mm + ((fDetectorThickness + fDeadLayerThickness)/2.) + fOffsetPCB;
 
             G4ThreeVector localPos6(posX,-posY,posZ);
@@ -271,21 +271,31 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
     auto mesh = CADMesh::TessellatedMesh::FromSTL("../../frame_3d/frame.stl");
     auto solid = mesh->GetSolid();
     G4LogicalVolume* MeshLog = new G4LogicalVolume(solid, FrameMaterial, "MeshLog");
-    G4VPhysicalVolume* MeshPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), MeshLog, "MeshPhys", expHallLog, false, 0, true); 
+    //G4VPhysicalVolume* MeshPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), MeshLog, "MeshPhys", expHallLog, false, 0, true); 
 
     auto windows = CADMesh::TessellatedMesh::FromSTL("../../frame_3d/windows.stl");
     auto solidWind = windows->GetSolid();
     G4LogicalVolume* WindLog = new G4LogicalVolume(solidWind, FrameMaterial, "WindLog");
     //G4VPhysicalVolume* WindPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), WindLog, "WindPhys", expHallLog, false, 0, true);
 
+    auto topdsssd = CADMesh::TessellatedMesh::FromSTL("../../frame_3d/topdsssd.stl");
+    auto solidTopDsssd = topdsssd->GetSolid();
+    G4LogicalVolume* TopDsssdLog = new G4LogicalVolume(solidTopDsssd, FrameMaterial, "TopDsssdLog");
+    //G4VPhysicalVolume* TopDsssdPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), TopDsssdLog, "TopDsssdPhys", expHallLog, false, 0, true);
+
+    auto botdsssd = CADMesh::TessellatedMesh::FromSTL("../../frame_3d/botdsssd.stl");
+    auto solidBotDsssd = botdsssd->GetSolid();
+    G4LogicalVolume* BotDsssdLog = new G4LogicalVolume(solidBotDsssd, FrameMaterial, "BotDsssdLog");
+    //G4VPhysicalVolume* BotDsssdPhys = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), BotDsssdLog, "BotDsssdPhys", expHallLog, false, 0, true);
+    
     //////HOLDER//////////////////////////////////////////////////////////////////////////////////////////
 
     //G4Box* solidHolderPreSub = new G4Box("solidHolderPreSub", 60*mm, 8.5*mm, 1.*mm);
-    G4Box* solidHolderA = new G4Box("solidHolderA", 14.9*mm, 8.45*mm, 0.45*mm);
+    G4Box* solidHolderA = new G4Box("solidHolderA", 14.9*mm, 8.45*mm, 0.6*mm);
     G4Box* solidHolderB = new G4Box("solidHolderB", 2.8*mm, 8.45*mm, 0.4*mm);
     G4Box* solidHolderC = new G4Box("solidHolderC", 15.8*mm, 8.45*mm, 0.775*mm);
     G4Box* solidHolderD = new G4Box("solidHolderD", 13.5*mm, 8.35*mm, 0.775*mm);
-    G4Tubs* solidHolderE = new G4Tubs("solidHolderE", 0., 9.45*mm, 0.45*mm, 0., 360.);
+    G4Tubs* solidHolderE = new G4Tubs("solidHolderE", 0., 9.45*mm, 0.6*mm, 0., 360.);
     G4Tubs* solidHolderSub = new G4Tubs("solidHolderSub", 0., 7.45*mm, 2.*mm, 0., 360.);
     G4VSolid* solidHolderUniA = new G4UnionSolid("solidHolderUniA", solidHolderA, solidHolderE, 0, G4ThreeVector(0., 0., 0.));
     
@@ -304,15 +314,17 @@ G4int DetectionSystemRCMP::PlaceDetector(G4LogicalVolume* expHallLog)
     //G4VSolid* solidHolder = new G4SubtractionSolid("solidHolder", solidHolderUniA, solidHolderSub); For more detailed holder but not very usefull
     G4LogicalVolume* logHolder = new G4LogicalVolume(solidHolder, FrameMaterial, "logHolder");
     logHolder->SetVisAttributes(visAttHolder);
-    G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., (0.45+0.00055)*mm), logHolder, "physHolder", expHallLog, false, 0, true); //Beam position
-    //G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., (0.45+0.00055+3.375)*mm), logHolder, "physHolder", expHallLog, false, 0, true); //Source position
+    G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., (0.6+0.00055+2.0)*mm), logHolder, "physHolder", expHallLog, false, 0, true); //Beam position with the offset making all shadows better (simu oriented)
+    //G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., (0.6+0.00055)*mm), logHolder, "physHolder", expHallLog, false, 0, true); //Beam position with measurements done (measure oriented)
+    //G4VPhysicalVolume* physHolder = new G4PVPlacement(0, G4ThreeVector(0., 0., (0.6+0.00055+3.375)*mm), logHolder, "physHolder", expHallLog, false, 0, true); //Source position
 
     //////HOLDER//////////////////////////////////////////////////////////////////////////////////////////
     
     G4Tubs* solidTape = new G4Tubs("solidTape", 0., 7.5*mm, 0.000275*mm, 0., 360.); 
     G4LogicalVolume* logTape = new G4LogicalVolume(solidTape, MylarMaterial, "logTape");
     logTape->SetVisAttributes(visAttTape);
-    G4VPhysicalVolume* physTape = new G4PVPlacement(0, G4ThreeVector(0., 0., (0.000275)*mm), logTape, "physTape", expHallLog, false, 0, true);
+    //G4VPhysicalVolume* physTape = new G4PVPlacement(0, G4ThreeVector(0., 0., (0.000275+2.0)*mm), logTape, "physTape", expHallLog, false, 0, true); //Beam position with the offset making all shadows better (simu oriented)
+    G4VPhysicalVolume* physTape = new G4PVPlacement(0, G4ThreeVector(0., 0., (0.000275)*mm), logTape, "physTape", expHallLog, false, 0, true); //Beam position with measurements done (measure oriented)
     
     G4Tubs* solidSource = new G4Tubs("solidSource", 0., 5.55*mm, 100.*um, 0., 360.);
     G4LogicalVolume* logSource = new G4LogicalVolume(solidSource, PlatinumMaterial, "logSource");

@@ -18,14 +18,18 @@
 
 /Histo/RecordGun true
 
-#/DetSys/gun/BeamSpot 0.5 mm
+/DetSys/gun/BeamSpot 0.5 mm
 #/DetSys/gun/coneMaxAngle 90 deg
 #/DetSys/gun/coneMinAngle 0 deg
 
-#Beam position
-/DetSys/gun/position 0.0 0.0 0.0 mm
+#Beam position with the offset making all shadows better (simu oriented)
+/DetSys/gun/position 0.0 0.0 2.0 mm
+
+#Beam position with measurements done (measure oriented)
+#/DetSys/gun/position 0.0 0.0 0.0 mm
+
 #Source position
-#/DetSys/gun/position 0.0 0.0 3.375 mm
+#/DetSys/gun/position 0.0 0.0 3.975 mm
 
 #/gun/particle ion
 #/gun/ion 12 20

@@ -1,0 +1,16 @@
+solid Ruled_Surface014 (Meshed)
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -45.379803 -36.549999 -2.875422
+      vertex 45.126823 -36.549999 -2.878464
+      vertex -0.124968 -36.549999 -48.130257
+    endloop
+  endfacet
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex -45.379803 -36.549999 -2.875422
+      vertex -0.128009 -36.549999 42.376369
+      vertex 45.126823 -36.549999 -2.878464
+    endloop
+  endfacet
+endsolid Mesh

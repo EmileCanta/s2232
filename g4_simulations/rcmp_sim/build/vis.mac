@@ -35,13 +35,13 @@
 /vis/drawVolume
 /vis/viewer/set/autoRefresh true
 /vis/scene/add/trajectories smooth
-/vis/scene/add/axes 0 0 0 10 cm
+#/vis/scene/add/axes 0 0 0 10 cm
 /vis/viewer/set/targetPoint 0 0 0 m
 /vis/viewer/set/style surface
 /vis/scene/endOfEventAction accumulate 10000
 #/vis/viewer/set/viewpointThetaPhi 90 0
-/vis/viewer/set/viewpointVector 1 0 0
-/vis/viewer/set/upVector 0 0 -1
+/vis/viewer/set/viewpointVector 0 -1 0
+/vis/viewer/set/upVector 0 0 1
 
 /Histo/RecordGun true
 
@@ -50,10 +50,14 @@
 #/DetSys/gun/coneMaxAngle -90 deg
 #/DetSys/gun/coneMinAngle 0 deg
 
-#Beam position
-/DetSys/gun/position 0.0 0.0 0.0 mm
+#Beam position with the offset making all shadows better (simu oriented)
+/DetSys/gun/position 0.0 0.0 2.0 mm
+
+#Beam position with measurements done (measure oriented)
+#/DetSys/gun/position 0.0 0.0 0.0 mm
+
 #Source position
-#/DetSys/gun/position 0.0 0.0 3.375 mm
+#/DetSys/gun/position 0.0 0.0 3.975 mm
 
 #/gun/particle ion
 #/gun/ion 12 20
